@@ -44,14 +44,16 @@ body {
     background-color:  #BDD6A4;
 }
 
-#content.homeImage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #footer {
     background-color:  #95AB63;
     text-align: center;
     padding: 3px;
+}
+
+/** CONTENT ONLY ON HOME*/
+
+.homeImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
