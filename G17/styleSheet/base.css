@@ -16,7 +16,7 @@ body {
     margin: auto;
 }
 
-#nav {
+#nav {                                  /** centers the nav texts*/
     background-color:  #BDD64A;
     text-align: center;
 }
@@ -26,7 +26,7 @@ body {
     color: #000000;
 }
 
-#nav ul {
+#nav ul {                               /** removes the padding to the left of a li*/
     padding-left: 0;
 }
 
@@ -36,12 +36,18 @@ body {
     font-size:  x-large;
     padding-left: 100px;
     padding-right: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #content {
     background-color:  #BDD6A4;
+}
+
+#content.homeImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #footer {
