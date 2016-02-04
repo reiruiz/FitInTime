@@ -103,14 +103,16 @@ body {
 
 /** Profile Content */
 
+
 #displayPicture {
-    float:  left;
-    
+    float: left;
+    padding-left: 30px;
+    position: 
 }
 
 #profileInfo {
-    float: left;
-    width: 500px;
+    width: 50%;
+    position: 
 }
 
 #calendar {
