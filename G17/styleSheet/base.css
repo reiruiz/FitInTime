@@ -9,10 +9,6 @@ body {
     background-color:  #95AB63;
 }
 
-#banner {
-    background-color:  #FFFFFF;
-}
-
 #banner img {
     width: 500px;
     height:  150px;
@@ -22,6 +18,26 @@ body {
 
 #nav {
     background-color:  #BDD64A;
+    text-align: center;
+}
+
+#nav a {
+    text-decoration:  none;
+    color: #000000;
+}
+
+#nav ul {
+    padding-left: 0;
+}
+
+#nav li {
+    display:  inline-block;
+    list-style:  none;
+    font-size:  x-large;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #content {
