@@ -17,10 +17,7 @@ body {
 }
 
 #header {
-    background-color:  #95AB63;
-    position: fixed;
-    width: 100%;
-    left: 0;
+    background-color: #95AB36;
 }
 
 #header h1 {                            /* TEMPORARY*/
@@ -35,8 +32,13 @@ body {
     margin: auto;
 }
 
+<<<<<<< HEAD
 #nav {                                  /* centers the nav texts*/
     background-color:  #BDD64A;
+=======
+#nav {                                  /** centers the nav texts*/
+    background-color: #BDD6A6;
+>>>>>>> 0fa1db42c7c1dc727fffbfae364bce21e6ea2117
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -64,12 +66,16 @@ body {
 }
 
 #content {
+<<<<<<< HEAD
     background-color:  #BDD6A4;
     min-height:  695px;
+=======
+    background-color:  #F6FFE0;
+>>>>>>> 0fa1db42c7c1dc727fffbfae364bce21e6ea2117
 }
 
 #footer {
-    background-color:  #95AB63;
+    background-color:  #95AB36;
     text-align: center;
     clear: both;
 }
@@ -80,6 +86,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
 }
 
 .homeContent {
@@ -109,4 +116,20 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 50px;
+}
+
+/** Profile Content */
+
+#displayPicture {
+    float:  left;
+    
+}
+
+#profileInfo {
+    float: left;
+    width: 500px;
+}
+
+#calendar {
+    clear:  both;
 }
