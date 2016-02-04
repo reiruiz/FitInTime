@@ -102,3 +102,19 @@ body {
     padding-right: 20px;
     padding-bottom: 50px;
 }
+
+/** Profile Content */
+
+#displayPicture {
+    float:  left;
+    
+}
+
+#profileInfo {
+    float: left;
+    width: 500px;
+}
+
+#calendar {
+    clear:  both;
+}
