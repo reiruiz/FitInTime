@@ -32,13 +32,9 @@ body {
     margin: auto;
 }
 
-<<<<<<< HEAD
-#nav {                                  /* centers the nav texts*/
-    background-color:  #BDD64A;
-=======
+    
 #nav {                                  /** centers the nav texts*/
     background-color: #BDD6A6;
->>>>>>> 0fa1db42c7c1dc727fffbfae364bce21e6ea2117
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -66,12 +62,10 @@ body {
 }
 
 #content {
-<<<<<<< HEAD
+
     background-color:  #BDD6A4;
     min-height:  695px;
-=======
     background-color:  #F6FFE0;
->>>>>>> 0fa1db42c7c1dc727fffbfae364bce21e6ea2117
 }
 
 #footer {
