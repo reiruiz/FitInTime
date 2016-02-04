@@ -1,3 +1,5 @@
+/** BASE CONTENT */
+
 body {
     background-color:  #10222B;
     width:  60%;
@@ -7,11 +9,12 @@ body {
 
 #header {
     background-color:  #95AB63;
-    padding: 1px;
+    position: static;
+    top: 0;
+    left: 0;
 }
 
 #header h1 {                            /** TEMPORARY*/
-    margin: 0;
     text-align: right;
     padding-right: 10px;
 }
@@ -26,7 +29,6 @@ body {
 #nav {                                  /** centers the nav texts*/
     background-color:  #BDD64A;
     text-align: center;
-    padding: 1px;
 }
 
 #nav a {
@@ -48,16 +50,14 @@ body {
 
 #content {
     background-color:  #BDD6A4;
-    padding: 1px;
 }
 
 #footer {
     background-color:  #95AB63;
     text-align: center;
-    padding: 1px;
 }
 
-/** CONTENT ONLY ON HOME*/
+/** HOME CONTENT */
 
 .homeImage {
     display: block;
@@ -72,3 +72,5 @@ body {
     margin-right: auto;
     padding-bottom: 20px;
 }
+
+/** EXERCISE/NUTRITION CONTENT */
