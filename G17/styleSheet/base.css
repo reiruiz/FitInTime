@@ -13,6 +13,13 @@ body {
     background-color:  #FFFFFF;
 }
 
+#banner img {
+    width: 500px;
+    height:  150px;
+    display: block;
+    margin: auto;
+}
+
 #nav {
     background-color:  #BDD64A;
 }
