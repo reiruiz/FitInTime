@@ -36,6 +36,10 @@ body {
     color: #000000;
 }
 
+#nav a:hover {
+    color: #808080;
+}
+
 #nav ul {                               /** removes the padding to the left of a li*/
     padding-left: 0;
 }
