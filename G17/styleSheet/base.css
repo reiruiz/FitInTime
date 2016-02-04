@@ -88,3 +88,15 @@ body {
 }
 
 /** EXERCISE/NUTRITION CONTENT */
+
+#activityTime ul{
+    list-style-type: none;
+}
+
+#activityTime a {
+    float: left;
+    margin: auto;   
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
