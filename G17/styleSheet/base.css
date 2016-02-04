@@ -1,6 +1,6 @@
-/** BASE CONTENT */
+/* BASE CONTENT */
 
-* {                                 /** resets margin/padding to 0 */
+* {                                 /* resets margin/padding to 0 */
     margin: 0;
     padding: 0;
 }
@@ -20,7 +20,7 @@ body {
     background-color: #95AB36;
 }
 
-#header h1 {                            /** TEMPORARY*/
+#header h1 {                            /* TEMPORARY*/
     text-align: right;
     padding-right: 10px;
 }
@@ -32,6 +32,7 @@ body {
     margin: auto;
 }
 
+    
 #nav {                                  /** centers the nav texts*/
     background-color: #BDD6A6;
     text-align: center;
@@ -48,7 +49,7 @@ body {
     color: #808080;
 }
 
-#nav ul {                               /** removes the padding to the left of a li*/
+#nav ul {                               /* removes the padding to the left of a li*/
     padding-left: 0;
 }
 
@@ -61,15 +62,19 @@ body {
 }
 
 #content {
+
+    background-color:  #BDD6A4;
+    min-height:  695px;
     background-color:  #F6FFE0;
 }
 
 #footer {
     background-color:  #95AB36;
     text-align: center;
+    clear: both;
 }
 
-/** HOME CONTENT */
+/* HOME CONTENT */
 
 .homeImage {
     display: block;
@@ -87,14 +92,20 @@ body {
     padding-bottom: 20px;
 }
 
-/** EXERCISE/NUTRITION CONTENT */
+/* EXERCISE/NUTRITION CONTENT */
 
-#activityTime ul{
+#activityTime li{
     list-style-type: none;
+    text-align: center;
+    display:  inline;
+}
+#activityTime {
+    display: block;         
+    text-align:  center;    /* centering the images*/
 }
 
 #activityTime a {
-    float: left;
+    
     margin: auto;   
     padding-left: 20px;
     padding-right: 20px;
