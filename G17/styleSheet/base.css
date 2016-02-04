@@ -1,5 +1,10 @@
 /** BASE CONTENT */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color:  #10222B;
     width:  60%;
@@ -34,6 +39,10 @@ body {
 #nav a {
     text-decoration:  none;
     color: #000000;
+}
+
+#nav a:hover {
+    color: #808080;
 }
 
 #nav ul {                               /** removes the padding to the left of a li*/
