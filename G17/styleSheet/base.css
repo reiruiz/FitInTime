@@ -15,7 +15,7 @@ body {
 }
 
 #wrapper {
-    width: 60%;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -101,16 +101,26 @@ body {
 
 
 #displayPicture {
+    padding-top: 30px;
     float: left;
     padding-left: 30px;
     position: 
 }
 
 #profileInfo {
-    width: 50%;
-    position: 
+    width: 450px;
+    float: left; 
+    padding-left: 40px;
+    padding-top: 30px;
 }
 
 #calendar {
     clear:  both;
+    padding-top:  30px;
+}
+
+#achievements {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
