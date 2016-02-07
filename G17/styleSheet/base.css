@@ -1,23 +1,23 @@
 /* BASE CONTENT */
 
-* {                                 /* resets margin/padding to 0 */
+* {                                 /* resets margin/padding to 0*/
     margin: 0;
     padding: 0;
 }
 
 body {
     background-color:  #10222B;
-    width:  60%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#wrapper {
     height: 100%;
 }
 
 #header {
     background-color: #95AB36;
+}
+
+#wrapper {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #header h1 {                            /* TEMPORARY*/
@@ -32,12 +32,9 @@ body {
     margin: auto;
 }
 
-    
-#nav {                                  /** centers the nav texts*/
+#nav {                                  /* centers the nav texts*/
     background-color: #BDD6A6;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 #nav a {
@@ -49,10 +46,6 @@ body {
     color: #808080;
 }
 
-#nav ul {                               /* removes the padding to the left of a li*/
-    padding-left: 0;
-}
-
 #nav li {
     display:  inline-block;
     list-style:  none;
@@ -62,16 +55,12 @@ body {
 }
 
 #content {
-
-    background-color:  #BDD6A4;
-    min-height:  695px;
     background-color:  #F6FFE0;
 }
 
 #footer {
     background-color:  #95AB36;
     text-align: center;
-    clear: both;
 }
 
 /* HOME CONTENT */
@@ -80,7 +69,6 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
 }
 
 .homeContent {
@@ -88,11 +76,9 @@ body {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
-/* EXERCISE/NUTRITION CONTENT */
+/* EXERCISE & NUTRITION CONTENT */
 
 #activityTime li{
     list-style-type: none;
@@ -101,18 +87,17 @@ body {
 }
 #activityTime {
     display: block;         
-    text-align:  center;    /* centering the images*/
+    text-align:  center;            /* centering the images*/
 }
 
 #activityTime a {
-    
     margin: auto;   
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 50px;
 }
 
-/** Profile Content */
+/* PROFILE CONTENT */
 
 
 #displayPicture {
