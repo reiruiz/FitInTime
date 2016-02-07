@@ -10,14 +10,21 @@ body {
     height: 100%;
 }
 
-#header {
-    background-color: #95AB36;
+p {
+    text-indent: 40px;
 }
 
 #wrapper {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+
+}
+
+#header {
+    background-color: #95AB36;
+    position: fixed;
+    width: 100%;
 }
 
 #header h1 {                            /* TEMPORARY*/
@@ -56,11 +63,14 @@ body {
 
 #content {
     background-color:  #F6FFE0;
+    padding-bottom: 20px;
 }
 
 #footer {
     background-color:  #95AB36;
     text-align: center;
+    padding: 10px;
+    padding-bottom: 20px;
 }
 
 /* HOME CONTENT */
@@ -80,14 +90,16 @@ body {
 
 /* EXERCISE & NUTRITION CONTENT */
 
-#activityTime li{
-    list-style-type: none;
-    text-align: center;
-    display:  inline;
-}
 #activityTime {
     display: block;         
     text-align:  center;            /* centering the images*/
+    padding: 20px;
+}
+
+#activityTime li{
+    list-style-type: none;
+    text-align: center;
+    display:  inline
 }
 
 #activityTime a {
