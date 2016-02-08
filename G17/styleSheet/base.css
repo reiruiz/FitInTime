@@ -10,10 +10,6 @@ body {
     height: 100%;
 }
 
-#content p {                        /* only content indents; fixed issue with footer indent*/
-    text-indent: 40px;
-}
-
 #wrapper {
     width: 800px;
     margin-left: auto;
@@ -63,10 +59,14 @@ body {
     padding-bottom: 5px;
 }
 
+#content p {                        /* only content indents; fixed issue with footer indent*/
+    text-indent: 40px;
+}
+
 #content {
     background-color:  #F6FFE0;
-    padding-top: 20px;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 #footer {
@@ -81,6 +81,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 20px;
 }
 
 .homeContent {
@@ -106,7 +107,7 @@ body {
 
 #activityTime a {
     margin: auto;   
-    padding-left: 20px;
+    padding-left: 25px;
     padding-right: 20px;
     padding-bottom: 50px;
 }
@@ -115,9 +116,8 @@ body {
 
 
 #displayPicture {
-    padding-top: 30px;
     float: left;
-    padding-left: 30px;
+    padding-left: 25px;
 
 }
 
@@ -125,7 +125,6 @@ body {
     width: 450px;
     float: left; 
     padding-left: 40px;
-    padding-top: 30px;
 }
 
 #calendar {
