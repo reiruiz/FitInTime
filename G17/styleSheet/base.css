@@ -35,19 +35,27 @@ body {
 
 #user {
     line-height:  60px;
-    height:  60px;
+    
     position:  absolute;
     right: 0;
-    padding:  0 20px;
+    
+    
     
 }
 
 #user .profile {
     background-color: yellow;
+    padding:  0;
+    float:  right;
+    text-align:  center;
 }
 
 #user .register {
     background-color: orange;
+    padding:  0;
+    float:  right;
+    text-align: center;
+    
 }
 
 #header a {                            /* TEMPORARY*/
