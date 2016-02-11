@@ -16,7 +16,7 @@ body {
     position: fixed;
     width: 100%;
     height: 60px;
-    border-bottom: 1px ridge ;
+    border-bottom: 2px solid #DEDEDE;
 }
 
 #header a {
@@ -49,56 +49,43 @@ body {
 }
 
 #user .profile {
-    background-color: yellow;
-    padding:  0;
-    float:  right;
-    text-align:  center;
-    border-bottom:  1px solid yellow;
-}
-
-#user .register {
     background-color: orange;
     padding:  0;
     float:  right;
+    text-align:  center;
+    border-bottom:  1px solid orange;
+    font-weight: bold;
+}
+
+#user .register {
+    background-color: yellow;
+    padding:  0;
+    float:  right;
     text-align: center;
-    border-bottom: 1px solid orange;
+    border-bottom: 1px solid yellow;
+    font-weight: bold;
 }
 
 #banner img {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 175px;
+    padding-bottom: 100px;
     display: block;
     margin: auto;
 }
 
 #wrapper {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 #wrapper a {
     display: inline;
-    margin:  auto;
+    margin: 0 auto;
     padding: 0 25px;    
 }
 
 #content {
     background-color:  white;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-#content p {                        /* only content indents; fixed issue with footer indent*/
-    text-indent: 40px;
-}
-
-#home {
-    text-align: center;
-}
-
-#home img{
-    width: 40%;
 }
 
 #footer {
@@ -112,6 +99,19 @@ body {
 }
 
 /* HOME CONTENT */
+
+#homeContent {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#home {
+    text-align: center;
+}
+
+#home img{
+    width: 45%;
+}
 
 /* EXERCISE & NUTRITION CONTENT */
 
@@ -136,42 +136,60 @@ body {
 
 /* PROFILE CONTENT */
 
+#profileContent {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 #displayPicture {
     float: left;
-    padding-left: 25px;
-
 }
 
 #profileInfo {
-    width:70%;
-    float: left; 
-    padding-left: 40px;
+    padding-left: 250px;
+}
+
+#profileInfo h2 {
+    padding-bottom: 30px;
 }
 
 #calendar {
     clear:  both;
-    padding-top:  30px;
+}
+
+#calendar td {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #achievements {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 /* REGISTRATION*/
 
+#regContent {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
 #whyRegister {
     width: 500px;
     float: left;
-    padding-left: 25px;
 }
 
 #whyRegister h2 {
     padding-bottom: 20px;
+    text-align: center;
 }
 
 #whyRegister p {
@@ -180,10 +198,10 @@ body {
 
 #whyRegister img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 #inputBoxes {
-    padding-left: 575px;
+    padding-left: 550px;
+    padding-bottom: 30px;
 }
