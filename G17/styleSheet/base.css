@@ -17,10 +17,6 @@ body {
     
 }
 
-#wrapper img {
-    width: 45%;
-}
-
 #wrapper a {
     display:  inline-block;
     margin:  auto;
