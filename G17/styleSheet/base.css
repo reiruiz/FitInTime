@@ -49,6 +49,7 @@ body {
 }
 
 #user .profile {
+    display: block;
     background-color: orange;
     padding:  0;
     float:  right;
@@ -57,13 +58,24 @@ body {
     font-weight: bold;
 }
 
+#user .profile:hover {
+    background-color: #c48209;
+    border-bottom: 1px solid #c48209;
+}
+
 #user .register {
+    display: block;
     background-color: yellow;
     padding:  0;
     float:  right;
     text-align: center;
     border-bottom: 1px solid yellow;
     font-weight: bold;
+}
+
+#user .register:hover {
+    background-color: #d5d545;
+    border-bottom: 1px solid #d5d545;
 }
 
 #banner img {
@@ -115,23 +127,23 @@ body {
 
 /* EXERCISE & NUTRITION CONTENT */
 
-#activityTime {
-    display: block;         
-    text-align:  center;            /* centering the images*/
-    padding: 20px;
+#description {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-#activityTime li{
+#activityTime li {
     list-style-type: none;
     text-align: center;
     display:  inline
 }
 
-#activityTime a {
-    margin: auto;   
-    padding-left: 25px;
-    padding-right: 20px;
-    padding-bottom: 50px;
+#activityTime img {
+    width: 450px;
+    height: 400px;
+    padding-bottom: 30px;
 }
 
 /* PROFILE CONTENT */
