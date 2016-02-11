@@ -69,7 +69,6 @@ body {
     float:  right;
     text-align: center;
     border-bottom: 1px solid orange;
-    border-left:  1px solid black;
 }
 
 #header a {                            /* TEMPORARY*/
