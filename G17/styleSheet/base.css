@@ -17,13 +17,12 @@ body {
     
 }
 
-#wrapper img {
-    width: 45%;
-}
 
 #wrapper a {
-    display:  inline-block;
+    display: inline;
     margin:  auto;
+    padding: 0 25px;
+    
 }
 
 #header {
