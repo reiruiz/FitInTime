@@ -4,31 +4,10 @@
     margin: 0;
     padding: 0;
 }
-#center{
-    text-align: center;
-}
-#center img{
-    width: 40%;
-}
 
 body {
     background-color:  #DDDDDD;
     height: 100%;
-}
-
-#wrapper {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
-
-#wrapper a {
-    display: inline;
-    margin:  auto;
-    padding: 0 25px;
-    
 }
 
 #header {
@@ -37,8 +16,15 @@ body {
     width: 100%;
     height: 60px;
     border-bottom: 1px ridge ;
-    
 }
+
+#header a {
+    padding: 10px;
+    font-size: 100%;
+    width: 115px;
+    height:  100%;
+}
+
 #header p {
     font-size:  200%;
     line-height: 60px;
@@ -50,11 +36,9 @@ body {
 }
 
 #user {
-    line-height:  60px;
-    
+    line-height:  60px;    
     position:  absolute;
     right: 0; 
-    
 }
 
 #user a {
@@ -68,7 +52,6 @@ body {
     float:  right;
     text-align:  center;
     border-bottom:  1px solid yellow;
-    
 }
 
 #user .register {
@@ -79,13 +62,6 @@ body {
     border-bottom: 1px solid orange;
 }
 
-#header a {                            /* TEMPORARY*/
-    padding: 10px;
-    font-size: 100%;
-    width: 115px;
-    height:  100%;
-}
-
 #banner img {
     padding-top: 100px;
     padding-bottom: 50px;
@@ -93,63 +69,43 @@ body {
     margin: auto;
 }
 
-#nav {                                  /* centers the nav texts*/
-    background-color: #BDD6A6;
-    text-align: center;
+#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#nav a {
-    text-decoration:  none;
-    color: #000000;
-}
-
-#nav a:hover {
-    color: #808080;
-}
-
-#nav li {
-    display:  inline-block;
-    list-style:  none;
-    font-size:  large;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-#content p {                        /* only content indents; fixed issue with footer indent*/
-    text-indent: 40px;
+#wrapper a {
+    display: inline;
+    margin:  auto;
+    padding: 0 25px;    
 }
 
 #content {
     background-color:  white;
     padding-bottom: 20px;
     padding-top: 20px;
+}
 
+#content p {                        /* only content indents; fixed issue with footer indent*/
+    text-indent: 40px;
+}
+
+#home {
+    text-align: center;
+}
+
+#home img{
+    width: 40%;
 }
 
 #footer {
     background-color:  #EEEEEE;
     text-align: center;
-    padding: 10px;
-       
+    padding: 10px;      
 }
 
 /* HOME CONTENT */
-
-.homeImage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-}
-
-.homeContent {
-    font-size: large;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 /* EXERCISE & NUTRITION CONTENT */
 
