@@ -4,6 +4,12 @@
     margin: 0;
     padding: 0;
 }
+#center{
+    text-align: center;
+}
+#center img{
+    width: 40%;
+}
 
 body {
     background-color:  #DDDDDD;
