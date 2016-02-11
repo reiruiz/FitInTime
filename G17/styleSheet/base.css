@@ -20,7 +20,9 @@ body {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    
 }
+
 
 #wrapper a {
     display: inline;
@@ -90,6 +92,30 @@ body {
     padding-bottom: 50px;
     display: block;
     margin: auto;
+}
+
+#nav {                                  /* centers the nav texts*/
+    background-color: #BDD6A6;
+    text-align: center;
+}
+
+#nav a {
+    text-decoration:  none;
+    color: #000000;
+}
+
+#nav a:hover {
+    color: #808080;
+}
+
+#nav li {
+    display:  inline-block;
+    list-style:  none;
+    font-size:  large;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #content p {                        /* only content indents; fixed issue with footer indent*/
