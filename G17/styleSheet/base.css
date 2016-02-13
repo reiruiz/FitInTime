@@ -26,6 +26,8 @@ body {
     height:  100%;
 }
 
+
+
 #header p {
     font-size:  200%;
     line-height: 60px;
@@ -35,6 +37,54 @@ body {
     padding: 0 20px;
     color: white;
 }
+
+
+/* Menu drop down start */
+
+
+ul {
+    list-style: none;
+    font-size:  100%;
+    line-height: 60px;
+    width: 135px;
+    height: 60px;
+    float: left;
+    position: 0;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+
+ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+}
+
+ul li a:hover{
+    color: blue;
+    background: #CCCCCC;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+ul li ul.dropdown li{
+        display: block;
+}
+
+/* Menu drop down end */
+
 
 #user {
     line-height:  60px;    
