@@ -28,15 +28,7 @@ body {
 
 
 
-#header p {
-    font-size:  200%;
-    line-height: 60px;
-    background-color: black;
-    width: 135px;
-    height: 60px;
-    padding: 0 20px;
-    color: white;
-}
+
 
 
 /* Menu drop down start */
@@ -44,12 +36,8 @@ body {
 
 ul {
     list-style: none;
-    font-size:  100%;
-    line-height: 60px;
-    width: 135px;
-    height: 60px;
-    float: left;
-    position: 0;
+    font-size:  210%;
+    
 }
 
 ul li {
@@ -77,10 +65,12 @@ ul li a:hover{
 
 ul li:hover ul.dropdown{
     display: block;
+    font-size: 90%;
 }
 
 ul li ul.dropdown li{
-        display: block;
+    display: block;
+
 }
 
 /* Menu drop down end */
