@@ -34,26 +34,25 @@ body {
 /* Menu drop down start */
 
 
-ul {
+#header ul {
     list-style: none;
     font-size:  210%;
-    
 }
 
-ul li {
+#header ul li {
     display: inline-block;
     position: relative;
     text-align: left;
 }
 
-ul li a{
+#header ul li a{
     display: block;
     color: white;
     text-decoration: none;
     background-color: black;
 }
 
-ul li a:hover{
+#header ul li a:hover{
     color: blue;
     background: #CCCCCC;
 }
