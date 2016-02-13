@@ -8,7 +8,6 @@
 body {
     background-color:  #DDDDDD;
     height: 100%;
-    font-family: Arial;
 }
 
 #header {
@@ -30,11 +29,10 @@ body {
     font-size:  200%;
     line-height: 60px;
     background-color: black;
-    width: 145px;
+    width: 135px;
     height: 60px;
     padding: 0 20px;
     color: white;
-    font-weight: bold;
 }
 
 #user {
