@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color:  #DDDDDD;
+    background-color:  #EBEBEB;
     height: 100%;
 }
 
@@ -15,7 +15,8 @@ body {
     position: fixed;
     width: 100%;
     height: 60px;
-    border-bottom: 1px ridge ;
+    border-bottom: 2px solid #EBEBEB;
+    /*background-image: linear-gradient(to top, #EBEBEB, white 15%);*/
 }
 
 #header a {
@@ -47,48 +48,74 @@ body {
 }
 
 #user .profile {
-    background-color: yellow;
-    padding:  0;
-    float:  right;
-    text-align:  center;
-    border-bottom:  1px solid yellow;
-}
-
-#user .register {
+    display: block;
     background-color: orange;
     padding:  0;
     float:  right;
+    text-align:  center;
+    border-bottom:  1px solid orange;
+    font-weight: bold;
+}
+
+#user .profile:hover {
+    background-color: #c48209;
+    border-bottom: 1px solid #c48209;
+}
+
+#user .register {
+    display: block;
+    background-color: yellow;
+    padding:  0;
+    float:  right;
     text-align: center;
-    border-bottom: 1px solid orange;
+    border-bottom: 1px solid yellow;
+    font-weight: bold;
+}
+
+#user .register:hover {
+    background-color: #d5d545;
+    border-bottom: 1px solid #d5d545;
 }
 
 #banner img {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 175px;
+    padding-bottom: 100px;
     display: block;
     margin: auto;
 }
 
 #wrapper {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 #wrapper a {
     display: inline;
-    margin:  auto;
+    margin: 0 auto;
     padding: 0 25px;    
 }
 
 #content {
     background-color:  white;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    border-radius: 25px 25px 0 0;
 }
 
-#content p {                        /* only content indents; fixed issue with footer indent*/
-    text-indent: 40px;
+#footer {
+    background-color:  #E0E0E0;
+    text-align: center;
+    padding: 10px;      
+    /*border-radius: 0 0 25px 25px;*/
+}
+#footer a {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+}
+
+/* HOME CONTENT */
+
+#homeContent {
+    padding-bottom: 30px;
 }
 
 #home {
@@ -96,80 +123,86 @@ body {
 }
 
 #home img{
-    width: 40%;
+    width: 45%;
 }
-
-#footer {
-    background-color:  #EEEEEE;
-    text-align: center;
-    padding: 10px;      
-}
-#footer a{
-    text-decoration: none;
-    color: black;
-}
-
-/* HOME CONTENT */
 
 /* EXERCISE & NUTRITION CONTENT */
 
-#activityTime {
-    display: block;         
-    text-align:  center;            /* centering the images*/
-    padding: 20px;
+#description {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-#activityTime li{
+#activityTime li {
     list-style-type: none;
     text-align: center;
     display:  inline
 }
 
-#activityTime a {
-    margin: auto;   
-    padding-left: 25px;
-    padding-right: 20px;
-    padding-bottom: 50px;
+#activityTime img {
+    width: 450px;
+    height: 400px;
+    padding-bottom: 30px;
 }
 
 /* PROFILE CONTENT */
 
+#profileContent {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 #displayPicture {
     float: left;
-    padding-left: 25px;
-
 }
 
 #profileInfo {
-    width:70%;
-    float: left; 
-    padding-left: 40px;
+    padding-left: 250px;
+}
+
+#profileInfo h2 {
+    padding-bottom: 30px;
 }
 
 #calendar {
     clear:  both;
-    padding-top:  30px;
+}
+
+#calendar td {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #achievements {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 /* REGISTRATION*/
 
+#regContent {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
 #whyRegister {
     width: 500px;
     float: left;
-    padding-left: 25px;
 }
 
 #whyRegister h2 {
     padding-bottom: 20px;
+    text-align: center;
 }
 
 #whyRegister p {
@@ -178,10 +211,10 @@ body {
 
 #whyRegister img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 #inputBoxes {
-    padding-left: 575px;
+    padding-left: 550px;
+    padding-bottom: 30px;
 }
