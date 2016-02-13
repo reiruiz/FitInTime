@@ -26,6 +26,13 @@ body {
     height:  100%;
 }
 
+#header p{
+    background-color: black;
+    padding: 0 10px;
+    color: white;
+    line-height: 60px;
+    height: 60px;
+}
 
 
 
@@ -37,6 +44,7 @@ body {
 #header ul {
     list-style: none;
     font-size:  210%;
+    
 }
 
 #header ul li {
@@ -57,17 +65,17 @@ body {
     background: #CCCCCC;
 }
 
-.dropdown{
+#header .dropdown{
     display: none;
     position: absolute;
 }
 
-ul li:hover ul.dropdown{
+#header ul li:hover ul.dropdown{
     display: block;
     font-size: 90%;
 }
 
-ul li ul.dropdown li{
+#header ul li ul.dropdown li{
     display: block;
 
 }
