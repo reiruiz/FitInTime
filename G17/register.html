@@ -3,6 +3,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="./styleSheet/base.css">
+        <script src="functions.js"></script>
         <meta charset="utf-8" />
         <title>Register</title>
     </head>
@@ -59,9 +60,9 @@
                          <h2>Register</h2>
                             <form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
                                 Username:<br>
-                                <input type="text" id="regusername" name="Username"><br>
+                                <input type="text" id="regusername" name="Username" onblur="validateNewUser()"><br>
                                 Password:<br>
-                                <input type="password" id="regpassword" name="Password"><br>
+                                <input type="password" id="regpassword" name="Password" onblur="validateNewPass()"><br>
                                 Confirm Password:<br>
                                 <input type="password" id="confirmpass"name="Password"><br>
                                 Email Address:<br>
