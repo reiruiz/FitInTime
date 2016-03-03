@@ -3,6 +3,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="./styleSheet/base.css">
+        <script src="functions.js"></script>
         <meta charset="utf-8" />
         <title>Register</title>
     </head>
@@ -20,10 +21,11 @@
                 <li>
                     <a href="#">Menu</a>
                     <ul class="dropdown">
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="./exercise/exercise.html">Exercise</a></li>
                         <li><a href="./nutrition/nutrition.html">Health</a></li>
                         <li><a href="profile.html">Profile</a></li>
-                        <li><a href="register.html">Registration</a></li>
+                        <li><a href="register.html">Register</a></li>
                     </ul>
                 </li>
             </ul>
@@ -50,25 +52,25 @@
                         <h2>Log In</h2>
                             <form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
                                 Log In:<br>
-                                <input type="text" name="Username"><br>
+                                <input type="text" id="logusername" name="Username"><br>
                                 Password:<br>
-                                <input type="password" name="Password"><br>
-                                <input type="submit" value="Sign In">
+                                <input type="password" id="logpassword" name="Password"><br>
+                                <input type="submit" id="signin" value="Sign In">
                             </form><br><br>
                        
                          <h2>Register</h2>
                             <form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
                                 Username:<br>
-                                <input type="text" name="Username"><br>
+                                <input type="text" id="regusername" name="Username" onblur="validateNewUser()"><br>
                                 Password:<br>
-                                <input type="password" name="Password"><br>
+                                <input type="password" id="regpassword" name="Password" onblur="validateNewPass()"><br>
                                 Confirm Password:<br>
-                                <input type="password" name="Password"><br>
+                                <input type="password" id="confirmpass"name="Password"><br>
                                 Email Address:<br>
-                                <input type="email" name="Email"><br>
+                                <input type="email" id="email" name="Email"><br>
                                 Confirm Email Address:<br>
-                                <input type="email" name="Email"><br>
-                                <input type="submit" value="Sign Up">
+                                <input type="email" id="confirmemail" name="Email"><br>
+                                <input type="submit" id="submitReg" value="Sign Up">
                             </form>
                     </div>
                 </div>  
