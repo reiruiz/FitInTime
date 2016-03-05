@@ -6,12 +6,13 @@ function $(id){
     }
     return element;
 }
+/* function being tested
 function errorMsg(msg, childId, parentId){
     var error = document.createElement("p");
     var text = document.createTextNode(msg);
     error.appendChild(text);
     parentId.insertBefore(error,childId);
-}
+}*/
 function validateNewUser(id){
     //Gets string for new user name
     var element = $(id);
@@ -20,7 +21,7 @@ function validateNewUser(id){
     if(patt.test(element.value)){
         element.style.backgroundColor = "Pink";
         element.style.border = "1px solid red";
-        errorMsg("Invalid user name.", element, element.parentNode);
+        //errorMsg("Invalid user name.", element, element.parentNode);
     }
 }
 function validateNewPass(id){
