@@ -49,7 +49,7 @@
                     </div>
                     <div id="inputBoxes">
                         <h2>Log In</h2>
-                            <form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+                            <form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" id="login">
                                 Log In:<br>
                                 <input type="text" id="logusername" name="Username"><br>
                                 Password:<br>
@@ -58,17 +58,17 @@
                             </form><br><br>
                        
                          <h2>Register</h2>
-                            <form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+                            <form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" id="register">
                                 Username:<br>
-                                <input type="text" id="regusername" name="Username" onblur="validateNewUser()"><br>
+                                <input type="text" id="reguser" name="Username" onblur="validateNewUser('reguser')"><br>
                                 Password:<br>
-                                <input type="password" id="regpassword" name="Password" onblur="validateNewPass()"><br>
+                                <input type="password" id="regpass" name="Password" onblur="validateNewPass('regpass')"><br>
                                 Confirm Password:<br>
-                                <input type="password" id="confirmpass"name="Password"><br>
+                                <input type="password" id="confirmpass"name="Password" onblur="confirmInput('regpass','confirmpass')"><br>
                                 Email Address:<br>
-                                <input type="email" id="email" name="Email"><br>
+                                <input type="email" id="email" name="Email" onblur="validateEmail('email')"><br>
                                 Confirm Email Address:<br>
-                                <input type="email" id="confirmemail" name="Email"><br>
+                                <input type="email" id="confirmemail" name="Email" onblur="confirmInput('email,confirmemail')"><br>
                                 <input type="submit" id="submitReg" value="Sign Up">
                             </form>
                     </div>
