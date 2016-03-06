@@ -172,6 +172,7 @@ body {
 
 #home img{
     width: 45%;
+    padding-bottom: 30px;
 }
 
 /* EXERCISE & NUTRITION CONTENT */
@@ -234,6 +235,15 @@ body {
     padding-bottom: 30px;
 }
 
+#widgets h2 {
+    text-align: center;
+}
+
+.bmi {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
 /* REGISTRATION*/
 
 #regContent {
@@ -265,3 +275,63 @@ body {
     float: left;
     padding-bottom: 30px;
 }
+
+/* OLD WIDGETS
+
+#widgetmain1 {
+    display: inline-block;
+    text-align: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 45%;
+    background-color: white; 
+    border: 1px solid #333333;
+    margin-right: 50px;
+}
+
+#widgetmain2 {
+    display: inline-block;
+    text-align: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 45%;
+    background-color: white; 
+    border: 1px solid #333333;
+}
+
+#rsswidget1 {
+    height: 200px;
+}
+
+#rsswidget2 {
+    height: 200px;
+}
+
+#rssOutput1 {
+    border: 0; 
+    padding: 0;
+    margin: 0; 
+    width: 100%; 
+    height: 200px;
+}
+
+#rssOutput2 {
+    border: 0; 
+    padding: 0;
+    margin: 0; 
+    width: 100%; 
+    height: 200px;    
+}
+
+#widgetbottom1 {
+    text-align: right;
+    margin-bottom: 0;
+    border-top: 1px solid #333333;
+}
+
+#widgetbottom2 {
+    text-align: right;
+    margin-bottom: 0;
+    border-top: 1px solid #333333;
+}
+*/
