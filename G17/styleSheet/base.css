@@ -44,34 +44,50 @@ body {
 }
 
 #header .menu {
-    background-color: yellow;
+    background-color: black;
     height: 60px;
     line-height: 60px;
-    float: right;
+    float: left;
 }
 
 #header .menu a {
-    color: black;
+    color: white;
 }
 
 #header .menu a:hover {                                     /* changes color on hover for menu */
-    background-color: #d5d545;
+    background-color: #888888;
     padding-bottom: 17px;
 }
 
-#header .user {
+#header .profile {
     background-color: orange;
     height: 60px;
     line-height: 60px;
     float: right;
 }
 
-#header .user a {
+#header .profile a {
     color: black;
 }
 
-#header .user a:hover {                                     /* changes color on hover for user */
+#header .profile a:hover {                                     /* changes color on hover for user */
     background-color: #c48209;
+    padding-bottom: 17px;
+}
+
+#header .register {
+    background-color: yellow;
+    height: 60px;
+    line-height: 60px;
+    float: right;
+}
+
+#header .register a {
+    color: black;
+}
+
+#header .register a:hover {                                     /* changes color on hover for user */
+    background-color: #d5d545;
     padding-bottom: 17px;
 }
 
@@ -83,7 +99,7 @@ body {
 }
 
 #header ul li a {                                           /* sets the colors for the menu */
-    background-color: yellow;
+    background-color: black;
     color: white;
     text-decoration: none;
 }
@@ -94,12 +110,14 @@ body {
 
 #header .menu:hover ul.dropdown {                           /* displays the menu items when you hover the menu */
     display: block;
-    background-color: yellow;
+    background-color: black;
+    color: white;
     margin-top: -4px;
 }
 
 #header .menu:hover ul.dropdown:hover a:hover {             /* displays an underline when you hover menu items */
-    background-color: yellow;
+    background-color: black;
+    color: white;
     text-decoration: underline;
 }
 
