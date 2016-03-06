@@ -10,137 +10,118 @@ body {
     height: 100%;
 }
 
+/* HEADER */
+
 #header {
     background-color: white;
     position: fixed;
     width: 100%;
     height: 60px;
-    border-bottom: 2px solid #EBEBEB;
-    /*background-image: linear-gradient(to top, #EBEBEB, white 15%);*/
 }
 
 #header a {
-    padding: 10px;
-    font-size: 100%;
+    padding: 20px;
+    font-size: 150%;
     width: 115px;
     height:  100%;
+    text-decoration: none;
 }
 
-#header li p {
+#header .home {
     background-color: black;
-    padding: 0 10px;
-    color: white;
-    line-height: 60px;
     height: 60px;
+    line-height: 60px;
+    float: left;
 }
 
+#header .home a {
+    color: white;
+}
 
+#header .home a:hover {
+    background: #888888;
+    padding-bottom: 17px; 
+}
 
+#header .menu {
+    background-color: black;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+}
 
+#header .menu a {
+    color: white;
+}
 
-/* Menu drop down start */
+#header .menu a:hover {                                     /* changes color on hover for menu */
+    background-color: #888888;
+    padding-bottom: 17px;
+}
 
+#header .profile {
+    background-color: orange;
+    height: 60px;
+    line-height: 60px;
+    float: right;
+}
 
-#header ul {
+#header .profile a {
+    color: black;
+}
+
+#header .profile a:hover {                                     /* changes color on hover for user */
+    background-color: #c48209;
+    padding-bottom: 17px;
+}
+
+#header .register {
+    background-color: yellow;
+    height: 60px;
+    line-height: 60px;
+    float: right;
+}
+
+#header .register a {
+    color: black;
+}
+
+#header .register a:hover {                                     /* changes color on hover for user */
+    background-color: #d5d545;
+    padding-bottom: 17px;
+}
+
+/* MENU DROP DOWN */
+
+#header ul {                                                /* removes bullets and changes the font size for the menu */
     list-style: none;
-    font-size:  210%;
-    
+    font-size: 60%;
 }
 
-#header ul li {
-    display: inline-block;
-    position: relative;
-    text-align: left;
-}
-
-#header ul li a{
-    display: block;
+#header ul li a {                                           /* sets the colors for the menu */
+    background-color: black;
     color: white;
     text-decoration: none;
-    background-color: black;
 }
 
-#header ul li a:hover{
-    color: blue;
-    background: #CCCCCC;
-}
-
-#header .dropdown{
+#header .dropdown {                                         /* initially hides the menu */
     display: none;
-    position: absolute;
-    left: -10px;
 }
 
-#header ul li:hover ul.dropdown{
+#header .menu:hover ul.dropdown {                           /* displays the menu items when you hover the menu */
     display: block;
-    font-size: 65%;
-    border-right: 2px solid black;
+    background-color: black;
+    color: white;
+    margin-top: -4px;
 }
 
-#header ul li:hover ul.dropdown:hover {
-    border-right: 2px solid #CCCCCC;
+#header .menu:hover ul.dropdown:hover a:hover {             /* displays an underline when you hover menu items */
+    background-color: black;
+    color: white;
+    text-decoration: underline;
 }
 
-#header ul li ul.dropdown li{
-    display: block;
-
-}
-
-.menu {
-    position: relative;
-    left: -10px;
-    border: 1px solid black;
-    text-align: center;
-    padding-left: 0;
-}
-
-.menu:hover {
-    border: 1px solid #CCCCCC;
-}
-
-/* Menu drop down end */
-
-
-#user {
-    line-height:  60px;    
-    position:  absolute;
-    right: 0; 
-}
-
-#user a {
-    color:  black;
-    text-decoration: none;
-}
-
-#user .profile {
-    display: block;
-    background-color: orange;
-    padding:  0;
-    float:  right;
-    text-align:  center;
-    border-bottom:  1px solid orange;
-    font-weight: bold;
-}
-
-#user .profile:hover {
-    background-color: #c48209;
-    border-bottom: 1px solid #c48209;
-}
-
-#user .register {
-    display: block;
-    background-color: yellow;
-    padding:  0;
-    float:  right;
-    text-align: center;
-    border-bottom: 1px solid yellow;
-    font-weight: bold;
-}
-
-#user .register:hover {
-    background-color: #d5d545;
-    border-bottom: 1px solid #d5d545;
-}
+/* BANNER */
 
 #banner img {
     padding-top: 175px;
@@ -191,6 +172,7 @@ body {
 
 #home img{
     width: 45%;
+    padding-bottom: 30px;
 }
 
 /* EXERCISE & NUTRITION CONTENT */
@@ -253,6 +235,15 @@ body {
     padding-bottom: 30px;
 }
 
+#widgets h2 {
+    text-align: center;
+}
+
+.bmi {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
 /* REGISTRATION*/
 
 #regContent {
@@ -284,3 +275,63 @@ body {
     float: left;
     padding-bottom: 30px;
 }
+
+/* OLD WIDGETS
+
+#widgetmain1 {
+    display: inline-block;
+    text-align: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 45%;
+    background-color: white; 
+    border: 1px solid #333333;
+    margin-right: 50px;
+}
+
+#widgetmain2 {
+    display: inline-block;
+    text-align: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 45%;
+    background-color: white; 
+    border: 1px solid #333333;
+}
+
+#rsswidget1 {
+    height: 200px;
+}
+
+#rsswidget2 {
+    height: 200px;
+}
+
+#rssOutput1 {
+    border: 0; 
+    padding: 0;
+    margin: 0; 
+    width: 100%; 
+    height: 200px;
+}
+
+#rssOutput2 {
+    border: 0; 
+    padding: 0;
+    margin: 0; 
+    width: 100%; 
+    height: 200px;    
+}
+
+#widgetbottom1 {
+    text-align: right;
+    margin-bottom: 0;
+    border-top: 1px solid #333333;
+}
+
+#widgetbottom2 {
+    text-align: right;
+    margin-bottom: 0;
+    border-top: 1px solid #333333;
+}
+*/
