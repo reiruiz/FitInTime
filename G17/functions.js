@@ -1,10 +1,15 @@
-
+//Shortcut to getting elements
 function $(id){
     var element = document.getElementById(id);
     if(element == null){
         alert("Error at the programming level");
     }
     return element;
+}
+//Highlights element
+function highlight(element){
+    element.style.backgroundColor = "pink";
+    element.style.border = "2px solid red";
 }
 /* function being tested
 function errorMsg(msg, childId, parentId){
@@ -19,8 +24,7 @@ function validateNewUser(id){
     //Username must be alphanumeric
     var patt = /\W/;
     if(patt.test(element.value)){
-        element.style.backgroundColor = "Pink";
-        element.style.border = "1px solid red";
+        highlight(element);
         //errorMsg("Invalid user name.", element, element.parentNode);
     }
 }
@@ -43,7 +47,7 @@ function validateNewPass(id){
         errorString += "Password must contain a number.\n";
     }
     if(errorString.length > 0) {
-        alert(errorString);
+        highlight($(id));
     }
 }
 
@@ -53,14 +57,17 @@ function validateEmail(id){
     pattern matches to format:
     [any alphanumeric characters including underscore]@[any domain].[toplevel domain(min 2 char)]
     */
-    var patt = /[\w_]*@.*\.\a{2,}/;
+    var patt = /[\w_]+@.*\.[a-zA-Z]{2,}/;
     if(!patt.test(email)){
         alert("Invalid email");
+        highlight($(id));
     }
 }
 
 function confirmInput(original, confirmer){
+    //Text should be "Does not match"
     if($(original).value != $(confirmer).value){
-        alert("Original does not match confirmation.");
+        highlight($(original));
+        highlight($(confirmer));
     }
 }
