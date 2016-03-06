@@ -1,6 +1,6 @@
 /* BASE CONTENT */
 
-* {                                                         /* resets margin/padding to 0*/
+* {                                                         /* resets margin/padding to 0 */
     margin: 0;
     padding: 0;
 }
@@ -177,20 +177,20 @@ body {
 
 /* EXERCISE & NUTRITION CONTENT */
 
-#description {
+#description {                                              /* sets the decription paragraph content to the center */
     width: 70%;
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-#activityTime li {
+#activityTime li {                                          /* removes the bullets and aligns the image links */
     list-style-type: none;
     text-align: center;
-    display:  inline
+    display:  inline;
 }
 
-#activityTime img {
+#activityTime img {                                         /* sets a predefined width and height for the images */
     width: 450px;
     height: 400px;
     padding-bottom: 30px;
@@ -198,85 +198,84 @@ body {
 
 /* PROFILE CONTENT */
 
-#profileContent {
+#profileContent {                                           /* sets the profile content to become centered */
     width: 70%;
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-#displayPicture {
+#displayPicture {                                           /* floats the display picture left */
     float: left;
 }
 
-#profileInfo {
+#profileInfo {                                              /* shifts the profile info to the left of the picture */
     padding-left: 250px;
 }
 
-#profileInfo h2 {
+#profileInfo h2 {                                           /* adds padding to the bottom of profile info */
     padding-bottom: 30px;
 }
 
-#calendar {
+#calendar {                                                 /* clears the floats */
     clear:  both;
 }
 
-#calendar td {
+#calendar td {                                              /* edits the table */
     text-align: center;
     vertical-align: middle;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-#achievements {
+#achievements {                                             /* edits the Achievements header */
     text-align: center;
-    margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-#widgets h2 {
+#widgets h2 {                                               /* edits the BMI Calculator header */
     text-align: center;
 }
 
-.bmi {
+.bmi {                                                      /* centers the BMI widget */
     text-align: center;
     padding-bottom: 15px;
 }
 
-/* REGISTRATION*/
+/* REGISTRATION */
 
-#regContent {
+#regContent {                                               /* centers the registration content */
     width: 50%;
     margin: auto;
     padding-top: 30px;
 }
 
-#whyRegister {
+#whyRegister {                                              /* floats the registration info content left */
     width: 500px;
     float: left;
 }
 
-#whyRegister h2 {
+#whyRegister h2 {                                           /* centers the registration info header */
     padding-bottom: 20px;
     text-align: center;
 }
 
-#whyRegister p {
+#whyRegister p {                                            /* adds padding to the bottom of the info content */
     padding-bottom: 40px;
 }
 
-#whyRegister img {
+#whyRegister img {                                          /* centers the logo */
     display: block;
     margin: 0 auto;
 }
 
-#inputBoxes {
+#inputBoxes {                                               /* floats the input forms to the left of the info content */
     float: left;
     padding-bottom: 30px;
 }
 
-/* OLD WIDGETS (RSS Feed for Exerice and Recipe Information)
+/* OLD WIDGETS (RSS Feed for Exercise and Recipe Information)
    Replaced by the new BMI widget on the profile page
 
 #widgetmain1 {
