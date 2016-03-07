@@ -1,6 +1,6 @@
 /* BASE CONTENT */
 
-* {                                 /* resets margin/padding to 0*/
+* {                                                         /* resets margin/padding to 0 */
     margin: 0;
     padding: 0;
 }
@@ -10,149 +10,151 @@ body {
     height: 100%;
 }
 
-#header {
+/* HEADER */
+
+#header {                                                   /* applies the white header */
     background-color: white;
     position: fixed;
     width: 100%;
     height: 60px;
-    border-bottom: 2px solid #EBEBEB;
-    /*background-image: linear-gradient(to top, #EBEBEB, white 15%);*/
 }
 
-#header a {
-    padding: 10px;
-    font-size: 100%;
+#header a {                                                 /* changes font and box-model for header links */
+    padding: 20px;
+    font-size: 150%;
     width: 115px;
     height:  100%;
+    text-decoration: none;
 }
 
-#header p{
+#header .home {                                             /* changes background color for home */
     background-color: black;
-    padding: 0 10px;
-    color: white;
-    line-height: 60px;
     height: 60px;
+    line-height: 60px;
+    float: left;
 }
 
+#header .home a {                                           /* changes text color on hover for home */
+    color: white;
+}
 
+#header .home a:hover {                                     /* changes background color on hover for home */
+    background: #888888;
+    padding-bottom: 17px; 
+}
 
+#header .menu {                                             /* changes background color for menu */
+    background-color: black;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+}
 
+#header .menu a {                                           /* changes text color for menu */
+    color: white;
+}
 
-/* Menu drop down start */
+#header .menu a:hover {                                     /* changes color on hover for menu */
+    background-color: #888888;
+    padding-bottom: 17px;
+}
 
+#header .profile {                                          /* changes background color for profile */
+    background-color: orange;
+    height: 60px;
+    line-height: 60px;
+    float: right;
+}
 
-#header ul {
+#header .profile a {
+    color: black;
+}
+
+#header .profile a:hover {                                  /* changes color on hover for profile */
+    background-color: #c48209;
+    padding-bottom: 17px;
+}
+
+#header .register {                                         /* changes background color for register */
+    background-color: yellow;
+    height: 60px;
+    line-height: 60px;
+    float: right;
+}
+
+#header .register a {                                       /* changes text color of register */
+    color: black;
+}
+
+#header .register a:hover {                                 /* changes color on hover for register */
+    background-color: #d5d545;
+    padding-bottom: 17px;
+}
+
+/* HEADER MENU DROP DOWN */
+
+#header ul {                                                /* removes bullets and changes the font size for the menu */
     list-style: none;
-    font-size:  210%;
-    
+    font-size: 60%;
 }
 
-#header ul li {
-    display: inline-block;
-    position: relative;
-    text-align: left;
-}
-
-#header ul li a{
-    display: block;
+#header ul li a {                                           /* sets the colors for the menu */
+    background-color: black;
     color: white;
     text-decoration: none;
-    background-color: black;
 }
 
-#header ul li a:hover{
-    color: blue;
-    background: #CCCCCC;
-}
-
-#header .dropdown{
+#header .dropdown {                                         /* initially hides the menu */
     display: none;
-    position: absolute;
 }
 
-#header ul li:hover ul.dropdown{
+#header .menu:hover ul.dropdown {                           /* displays the menu items when you hover the menu */
     display: block;
-    font-size: 90%;
+    background-color: black;
+    color: white;
+    margin-top: -4px;
 }
 
-#header ul li ul.dropdown li{
-    display: block;
-
+#header .menu:hover ul.dropdown:hover a:hover {             /* displays an underline when you hover menu items */
+    background-color: black;
+    color: white;
+    text-decoration: underline;
 }
 
-/* Menu drop down end */
+/* BANNER */
 
-
-#user {
-    line-height:  60px;    
-    position:  absolute;
-    right: 0; 
-}
-
-#user a {
-    color:  black;
-    text-decoration: none;
-}
-
-#user .profile {
-    display: block;
-    background-color: orange;
-    padding:  0;
-    float:  right;
-    text-align:  center;
-    border-bottom:  1px solid orange;
-    font-weight: bold;
-}
-
-#user .profile:hover {
-    background-color: #c48209;
-    border-bottom: 1px solid #c48209;
-}
-
-#user .register {
-    display: block;
-    background-color: yellow;
-    padding:  0;
-    float:  right;
-    text-align: center;
-    border-bottom: 1px solid yellow;
-    font-weight: bold;
-}
-
-#user .register:hover {
-    background-color: #d5d545;
-    border-bottom: 1px solid #d5d545;
-}
-
-#banner img {
+#banner img {                                               /* specifies the banner padding and centers */
     padding-top: 175px;
     padding-bottom: 100px;
     display: block;
     margin: auto;
 }
 
-#wrapper {
+#wrapper {                                                  /* specifies the wrapper width and centers */
     width: 80%;
     margin: 0 auto;
 }
 
-#wrapper a {
+#wrapper a {                                                /* centers the link images for ALL pages */
     display: inline;
     margin: 0 auto;
     padding: 0 25px;    
 }
 
-#content {
+#content {                                                  /* curved border and white background color */
     background-color:  white;
     border-radius: 25px 25px 0 0;
+    overflow: auto;
 }
 
-#footer {
+#footer {                                                   /* color for the footer and footer text */
     background-color:  #E0E0E0;
     text-align: center;
-    padding: 10px;      
+    padding: 10px;   
+    clear: both;   
 }
-#footer a {
+
+#footer a {                                                 /* copyright information styling */
     text-decoration: none;
     color: black;
     padding: 0;
@@ -160,34 +162,35 @@ body {
 
 /* HOME CONTENT */
 
-#homeContent {
+#homeContent {                                              /* adds spaces to the bototm of the home intro text */
     padding-bottom: 30px;
 }
 
-#home {
+#home {                                                     /* centers the home content within the wrapper */
     text-align: center;
 }
 
-#home img{
+#home img {                                                 /* sets the sizes for the image links and adds padding */
     width: 45%;
+    padding-bottom: 30px;
 }
 
 /* EXERCISE & NUTRITION CONTENT */
 
-#description {
+#description {                                              /* sets the decription paragraph content to the center */
     width: 70%;
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-#activityTime li {
+#activityTime li {                                          /* removes the bullets and aligns the image links */
     list-style-type: none;
     text-align: center;
-    display:  inline
+    display:  inline;
 }
 
-#activityTime img {
+#activityTime img {                                         /* sets a predefined width and height for the images */
     width: 450px;
     height: 400px;
     padding-bottom: 30px;
@@ -195,72 +198,162 @@ body {
 
 /* PROFILE CONTENT */
 
-#profileContent {
+#profileContent {                                           /* sets the profile content to become centered */
     width: 70%;
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-#displayPicture {
+#displayPicture {                                           /* floats the display picture left */
     float: left;
 }
 
-#profileInfo {
+#profileInfo {                                              /* shifts the profile info to the left of the picture */
     padding-left: 250px;
 }
 
-#profileInfo h2 {
+#profileInfo h2 {                                           /* adds padding to the bottom of profile info */
     padding-bottom: 30px;
 }
 
-#calendar {
+#calendar {                                                 /* clears the floats */
     clear:  both;
 }
 
-#calendar td {
+#calendar td {                                              /* edits the table */
     text-align: center;
     vertical-align: middle;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-#achievements {
+#achievements {                                             /* edits the Achievements header */
     text-align: center;
-    margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-/* REGISTRATION*/
+#widgets h2 {                                               /* edits the BMI Calculator header */
+    text-align: center;
+}
 
-#regContent {
+#widgets {
+    width: 70%;
+    margin: auto;
+}
+
+.bmi {
+    float: left;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bmiInfo {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.calorie {
+    float: left;
+    padding-right: 25px;
+    padding-bottom: 30px;
+}
+
+.calInfo {
+    padding-top: 15px;
+}
+
+/* REGISTRATION */
+
+#regContent {                                               /* centers the registration content */
     width: 50%;
-    display: block;
-    margin: 0 auto;
+    margin: auto;
     padding-top: 30px;
 }
 
-#whyRegister {
+#whyRegister {                                              /* floats the registration info content left */
     width: 500px;
     float: left;
 }
 
-#whyRegister h2 {
+#whyRegister h2 {                                           /* centers the registration info header */
     padding-bottom: 20px;
     text-align: center;
 }
 
-#whyRegister p {
+#whyRegister p {                                            /* adds padding to the bottom of the info content */
     padding-bottom: 40px;
 }
 
-#whyRegister img {
+#whyRegister img {                                          /* centers the logo */
     display: block;
     margin: 0 auto;
 }
 
-#inputBoxes {
-    padding-left: 550px;
+#inputBoxes {                                               /* floats the input forms to the left of the info content */
+    float: left;
     padding-bottom: 30px;
 }
+
+/* OLD WIDGETS (RSS Feed for Exercise and Recipe Information)
+   Replaced by the new BMI widget on the profile page
+
+#widgetmain1 {
+    display: inline-block;
+    text-align: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 45%;
+    background-color: white; 
+    border: 1px solid #333333;
+    margin-right: 50px;
+}
+
+#widgetmain2 {
+    display: inline-block;
+    text-align: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 45%;
+    background-color: white; 
+    border: 1px solid #333333;
+}
+
+#rsswidget1 {
+    height: 200px;
+}
+
+#rsswidget2 {
+    height: 200px;
+}
+
+#rssOutput1 {
+    border: 0; 
+    padding: 0;
+    margin: 0; 
+    width: 100%; 
+    height: 200px;
+}
+
+#rssOutput2 {
+    border: 0; 
+    padding: 0;
+    margin: 0; 
+    width: 100%; 
+    height: 200px;    
+}
+
+#widgetbottom1 {
+    text-align: right;
+    margin-bottom: 0;
+    border-top: 1px solid #333333;
+}
+
+#widgetbottom2 {
+    text-align: right;
+    margin-bottom: 0;
+    border-top: 1px solid #333333;
+}
+*/
