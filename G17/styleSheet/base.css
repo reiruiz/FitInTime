@@ -238,9 +238,31 @@ body {
     text-align: center;
 }
 
-.bmi {                                                      /* centers the BMI widget */
-    text-align: center;
-    padding-bottom: 15px;
+#widgets {
+    width: 70%;
+    margin: auto;
+}
+
+.bmi {
+    float: left;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bmiInfo {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.calorie {
+    float: left;
+    padding-right: 25px;
+    padding-bottom: 30px;
+}
+
+.calInfo {
+    padding-top: 15px;
 }
 
 /* REGISTRATION */
