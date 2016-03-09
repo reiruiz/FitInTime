@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-body {
+body {                                                      /* changes the background color for the page */
     background-color:  #EBEBEB;
     height: 100%;
 }
@@ -66,7 +66,7 @@ body {
     float: right;
 }
 
-#header .profile a {
+#header .profile a {                                        /* changes the color of the profile link to black */
     color: black;
 }
 
@@ -234,34 +234,34 @@ body {
     padding-bottom: 30px;
 }
 
-#widgets h2 {                                               /* edits the BMI Calculator header */
+#widgets h2 {                                               /* edits the widget header */
     text-align: center;
 }
 
-#widgets {
+#widgets {                                                  /* centers the widgets */
     width: 70%;
     margin: auto;
 }
 
-.bmi {
+.bmi {                                                      /* floats the bmi widget and adds padding */
     float: left;
     padding-right: 25px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.bmiInfo {
+.bmiInfo {                                                  /* adds padding to the content for the bmi widget*/
     padding-top: 30px;
     padding-bottom: 20px;
 }
 
-.calorie {
+.calorie {                                                  /* floats the calorie widget and adds padding */
     float: left;
     padding-right: 25px;
     padding-bottom: 30px;
 }
 
-.calInfo {
+.calInfo {                                                  /* adds padding to the content for the calorie widget */
     padding-top: 15px;
 }
 
