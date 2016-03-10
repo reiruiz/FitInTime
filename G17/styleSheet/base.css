@@ -5,7 +5,8 @@
     padding: 0;
 }
 
-body {                                                      /* changes the background color for the page */
+body {     
+                                                     /* changes the background color for the page */
 }
 
 /* HEADER */
@@ -15,6 +16,8 @@ body {                                                      /* changes the backg
     position: fixed;
     width: 100%;
     height: 40px;
+    /* z-index makes it always on top at 999 */
+    z-index: 999;
 }
 
 #header a {                                                 /* changes font and box-model for header links */
@@ -123,13 +126,50 @@ body {                                                      /* changes the backg
 
 #banner {
 	background-image: url(../images/background.jpg);
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	height: 1000px;
+    
 }
 
 /* CONTENT */
+#wrapper {
+    z-index: -1;
+}
 
-#content {
-	height: 1000px;
+#exercise {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    background-image: url("../images/mandom.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#recipe {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background-color: red
+}
+.options {
+    position: relative;
+    text-align: center; 
+    top: 25%;
+    margin: auto;
+}.options p {
+    margin-top: 20px;}.options img {
+    width: 25%;
+    height: auto;
+}/* Footer */#footer {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    background-color: green;
+}
+#footer a {
+    text-decoration: none;
+    color: black;
 }
