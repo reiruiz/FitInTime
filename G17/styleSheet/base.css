@@ -21,7 +21,7 @@ body {
 }
 
 #header a {                                                 /* changes font and box-model for header links */
-    padding: 20px;
+    padding: 7px 20px;
     font-size: 150%;
     width: 115px;
     height:  100%;
@@ -41,7 +41,6 @@ body {
 
 #header .home a:hover {                                     /* changes background color on hover for home */
     background: #888888;
-    padding-bottom: 17px; 
 }
 
 #header .menu {                                             /* changes background color for menu */
@@ -57,7 +56,6 @@ body {
 
 #header .menu a:hover {                                     /* changes color on hover for menu */
     background-color: #888888;
-    padding-bottom: 17px;
 }
 
 #header .profile {                                          /* changes background color for profile */
@@ -73,7 +71,6 @@ body {
 
 #header .profile a:hover {                                  /* changes color on hover for profile */
     background-color: #c48209;
-    padding-bottom: 17px;
 }
 
 #header .register {                                         /* changes background color for register */
@@ -89,7 +86,6 @@ body {
 
 #header .register a:hover {                                 /* changes color on hover for register */
     background-color: #d5d545;
-    padding-bottom: 17px;
 }
 
 /* HEADER MENU DROP DOWN */
