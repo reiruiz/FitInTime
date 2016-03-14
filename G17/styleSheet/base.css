@@ -210,11 +210,15 @@ body {                                                      /* changes the backg
 
 .recipeImg img {
     -webkit-filter: grayscale(1);
+	filter: grayscale(100%);
+	
 	-webkit-transition: -webkit-filter 1s linear;
+	transition: filter 1s linear;
 }
 
 .recipeImg img:hover {
     -webkit-filter: grayscale(0);
+	filter: grayscale(0%);
 }
 
 #exercise {
@@ -229,9 +233,13 @@ body {                                                      /* changes the backg
 
 .exerciseImg img {
     -webkit-filter: grayscale(1);
+	filter: grayscale(100%);
+	
 	-webkit-transition: -webkit-filter 1s linear;
+	transition: filter 1s linear;
 }
 
 .exerciseImg img:hover {
     -webkit-filter: grayscale(0);
+	filter: grayscale(0%);
 }
