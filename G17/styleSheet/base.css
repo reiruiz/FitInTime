@@ -195,7 +195,8 @@ body {                                                      /* changes the backg
 
 .recipeImg img {
     -webkit-filter: grayscale(1);
-	-webkit-transition: -webkit-filter 1s linear;
+    /* Speed of color shift */
+	-webkit-transition: -webkit-filter .3s linear;
 }
 
 .recipeImg img:hover {
@@ -214,7 +215,8 @@ body {                                                      /* changes the backg
 
 .exerciseImg img {
     -webkit-filter: grayscale(1);
-	-webkit-transition: -webkit-filter 1s linear;
+    /* Speed of color shift */
+	-webkit-transition: -webkit-filter .3s linear;
 }
 
 .exerciseImg img:hover {
