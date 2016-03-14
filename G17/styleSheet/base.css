@@ -1,17 +1,17 @@
 /* BASE CONTENT */
 
 @font-face {
-	font-family: NimbusSanL-Reg;
+	/*font-family: NimbusSanL-Reg;
 	src: url("../font/NimbusSanL-Reg.otf");
 	
 	font-family: Dreamer;
-	src: url("../font/Dreamer.ttf");
+	src: url("../font/Dreamer.ttf");*/
 
 	font-family: thisSideUp;
 	src: url("../font/Life's A Beach Thin.ttf");
     
-    font-family: Helvetica;
-    src: url("../font/Helvetica-Regular.ttf");
+    /*font-family: Helvetica;
+    src: url("../font/Helvetica-Regular.ttf");*/
 }
 
 /* resets margin/padding to 0 */
