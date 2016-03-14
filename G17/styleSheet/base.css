@@ -125,7 +125,7 @@ body {                                                      /* changes the backg
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: -10px;
+    /* margin-bottom: -10px; */
 }
 
 #banner3 {
@@ -137,7 +137,7 @@ body {                                                      /* changes the backg
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: -10px;
+    /* margin-bottom: -10px; */
 }
 
 /* CONTENT */
@@ -150,7 +150,7 @@ body {                                                      /* changes the backg
     width: 33.3333333%;
     float: left;
     overflow: hidden;
-    margin-bottom: -10px;
+    /* margin-bottom: -10px; */
 }
 
 .recipeImg img {
