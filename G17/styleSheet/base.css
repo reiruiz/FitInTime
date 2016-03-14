@@ -28,14 +28,17 @@ body {                                                      /* changes the backg
     position: fixed;
     width: 100%;
     height: 40px;
+    /* z-index makes it always on top at 999 */
+    z-index: 999;
 }
 
-#header a {                                                 /* changes font and box-model for header links */
-    padding: 20px;
+#links a {                                                 /* changes font and box-model for header links */
+    padding: 7px 10px;
     font-size: 150%;
     width: 115px;
-    height:  100%;
+    height: 100%;
     text-decoration: none;
+    color: white;
 }
 
 #header .home {                                             /* changes background color for home */
@@ -45,13 +48,8 @@ body {                                                      /* changes the backg
     float: left;
 }
 
-#header .home a {                                           /* changes text color on hover for home */
-    color: white;
-}
-
 #header .home a:hover {                                     /* changes background color on hover for home */
     background: #888888;
-    padding-bottom: 17px; 
 }
 
 #header .menu {                                             /* changes background color for menu */
@@ -59,54 +57,40 @@ body {                                                      /* changes the backg
     height: 40px;
     line-height: 40px;
     float: left;
+    text-decoration: none;
 }
 
-#header .menu a {                                           /* changes text color for menu */
-    color: white;
-}
+/* #header .menu img {
+    margin-top: 8px;
+    margin-left: 8px;
+} */
 
-#header .menu a:hover {                                     /* changes color on hover for menu */
+#header .menu:hover {
     background-color: #888888;
-    padding-bottom: 17px;
 }
 
-#header .profile {                                          /* changes background color for profile */
-    background-color: orange;
-    height: 40px;
-    line-height: 40px;
+/*#header .facebook {
     float: right;
 }
 
-#header .profile a {                                        /* changes the color of the profile link to black */
-    color: black;
-}
-
-#header .profile a:hover {                                  /* changes color on hover for profile */
-    background-color: #c48209;
-    padding-bottom: 17px;
-}
-
-#header .register {                                         /* changes background color for register */
-    background-color: yellow;
-    height: 40px;
-    line-height: 40px;
+#header .instagram {
     float: right;
 }
 
-#header .register a {                                       /* changes text color of register */
-    color: black;
-}
+#header .twitter {
+    float: right;
+}*/
 
-#header .register a:hover {                                 /* changes color on hover for register */
-    background-color: #d5d545;
-    padding-bottom: 17px;
+#header .profile {
+    float: right;
+    padding-right: 10px;
 }
 
 /* HEADER MENU DROP DOWN */
 
 #header ul {                                                /* removes bullets and changes the font size for the menu */
     list-style: none;
-    font-size: 60%;
+    font-size: 100%;
 }
 
 #header ul li a {                                           /* sets the colors for the menu */
@@ -123,7 +107,7 @@ body {                                                      /* changes the backg
     display: block;
     background-color: black;
     color: white;
-    margin-top: -4px;
+    margin-top: -3px
 }
 
 #header .menu:hover ul.dropdown:hover a:hover {             /* displays an underline when you hover menu items */
@@ -135,14 +119,117 @@ body {                                                      /* changes the backg
 /* BANNER */
 
 #banner {
-	background-image: url(../images/background.jpg);
-	background-size: 100%;
+	background-image: url("../images/background.jpg");
+	background-size: cover;
 	background-repeat: no-repeat;
 	height: 1000px;
+    
 }
 
-/* CONTENT */
+#banner2 {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    background-image: url("../images/background2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -10px;
+}
 
-#content {
-	height: 1000px;
+#banner3 {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    background-image: url("../images/background3.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -10px;
+}
+
+/* CONTENT
+#wrapper {
+    z-index: -1;
+}
+
+#exercise {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    background-image: url("../images/mandom.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#recipe {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background-color: red
+}
+.options {
+    position: relative;
+    text-align: center; 
+    top: 25%;
+    margin: auto;
+}.options p {
+    margin-top: 20px;}.options img {
+    width: 25%;
+    height: auto;
+} *//* Footer */#footer {
+    /* text-align: center;
+    padding: 10px;
+    font-weight: bold; */
+    background-color: black;
+    height: 1000px;
+}
+
+/* #footer a {
+    text-decoration: none;
+    color: black;
+    clear: both;
+} */
+
+/* TEST CODE */
+
+#recipe {
+    height: 1000px;
+}
+
+.recipeImg {
+    width: 33.3333333%;
+    float: left;
+    overflow: hidden;
+    margin-bottom: -10px;
+}
+
+.recipeImg img {
+    -webkit-filter: grayscale(1);
+}
+
+.recipeImg img:hover {
+    -webkit-filter: grayscale(0);
+}
+
+#exercise {
+    height: 1000px;
+}
+
+.exerciseImg {
+    width: 33.3333333%;
+    float: left;
+    overflow: hidden;
+}
+
+.exerciseImg img {
+    -webkit-filter: grayscale(1);
+}
+
+.exerciseImg img:hover {
+    -webkit-filter: grayscale(0);
 }
