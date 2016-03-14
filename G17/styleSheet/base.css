@@ -8,10 +8,7 @@
 	src: url("../font/Dreamer.ttf");
 
 	font-family: thisSideUp;
-	src: url("../font/Life's A Beach Thin.ttf");
-    
-    font-family: Helvetica;
-    src: url("../font/Helvetica-Regular.ttf");
+	src: url("../font/This side up.ttf");
 }
 
 * {                                                         /* resets margin/padding to 0 */
@@ -155,14 +152,19 @@ body {                                                      /* changes the backg
 
 .recipeImg img {
     -webkit-filter: grayscale(1);
+	-ms-filter: "grayscale(100%)";
 	filter: grayscale(100%);
 	
-	-webkit-transition: -webkit-filter 1s linear;
-	transition: filter 1s linear;
+	-webkit-transition: all 1s linear;
+	-moz-transition: all 1s lienar;
+	-ms-transition: all 1s linear;
+	-o-transition: all 1s lienar;
+	transition: all 1s linear;
 }
 
 .recipeImg img:hover {
     -webkit-filter: grayscale(0);
+	-ms-filter: "grayscale(0%)";
 	filter: grayscale(0%);
 }
 
@@ -178,14 +180,19 @@ body {                                                      /* changes the backg
 
 .exerciseImg img {
     -webkit-filter: grayscale(1);
+	-ms-filter: "grayscale(100%)";
 	filter: grayscale(100%);
 	
-	-webkit-transition: -webkit-filter 1s linear;
-	transition: filter 1s linear;
+	-webkit-transition: all 1s linear;
+	-moz-transition: all 1s lienar;
+	-ms-transition: all 1s linear;
+	-o-transition: all 1s lienar;
+	transition: all 1s linear;
 }
 
 .exerciseImg img:hover {
     -webkit-filter: grayscale(0);
+	-ms-filter: "grayscale(0%)";
 	filter: grayscale(0%);
 }
 
