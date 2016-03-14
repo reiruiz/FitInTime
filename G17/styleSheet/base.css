@@ -14,19 +14,24 @@
     src: url("../font/Helvetica-Regular.ttf");
 }
 
-* {                                                         /* resets margin/padding to 0 */
+/* resets margin/padding to 0 */
+
+* {
     margin: 0;
     padding: 0;
 }
 
-body {                                                      /* changes the background color for the page */
+/* changes the background color for the page */
+
+body {                                                      
 	font-family: thisSideUp;
 	font-size: 1em;
 }
 
 /* HEADER */
 
-#header {                                                   /* applies the white header */
+#header {
+    /* applies the white header */
     background-color: black;
     position: fixed;
     width: 100%;
@@ -35,7 +40,9 @@ body {                                                      /* changes the backg
     z-index: 999;
 }
 
-.menu a {                                                 /* changes font and box-model for header links */
+ /* changes font and box-model for header links */
+
+.menu a {
     padding: 7px 10px;
     font-size: 150%;
     width: 115px;
@@ -48,18 +55,24 @@ body {                                                      /* changes the backg
     font-size: 125%;
 }
 
-#header .home {                                             /* changes background color for home */
+/* changes background color for home */
+
+#header .home {
     background-color: black;
     height: 40px;
     line-height: 40px;
     float: left;
 }
 
-#header .home a:hover {                                     /* changes background color on hover for home */
+/* changes background color on hover for home */
+
+#header .home a:hover {
     background: #888888;
 }
 
-#header .menu {                                             /* changes background color for menu */
+/* changes background color for menu */
+
+#header .menu {
     background-color: black;
     height: 40px;
     line-height: 40px;
@@ -78,29 +91,34 @@ body {                                                      /* changes the backg
 
 /* HEADER MENU DROP DOWN */
 
-#header ul {                                                /* removes bullets and changes the font size for the menu */
+#header ul {
+    /* removes bullets and changes the font size for the menu */
     list-style: none;
     font-size: 100%;
 }
 
-#header ul li a {                                           /* sets the colors for the menu */
+#header ul li a {
+    /* sets the colors for the menu */                                       
     background-color: black;
     color: white;
     text-decoration: none;
 }
 
-#header .dropdown {                                         /* initially hides the menu */
+#header .dropdown {
+    /* initially hides the menu */
     display: none;
 }
 
-#header .menu:hover ul.dropdown {                           /* displays the menu items when you hover the menu */
+#header .menu:hover ul.dropdown {
+    /* displays the menu items when you hover the menu */
     display: block;
     background-color: black;
     color: white;
     margin-top: -3px
 }
 
-#header .menu:hover ul.dropdown:hover a:hover {             /* displays an underline when you hover menu items */
+#header .menu:hover ul.dropdown:hover a:hover {   
+    /* displays an underline when you hover menu items */
     background-color: black;
     color: white;
     text-decoration: underline;
@@ -253,6 +271,12 @@ body {                                                      /* changes the backg
     text-align: right;
     padding-right: 5px;
 }/* FOOTER */#footer {
-    background-color: black;
-    height: 1000px;
+    background-color: #ec33d0;
+    padding: 10px;
+    text-align: center;
+}
+#footer a {
+    color: black;
+    text-decoration: none;
+    
 }
