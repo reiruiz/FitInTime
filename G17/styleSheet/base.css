@@ -44,26 +44,9 @@
     text-decoration: none;
 }
 
-/* #header .menu img {
-    margin-top: 8px;
-    margin-left: 8px;
-} */
-
 #header .menu:hover {
     background-color: #888888;
 }
-
-/*#header .facebook {
-    float: right;
-}
-
-#header .instagram {
-    float: right;
-}
-
-#header .twitter {
-    float: right;
-}*/
 
 #header .profile {
     float: right;
@@ -134,52 +117,7 @@
     margin-bottom: -10px;
 }
 
-/* CONTENT
-#wrapper {
-    z-index: -1;
-}
-
-#exercise {
-    height: 1000px;
-    background-color: rgba(0, 0, 0, 0);
-    display: inline-block;
-    width: 100%;
-    background-image: url("../images/mandom.png");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-#recipe {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    height: 1000px;
-    background-color: red
-}
-.options {
-    position: relative;
-    text-align: center; 
-    top: 25%;
-    margin: auto;
-}.options p {
-    margin-top: 20px;}.options img {
-    width: 25%;
-    height: auto;
-} *//* Footer */#footer {
-    /* text-align: center;
-    padding: 10px;
-    font-weight: bold; */
-    background-color: black;
-    height: 1000px;
-}
-
-/* #footer a {
-    text-decoration: none;
-    color: black;
-    clear: both;
-} */
-
-/* TEST CODE */
+/* CONTENT */
 
 #recipe {
     height: 1000px;
@@ -216,4 +154,15 @@
 
 .exerciseImg img:hover {
     -webkit-filter: grayscale(0);
+}
+
+/* REGISTER */
+
+#register {
+    background-color: white;
+    height: 1000px;
+}
+/* FOOTER */#footer {
+    background-color: black;
+    height: 1000px;
 }
