@@ -69,18 +69,6 @@ body {                                                      /* changes the backg
     background-color: #888888;
 }
 
-/*#header .facebook {
-    float: right;
-}
-
-#header .instagram {
-    float: right;
-}
-
-#header .twitter {
-    float: right;
-}*/
-
 #header .profile {
     float: right;
     padding-right: 10px;
@@ -123,9 +111,23 @@ body {                                                      /* changes the backg
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 1000px;
-    
+    width:  100%;
 }
 
+#logoIntro {
+    float: right;
+    width: 600px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0); 
+    margin-top: 180px;
+    text-align: center;
+    margin-right: 100px;
+    border-radius: 15px;
+    font-size: 500%;
+   
+}
+
+    
 #banner2 {
     height: 1000px;
     background-color: rgba(0, 0, 0, 0);
@@ -136,6 +138,19 @@ body {                                                      /* changes the backg
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: -10px;
+    position:  relative;
+}
+
+#recipeIntro {
+    float: right;
+    width: 600px;
+    height: 200px;
+    background-color:  rgba(255, 255, 255, 0); 
+    margin-top: 200px;
+    text-align: center;
+    margin-right: 100px;
+    border-radius: 15px;
+    font-size: 500%;
 }
 
 #banner3 {
@@ -148,6 +163,19 @@ body {                                                      /* changes the backg
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: -10px;
+    
+}
+
+#fitIntro {
+    float: right;
+    width: 600px;
+    height: 200px;
+    background-color:  rgba(255, 255, 255, 0); 
+    margin-top: 200px;
+    text-align: center;
+    margin-right: 100px;
+    border-radius: 15px;
+    font-size: 500%;
 }
 
 /* CONTENT
