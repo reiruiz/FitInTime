@@ -8,7 +8,10 @@
 	src: url("../font/Dreamer.ttf");
 
 	font-family: thisSideUp;
-	src: url("../font/Life's A Beach Thin.ttf")
+	src: url("../font/Life's A Beach Thin.ttf");
+    
+    font-family: Helvetica;
+    src: url("../font/Helvetica-Regular.ttf");
 }
 
 * {                                                         /* resets margin/padding to 0 */
@@ -17,7 +20,7 @@
 }
 
 body {                                                      /* changes the background color for the page */
-	font-family: thisSideUp;
+	font-family: Helvetica;
 	font-size: 1em;
 }
 
@@ -32,13 +35,17 @@ body {                                                      /* changes the backg
     z-index: 999;
 }
 
-#links a {                                                 /* changes font and box-model for header links */
+.menu a {                                                 /* changes font and box-model for header links */
     padding: 7px 10px;
     font-size: 150%;
     width: 115px;
     height: 100%;
     text-decoration: none;
     color: white;
+}
+
+.dropdown a {
+    font-size: 125%;
 }
 
 #header .home {                                             /* changes background color for home */
