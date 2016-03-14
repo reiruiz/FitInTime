@@ -210,19 +210,14 @@ body {
 
 .recipeImg img {
     -webkit-filter: grayscale(1);
-<<<<<<< HEAD
 	-ms-filter: "grayscale(100%)";
 	filter: grayscale(100%);
 	
-	-webkit-transition: all 1s linear;
-	-moz-transition: all 1s lienar;
-	-ms-transition: all 1s linear;
-	-o-transition: all 1s lienar;
-	transition: all 1s linear;
-=======
-    /* Speed of color shift */
-	-webkit-transition: -webkit-filter .3s linear;
->>>>>>> 484d01810ef21fe5f83d5b209afc56a0ad90c1b4
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s lienar;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s lienar;
+	transition: all .3s linear;
 }
 
 .recipeImg img:hover {
@@ -243,19 +238,14 @@ body {
 
 .exerciseImg img {
     -webkit-filter: grayscale(1);
-<<<<<<< HEAD
 	-ms-filter: "grayscale(100%)";
 	filter: grayscale(100%);
 	
-	-webkit-transition: all 1s linear;
-	-moz-transition: all 1s lienar;
-	-ms-transition: all 1s linear;
-	-o-transition: all 1s lienar;
-	transition: all 1s linear;
-=======
-    /* Speed of color shift */
-	-webkit-transition: -webkit-filter .3s linear;
->>>>>>> 484d01810ef21fe5f83d5b209afc56a0ad90c1b4
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s lienar;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s lienar;
+	transition: all .3s linear;
 }
 
 .exerciseImg img:hover {
