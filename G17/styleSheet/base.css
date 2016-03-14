@@ -1,8 +1,24 @@
 /* BASE CONTENT */
 
+@font-face {
+	font-family: NimbusSanL-Reg;
+	src: url("../font/NimbusSanL-Reg.otf");
+	
+	font-family: Dreamer;
+	src: url("../font/Dreamer.ttf");
+
+	font-family: thisSideUp;
+	src: url("../font/Life's A Beach Thin.ttf")
+}
+
 * {                                                         /* resets margin/padding to 0 */
     margin: 0;
     padding: 0;
+}
+
+body {                                                      /* changes the background color for the page */
+	font-family: thisSideUp;
+	font-size: 1em;
 }
 
 /* HEADER */
