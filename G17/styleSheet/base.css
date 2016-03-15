@@ -42,7 +42,7 @@ body {
 
 .menu a {
     padding: 7px 10px;
-    font-size: 150%;
+    font-size: 175%;
     width: 115px;
     height: 100%;
     text-decoration: none;
@@ -153,14 +153,43 @@ body {
 #logoIntro {
     float: right;
     width: 600px;
-    height: 200px;
     background-color: rgba(255, 255, 255, 0); 
-    margin-top: 180px;
+    margin-top: 100px;
     text-align: center;
-    margin-right: 100px;
-    border-radius: 15px;
-    font-size: 500%;
-   
+    margin-right: 125px;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+#logoIntro h1 {
+    font-size: 650%;
+    font-weight: normal;
+}
+
+#logoIntro p {
+    font-size: 250%;
+    margin-top: 10px;
+    margin-bottom: 20px;    
+}
+
+#logoIntro a {
+    text-decoration: none;
+    color: black;
+    font-size: 450%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#logoIntro a:hover {
+    color: white;
+}
+
+#logoIntro ul {
+    list-style-type: none;
+}
+
+#logoIntro li {
+    display: inline;
 }
 
 /* makes a static background for the recipe info page */
@@ -182,13 +211,37 @@ body {
 #recipeIntro {
     float: right;
     width: 600px;
-    height: 200px;
-    background-color:  rgba(255, 255, 255, 0); 
-    margin-top: 200px;
+    background-color: rgba(255, 255, 255, 0.75); 
+    margin-top: 100px;
     text-align: center;
-    margin-right: 100px;
-    border-radius: 15px;
-    font-size: 500%;
+    margin-right: 125px;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+#recipeIntro h1 {
+    font-size: 650%;
+    font-weight: normal;
+}
+
+#recipeIntro p {
+    font-size: 250%;
+    margin-top: 10px;
+    margin-bottom: 20px;    
+}
+
+#recipeIntro a {
+    text-decoration: none;
+    color: black;
+    font-size: 450%;
+}
+
+#recipeIntro a:hover {
+    color: white;
+}
+
+#recipeIntro ul {
+    list-style-type: none;
 }
 
 /* makes a static background for the fitness info page */
@@ -211,13 +264,37 @@ body {
 #fitIntro {
     float: right;
     width: 600px;
-    height: 200px;
-    background-color:  rgba(255, 255, 255, 0); 
-    margin-top: 200px;
+    background-color:  rgba(255, 255, 255, 0.75); 
+    margin-top: 100px;
     text-align: center;
-    margin-right: 100px;
-    border-radius: 15px;
-    font-size: 500%;
+    margin-right: 125px;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+#fitIntro h1 {
+    font-size: 650%;
+    font-weight: normal;
+}
+
+#fitIntro p {
+    font-size: 250%;
+    margin-top: 10px;
+    margin-bottom: 20px;  
+}
+
+#fitIntro a {
+    text-decoration: none;
+    color: black;
+    font-size: 450%;
+}
+
+#fitIntro a:hover {
+    color: white;
+}
+
+#fitIntro ul {
+    list-style-type: none;
 }
 
 /* CONTENT */
