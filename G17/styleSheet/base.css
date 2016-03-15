@@ -92,7 +92,7 @@ body {
     /* removes bullets and changes the font size for the menu */
     list-style: none;
     font-size: 100%;
-    font-weight: none;
+    font-weight: 400;
 }
 
 #header ul li a {
