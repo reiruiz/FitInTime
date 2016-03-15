@@ -261,17 +261,23 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 1000px;
-	width: 100%;
     position: relative;
     margin-top: -5px;
+}#inputText {
+    font-weight: lighter;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }#registerText {
     text-align: center;
     font-size: 50px;
     margin-top: 30px;
+    font-weight: lighter;
 }#registerBox {
     background-color: white;
     width: 350px;
-    height: 40%;
+    height: 45%;
     margin: auto;
     position: absolute;
     top: 20%;
@@ -281,7 +287,6 @@ body {
     border: 10px solid white;
 }#inputBoxes table{
     margin: auto;
-    position: absolute;
     width: 100%;
     top: 30%;
 }#inputBoxes th {

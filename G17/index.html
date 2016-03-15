@@ -6,21 +6,20 @@
         <script src="functions.js"></script>
         <meta charset="utf-8" />
         <title>FitInTime</title>
-		
     </head>
     <body>
         <div id="header">
             <div id="links">
-            <div class="menu">
-                <a href="./index.html">FitInTime</a>
-                <ul class="dropdown">
-                    <!--<li><a href="index.html">Home</a>-->
-                    <li><a href="#recipe">Recipes</a>
-                    <li><a href="#exercise">Exercises</a>
-                    <li><a href="#register">Register</a>
-                    <li><a href="profile.html">Profile</a>
-                </ul>
-            </div>
+                <div class="menu">
+                    <a href="./index.html">FitInTime</a>
+                    <ul class="dropdown">
+                        <!--<li><a href="index.html">Home</a>-->
+                        <li><a href="#recipe">Recipes</a>
+                        <li><a href="#exercise">Exercises</a>
+                        <li><a href="#register">Register</a>
+                        <li><a href="profile.html">Profile</a>
+                    </ul>
+                </div>
             </div>
             
             <div id="social">
@@ -40,23 +39,20 @@
 
         </div>
         <div id="banner">
-
             
             <div id="logoIntro">
-                <p>We are FitInTime</p>
+                <p>Get FitInTime</p>
 			</div>
 
         </div>
 
         <div id="banner2">
             <div id="recipeIntro">
-                <p>We Eat Healthy</p>
+                <p>Get Healthy</p>
             </div>
-            
         </div>
 
         <div id="wrapper">
-	
 
             <div id="recipe">
                 <div class="recipeImg">
@@ -72,7 +68,7 @@
 
             <div id="banner3">
                 <div id="fitIntro">
-                    <p>We are Fit</p>
+                    <p>Get Fit</p>
                 </div>
             </div>
 
@@ -90,15 +86,15 @@
 			
             <div id="register">
                 <div id="registerBox">
-                    <p id="registerText">
-                        Register today!
-                    </p>
                     <div id="inputBoxes">
+                        <h1 id="inputText">
+                           Register today!
+                        </h1>
                         <form action="" method="post">
                             <table>
                                 <tr>
                                     <th>
-                                        <label for="regUser">Username:</label>
+                                        <label for="reguser">Username:</label>
                                     </th>
                                     <td>
                                         <input type="text" name="reguser" id="reguser" onblur="validateNewUser('reguser')" required>
@@ -106,7 +102,7 @@
                                 </tr>
                                 <tr>
                                     <th>
-                                        <label for="regPass">Password:</label>
+                                        <label for="regpass">Password:</label>
                                     </th>
                                     <td>
                                         <input type="password" name="regpass" id="regpass" onblur="validateNewPass('regpass')" required>
@@ -114,7 +110,7 @@
                                 </tr>
                                 <tr>
                                     <th>
-                                        <label for="confPass">Confirm Password:</label>
+                                        <label for="confpass">Confirm Password:</label>
                                     </th>
                                     <td>
                                         <input type="password" name="confpass" id="confpass" onblur="confirmInput('regpass','confpass')" required>
@@ -122,7 +118,7 @@
                                 </tr>
                                 <tr>
                                     <th>
-                                        <label for="regEmail">Email:</label>
+                                        <label for="regemail">Email:</label>
                                     </th>
                                     <td>
                                         <input type="text" name="regemail" id="regemail" onblur="validateEmail('regemail')"required>
@@ -130,14 +126,45 @@
                                 </tr>
                                 <tr>
                                     <th>
-                                        <label for="confEmail">Confirm Email:</label>
+                                        <label for="confemail">Confirm Email:</label>
                                     </th>
                                     <td>
                                         <input type="text" name="confemail" id="confemail" onblur="confirmInput('regemail','confemail')" required>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th><input type="submit" name="submit" id="submit" value="Register"></th>
+                                    <th>
+                                        <input type="submit" name="submit" id="submit" value="Register">
+                                    </th>
+                                </tr>
+                            </table>
+                        </form>
+                        <br>
+                        <h2 id="inputText">
+                            Sign in!
+                        </h2>
+                        <form action="" method="post">
+                            <table id="signin">
+                                <tr>
+                                    <th>
+                                        <label for="signuser">Username:</label>
+                                    </th>
+                                    <td>
+                                        <input type="text" name="singninuser" id="signuser">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label for="signpass">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:</label>
+                                    </th>
+                                    <td>
+                                        <input type="password" name="signinpass" id="signpass">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <input type="submit" name="submitinfo" id="submit" value="Login">
+                                    </th>
                                 </tr>
                             </table>
                         </form>
@@ -145,7 +172,7 @@
                 </div>
             </div>
 			<div id="backToTop">
-				<a href="#banner"><img src="./images/up-arrow.svg" alt="" width="50" height="50"></a>
+				<a href="#banner"><img src="./images/up-arrow.svg" alt="upwardArrow" width="50" height="50"></a>
 			</div>
             <div id="footer">
 				<table id="footerTable">
@@ -202,6 +229,7 @@
 						</td>
 					</tr>
 				</table>
+
 				<p>Copyright but not really<a href="./images/mandom.png">&copy;</a></p>
             </div>
         </div>
