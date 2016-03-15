@@ -45,6 +45,7 @@ body {
     height: 100%;
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 
 .dropdown a {
@@ -91,6 +92,7 @@ body {
     /* removes bullets and changes the font size for the menu */
     list-style: none;
     font-size: 100%;
+    font-weight: none;
 }
 
 #header ul li a {
