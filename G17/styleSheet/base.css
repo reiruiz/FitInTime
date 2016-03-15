@@ -261,6 +261,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 1000px;
+	width: 100%;
     position: relative;
     margin-top: -5px;
 }#registerText {
@@ -315,6 +316,7 @@ body {
 	padding: 5px;
 }
 #footer {
+	border-top: 5px gray solid;
     background-color: #FFFFFF;
 	color: black;
 	padding: 50px;
