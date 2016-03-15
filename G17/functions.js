@@ -33,7 +33,7 @@ function validateNewUser(id){
     var element = $(id);
     //Username must be alphanumeric
     var patt = /\W/;
-    if(patt.test(element.value)){
+    if(patt.test(element.value) || element.value.length == 0){
         highlight(element);
         errorMsg("Invalid user name.", element, element.parentNode,'userError');
     }else{

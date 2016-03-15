@@ -3,6 +3,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="./styleSheet/base.css">
+        <script src="functions.js"></script>
         <meta charset="utf-8" />
         <title>FitInTime</title>
 		
@@ -100,7 +101,7 @@
                                         <label for="regUser">Username:</label>
                                     </th>
                                     <td>
-                                        <input type="text" name="reguser" id="regUser" required>
+                                        <input type="text" name="reguser" id="reguser" onblur="validateNewUser('reguser')" required>
                                     </td>
                                 </tr>
                                 <tr>
@@ -108,7 +109,7 @@
                                         <label for="regPass">Password:</label>
                                     </th>
                                     <td>
-                                        <input type="password" name="regpass" id="regPass" required>
+                                        <input type="password" name="regpass" id="regpass" onblur="validateNewPass('regpass')" required>
                                     </td>
                                 </tr>
                                 <tr>
@@ -116,7 +117,7 @@
                                         <label for="confPass">Confirm Password:</label>
                                     </th>
                                     <td>
-                                        <input type="password" name="confpass" id="confPass" required>
+                                        <input type="password" name="confpass" id="confpass" onblur="confirmInput('regpass','confpass')" required>
                                     </td>
                                 </tr>
                                 <tr>
@@ -124,7 +125,7 @@
                                         <label for="regEmail">Email:</label>
                                     </th>
                                     <td>
-                                        <input type="text" name="regemail" id="regEmail" required>
+                                        <input type="text" name="regemail" id="regemail" onblur="validateEmail('regemail')"required>
                                     </td>
                                 </tr>
                                 <tr>
@@ -132,7 +133,7 @@
                                         <label for="confEmail">Confirm Email:</label>
                                     </th>
                                     <td>
-                                        <input type="text" name="confemail" id="confEmail" required>
+                                        <input type="text" name="confemail" id="confemail" onblur="confirmInput('regemail','confemail')" required>
                                     </td>
                                 </tr>
                                 <tr>
