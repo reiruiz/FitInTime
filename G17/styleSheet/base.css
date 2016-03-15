@@ -263,14 +263,15 @@ body {
     height: 1000px;
     position: relative;
     margin-top: -5px;
-}#registerText {
+}#inputText {
     text-align: center;
     font-size: 50px;
     margin-top: 30px;
+    font-weight: lighter;
 }#registerBox {
     background-color: white;
     width: 350px;
-    height: 40%;
+    height: 45%;
     margin: auto;
     position: absolute;
     top: 20%;
@@ -280,7 +281,6 @@ body {
     border: 10px solid white;
 }#inputBoxes table{
     margin: auto;
-    position: absolute;
     width: 100%;
     top: 30%;
 }#inputBoxes th {
