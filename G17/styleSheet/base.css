@@ -283,9 +283,38 @@ body {
 }#inputBoxes th {
     text-align: right;
     padding-right: 5px;
-}/* FOOTER */#footer {
-    background-color: #ec33d0;
-    padding: 10px;
+}/* FOOTER */
+
+#backToTop {
+	position: fixed;
+	right: 25px;
+	bottom: 25px;
+	border-radius: 10%;
+	text-align: center;
+	vertical-align: middle;
+	padding: 2px 2px 0px 2px;
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 50px;
+	height: 50px;
+}
+
+#footerTable {
+	display: inline-block;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+#footerTable th{
+	padding: 10px 50px;
+}
+
+#footerTable td{
+	padding: 5px;
+}
+#footer {
+    background-color: #FFFFFF;
+	color: black;
+	padding: 50px;
     text-align: center;
 }
 #footer a {
