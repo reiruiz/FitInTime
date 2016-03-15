@@ -256,10 +256,12 @@ body {
 
 /* REGISTER */
 #register {
-    background-color: black;
+    background-image: url("../images/background4.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 1000px;
-    position: relative;
-    
+    position: relative
 }#registerText {
     text-align: center;
     font-size: 50px;
