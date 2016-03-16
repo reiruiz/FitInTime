@@ -50,21 +50,6 @@ body {
     font-weight: bold;
 }
 
-/* changes background color for home */
-
-#header .home {
-    background-color: black;
-    height: 40px;
-    line-height: 40px;
-    float: left;
-}
-
-/* changes background color on hover for home */
-
-#header .home a:hover {
-    background: #888888;
-}
-
 /* changes background color for menu */
 
 #header .menu {
@@ -93,7 +78,7 @@ body {
 /* makes the font in the dropdown smaller */
 
 .dropdown a {
-    font-size: 125%;
+    font-size: 145%;
 }
 
 /* removes bullets and changes the font size for the menu */
@@ -146,6 +131,7 @@ body {
 	height: 1000px;
     width:  100%;
 	font-family: thisSideUp;
+    margin-top: -5px;
 }
 
 /* information text for main banner */
