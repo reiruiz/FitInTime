@@ -1,5 +1,7 @@
 /* BASE CONTENT */
 
+/* adds the fonts for the pages */
+
 @font-face {
 	font-family: thisSideUp;
 	src: url("../font/This side up.ttf");
@@ -10,14 +12,14 @@
 	src: url("../font/Life's A Beach Thin.ttf");
 }
 
-/* resets margin/padding to 0 */
+/* resets margin and padding to 0 */
 
 * {
     margin: 0;
     padding: 0;
 }
 
-/* changes the background color for the page */
+/* assigns the main font for the page */
 
 body {                                                      
 	font-family: lifesABeachThin;
@@ -26,45 +28,26 @@ body {
 
 /* HEADER */
 
+/* forces the header to the top with z-index at 999 */
+
 #header {
-    /* applies the white header */
     background-color: black;
     position: fixed;
     width: 100%;
     height: 40px;
-    /* z-index makes it always on top at 999 */
     z-index: 999;
 }
 
- /* changes font and box-model for header links */
+/* changes font and box-model for header links */
 
 .menu a {
     padding: 7px 10px;
-    font-size: 150%;
+    font-size: 175%;
     width: 115px;
     height: 100%;
     text-decoration: none;
     color: white;
     font-weight: bold;
-}
-
-.dropdown a {
-    font-size: 125%;
-}
-
-/* changes background color for home */
-
-#header .home {
-    background-color: black;
-    height: 40px;
-    line-height: 40px;
-    float: left;
-}
-
-/* changes background color on hover for home */
-
-#header .home a:hover {
-    background: #888888;
 }
 
 /* changes background color for menu */
@@ -77,9 +60,13 @@ body {
     text-decoration: none;
 }
 
+/* changes background color for menu on hover */
+
 #header .menu:hover {
     background-color: #888888;
 }
+
+/* floats the profile icon to the righ and adds padding */
 
 #header .profile {
     float: right;
@@ -88,41 +75,54 @@ body {
 
 /* HEADER MENU DROP DOWN */
 
+/* makes the font in the dropdown smaller */
+
+.dropdown a {
+    font-size: 145%;
+}
+
+/* removes bullets and changes the font size for the menu */
+
 #header ul {
-    /* removes bullets and changes the font size for the menu */
     list-style: none;
     font-size: 100%;
     font-weight: 400;
 }
 
-#header ul li a {
-    /* sets the colors for the menu */                                       
+/* sets the colors for the menu */ 
+
+#header ul li a {                                      
     background-color: black;
     color: white;
     text-decoration: none;
 }
 
+/* initially hides the menu */
+
 #header .dropdown {
-    /* initially hides the menu */
     display: none;
 }
 
+/* displays the menu items when you hover the menu */
+
 #header .menu:hover ul.dropdown {
-    /* displays the menu items when you hover the menu */
     display: block;
     background-color: black;
     color: white;
-    margin-top: -3px
+    margin-top: -3px;
 }
 
-#header .menu:hover ul.dropdown:hover a:hover {   
-    /* displays an underline when you hover menu items */
+/* displays an underline when you hover menu items */
+
+#header .menu:hover ul.dropdown:hover a:hover {
     background-color: black;
     color: white;
     text-decoration: underline;
 }
 
 /* BANNER */
+
+/* makes a static background for the main info page */
 
 #banner {
 	background-image: url("../images/background.jpg");
@@ -133,20 +133,55 @@ body {
 	font-family: thisSideUp;
 }
 
+/* information text for main banner */
+
 #logoIntro {
     float: right;
     width: 600px;
-    height: 200px;
     background-color: rgba(255, 255, 255, 0); 
-    margin-top: 180px;
+    margin-top: 100px;
     text-align: center;
-    margin-right: 100px;
-    border-radius: 15px;
-    font-size: 500%;
-   
+    margin-right: 125px;
+    border-radius: 25px;
+    padding: 25px;
 }
 
-    
+#logoIntro h1 {
+    font-size: 650%;
+    font-weight: normal;
+}
+
+#logoIntro p {
+    font-size: 250%;
+    margin-top: 10px;
+    margin-bottom: 20px;    
+}
+
+#logoIntro a {
+    text-decoration: none;
+    color: black;
+}
+
+#logoIntro li {
+    font-size: 450%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#logoIntro a:hover {
+    color: white;
+}
+
+#logoIntro ul {
+    list-style-type: none;
+}
+
+#logoIntro li {
+    display: inline;
+}
+
+/* makes a static background for the recipe info page */
+
 #banner2 {
     height: 1000px;
     background-color: rgba(0, 0, 0, 0);
@@ -159,17 +194,45 @@ body {
 	font-family: thisSideUp;
 }
 
+/* information text for recipe banner */
+
 #recipeIntro {
     float: right;
     width: 600px;
-    height: 200px;
-    background-color:  rgba(255, 255, 255, 0); 
-    margin-top: 200px;
+    background-color: rgba(255, 255, 255, 0.75); 
+    margin-top: 100px;
     text-align: center;
-    margin-right: 100px;
-    border-radius: 15px;
-    font-size: 500%;
+    margin-right: 125px;
+    border-radius: 25px;
+    padding: 25px;
 }
+
+#recipeIntro h1 {
+    font-size: 650%;
+    font-weight: normal;
+}
+
+#recipeIntro p {
+    font-size: 250%;
+    margin-top: 10px;
+    margin-bottom: 20px;    
+}
+
+#recipeIntro a {
+    text-decoration: none;
+    color: black;
+    font-size: 450%;
+}
+
+#recipeIntro a:hover {
+    color: white;
+}
+
+#recipeIntro ul {
+    list-style-type: none;
+}
+
+/* makes a static background for the fitness info page */
 
 #banner3 {
     height: 1000px;
@@ -184,16 +247,42 @@ body {
     margin-top: -5px;   
 }
 
+/* information text for fitness banner */
+
 #fitIntro {
     float: right;
     width: 600px;
-    height: 200px;
-    background-color:  rgba(255, 255, 255, 0); 
-    margin-top: 200px;
+    background-color:  rgba(255, 255, 255, 0.75); 
+    margin-top: 100px;
     text-align: center;
-    margin-right: 100px;
-    border-radius: 15px;
-    font-size: 500%;
+    margin-right: 125px;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+#fitIntro h1 {
+    font-size: 650%;
+    font-weight: normal;
+}
+
+#fitIntro p {
+    font-size: 250%;
+    margin-top: 10px;
+    margin-bottom: 20px;  
+}
+
+#fitIntro a {
+    text-decoration: none;
+    color: black;
+    font-size: 450%;
+}
+
+#fitIntro a:hover {
+    color: white;
+}
+
+#fitIntro ul {
+    list-style-type: none;
 }
 
 /* CONTENT */
@@ -211,8 +300,10 @@ body {
 
 .recipeImg img {
     -webkit-filter: grayscale(1);
-	-ms-filter: "grayscale(100%)";
-	filter: grayscale(100%);
+    -moz-filter: grayscale(1);
+	-ms-filter: grayscale(1);
+    -o-filter: grayscale(1);
+	filter: grayscale(1);
 	-webkit-transition: all .3s linear;
 	-moz-transition: all .3s lienar;
 	-ms-transition: all .3s linear;
@@ -222,8 +313,10 @@ body {
 
 .recipeImg img:hover {
     -webkit-filter: grayscale(0);
-	-ms-filter: "grayscale(0%)";
-	filter: grayscale(0%);
+    -moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
+	filter: grayscale(0);
 }
 
 #exercise {
@@ -239,8 +332,10 @@ body {
 
 .exerciseImg img {
     -webkit-filter: grayscale(1);
-	-ms-filter: "grayscale(100%)";
-	filter: grayscale(100%);
+    -moz-filter: grayscale(1);
+	-ms-filter: grayscale(1);
+    -o-filter: grayscale(1);
+	filter: grayscale(1);
 	-webkit-transition: all .3s linear;
 	-moz-transition: all .3s lienar;
 	-ms-transition: all .3s linear;
@@ -250,8 +345,10 @@ body {
 
 .exerciseImg img:hover {
     -webkit-filter: grayscale(0);
-	-ms-filter: "grayscale(0%)";
-	filter: grayscale(0%);
+    -moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
+	filter: grayscale(0);
 }
 
 /* REGISTER */
@@ -276,7 +373,7 @@ body {
     font-weight: lighter;
 }#registerBox {
     background-color: white;
-    width: 350px;
+    width: 500px;
     height: 45%;
     margin: auto;
     position: absolute;
@@ -285,7 +382,7 @@ body {
     right: 0;
     border-radius: 25px;
     border: 10px solid white;
-}#inputBoxes table{
+}#inputBoxes table {
     margin: auto;
     width: 100%;
     top: 30%;
@@ -296,8 +393,8 @@ body {
 
 #backToTop {
 	position: fixed;
-	right: 25px;
-	bottom: 25px;
+	right: 10px;
+	bottom: 10px;
 	border-radius: 10%;
 	text-align: center;
 	vertical-align: middle;
@@ -321,6 +418,7 @@ body {
 	padding: 5px;
 }
 #footer {
+	border-top: 5px gray solid;
     background-color: #FFFFFF;
 	color: black;
 	padding: 50px;

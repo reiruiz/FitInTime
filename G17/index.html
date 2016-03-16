@@ -4,51 +4,75 @@
     <head>
         <link rel="stylesheet" href="./styleSheet/base.css">
         <script src="functions.js"></script>
+        
+        <!-- SMOOTH SCROLL -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(function() {
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1750);
+                    return false;
+                  }
+                }
+              });
+            });
+        </script>
+        <!-- End of SMOOTH SCROLL -->
+
         <meta charset="utf-8" />
         <title>FitInTime</title>
     </head>
     <body>
         <div id="header">
-            <div id="links">
-                <div class="menu">
-                    <a href="./index.html">FitInTime</a>
-                    <ul class="dropdown">
-                        <!--<li><a href="index.html">Home</a>-->
-                        <li><a href="#recipe">Recipes</a>
-                        <li><a href="#exercise">Exercises</a>
-                        <li><a href="#register">Register</a>
-                        <li><a href="profile.html">Profile</a>
-                    </ul>
-                </div>
+            <div class="menu">
+                <a href="#banner">FitInTime</a>
+                <ul class="dropdown">
+                    <li><a href="#banner2">Nutrition</a>
+                    <li><a href="#recipe">Recipes</a>
+                    <li><a href="#banner3">Fitness</a>
+                    <li><a href="#exercise">Exercises</a>
+                    <li><a href="#register">Register</a>
+                </ul>
             </div>
             
-            <div id="social">
-            <!--<div class="facebook">
-                <a href="http://www.facebook.com"><img src="./images/facebook.png" width="40" height="40" alt="facebook"></a>
-            </div>
-            <div class="instagram">
-                <a href="http://www.instagram.com"><img src="./images/instagram.png" width="40" height="40" alt="instagram"></a>
-            </div>
-            <div class="twitter">
-                <a href="http://www.twitter.com"><img src="./images/twitter.png" width="40" height="40" alt="twitter"></a>
-            </div>-->
-            <div class="profile">
-                <a href="./profile.html"><img src="./images/user.png" width="40" height="40" alt="user"></a>                
-            </div>
-            </div>
+        <div class="profile">
+            <a href="./profile.html"><img src="./images/user.png" width="40" height="40" alt="user"></a>                
+        </div>
 
         </div>
+        
         <div id="banner">
 
             <div id="logoIntro">
-                <p>Get FitInTime</p>
+                <h1>Get FitInTime</h1>
+                <p>Whether you've got 15 minutes or 60 minutes, 
+                    we at FITINTIME will provide the resources you'll need to get fit in time!</p>
+                <p>Click below to get started!</p>
+                <ul>
+                   <li><a href="#banner2">Nutrition</a></li>
+                   <li>/</li>
+                   <li><a href="#banner3">Fitness</a></li>
+                </ul>
 			</div>
 
         </div>
 
         <div id="banner2">
             <div id="recipeIntro">
-                <p>Get Healthy</p>
+                <h1>Nutrition</h1>
+                <p>
+                Lorem ipsum dolor sit amet, per commodo eleifend eu, qui dolore timeam indoctum et. 
+                Praesent consectetuer mel ne. Et oratio tritani euripidis sed, nonumy nostro at vel. 
+                Dignissim tincidunt et mea, vidit doctus vivendo et sea. Et detracto urbanitas cum, 
+                feugait singulis conclusionemque est id, ex mel nostro legimus electram.
+                </p>
+                <a href="#recipe">Get Healthy</a>
             </div>
         </div>
 
@@ -69,7 +93,14 @@
 
             <div id="banner3">
                 <div id="fitIntro">
-                    <p>Get Fit</p>
+                    <h1>Fitness</h1>
+                    <p>
+                    Lorem ipsum dolor sit amet, per commodo eleifend eu, qui dolore timeam indoctum et. 
+                    Praesent consectetuer mel ne. Et oratio tritani euripidis sed, nonumy nostro at vel. 
+                    Dignissim tincidunt et mea, vidit doctus vivendo et sea. Et detracto urbanitas cum, 
+                    feugait singulis conclusionemque est id, ex mel nostro legimus electram.
+                    </p>
+                    <a href="#exercise">Get Fit</a>
                 </div>
             </div>
 
@@ -140,7 +171,7 @@
                                 </tr>
                             </table>
                         </form>
-                        <br>
+                        
                         <h2 id="inputText">
                             Sign in!
                         </h2>
@@ -164,7 +195,7 @@
                                 </tr>
                                 <tr>
                                     <th>
-                                        <input type="submit" name="submitinfo" id="submit" value="Login">
+                                        <input type="submit" name="submitinfo" id="submit" value="Sign in">
                                     </th>
                                 </tr>
                             </table>
@@ -231,7 +262,7 @@
 					</tr>
 				</table>
 
-				<p>Copyright but not really<a href="./images/mandom.png">&copy;</a></p>
+				<p>Copyright but not really <a href="./images/mandom.png">&copy;</a></p>
             </div>
         </div>
     </body>
