@@ -3,69 +3,77 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="../styleSheet/base.css">
+        <script src="functions.js"></script>
+        
+        <!-- SMOOTH SCROLL -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(function() {
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1750);
+                    return false;
+                  }
+                }
+              });
+            });
+        </script>
+        <!-- End of SMOOTH SCROLL -->
+
         <meta charset="utf-8" />
-        <title>FitNizBiz - 15 Minute Exercises</title>
+        <title>15 Minute Exercises</title>
     </head>
     <body>
         <div id="header">
-            <div id="links">
             <div class="menu">
-                <a href="../index.html">FitInTime</a>
+                <a href="../index.html#banner">FitInTime</a>
                 <ul class="dropdown">
-                    <!--<li><a href="index.html">Home</a>-->
-                    <li><a href="../#recipe">Recipes</a>
-                    <li><a href="../#exercise">Exercises</a>
-                    <li><a href="../#register">Register</a>
-                    <li><a href="../profile.html">Profile</a>
+                    <li><a href="../index.html#banner2">Nutrition</a>
+                    <li><a href="../index.html#recipe">Recipes</a>
+                    <li><a href="../index.html#banner3">Fitness</a>
+                    <li><a href="../index.html#exercise">Exercises</a>
+                    <li><a href="../index.html#register">Register</a>
                 </ul>
             </div>
-            </div>
             
-            <div id="social">
-            <!--<div class="facebook">
-                <a href="http://www.facebook.com"><img src="./images/facebook.png" width="40" height="40" alt="facebook"></a>
-            </div>
-            <div class="instagram">
-                <a href="http://www.instagram.com"><img src="./images/instagram.png" width="40" height="40" alt="instagram"></a>
-            </div>
-            <div class="twitter">
-                <a href="http://www.twitter.com"><img src="./images/twitter.png" width="40" height="40" alt="twitter"></a>
-            </div>-->
-            <div class="profile">
-                <a href="../profile.html"><img src="../images/user.png" width="40" height="40" alt="user"></a>                
-            </div>
-            </div>
-
+        <div class="profile">
+            <a href="../index.html#register"><img src="../images/user.png" width="40" height="40" alt="user"></a>                
         </div>
 
-        <div id="banner">
-            <a href="../index.html"><img src="../images/logo.png" alt="FitnizBiz Logo" ></a>
         </div>
-        <div id="wrapper">
-            
-            <div id="content">
-                <p id="description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
-                    Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
-                </p>
-
-				<div id="activityTime">
-				<ul>
-                    <li><a href="minute15.html"><img src="../images/jogging.png" height="200" width="200" alt="workout template"></a></li>
-				    <li><a href="minute15.html"><img src="../images/pushUp.png" height="200" width="200" alt="workout template"></a></li>
-				    <li><a href="minute15.html"><img src="../images/jumpingJack.png" height="200" width="200" alt="workout template"></a></li>
-                    <li><a href="minute15.html"><img src="../images/exercise.jpg" height="200" width="200" alt="workout template"></a></li>
-				    <li><a href="minute15.html"><img src="../images/exercise.jpg" height="200" width="200" alt="workout template"></a></li>
-				    <li><a href="minute15.html"><img src="../images/exercise.jpg" height="200" width="200" alt="workout template"></a></li>
-                    <li><a href="minute15.html"><img src="../images/exercise.jpg" height="200" width="200" alt="workout template"></a></li>
-				    <li><a href="minute15.html"><img src="../images/exercise.jpg" height="200" width="200" alt="workout template"></a></li>
-				    <li><a href="minute15.html"><img src="../images/exercise.jpg" height="200" width="200" alt="workout template"></a></li>
-                </ul>
-				</div>
+        
+            <div id="banner3">
+                <div id="fitIntro">
+                    <h1>Fitness</h1>
+                    <p>
+                    Lorem ipsum dolor sit amet, per commodo eleifend eu, qui dolore timeam indoctum et. 
+                    Praesent consectetuer mel ne. Et oratio tritani euripidis sed, nonumy nostro at vel. 
+                    Dignissim tincidunt et mea, vidit doctus vivendo et sea. Et detracto urbanitas cum, 
+                    feugait singulis conclusionemque est id, ex mel nostro legimus electram.
+                    </p>
+                    <a href="#exercise">Get Fit</a>
+                </div>
             </div>
+
+            <div id="exercise">
+                <div class="exerciseImg">
+                    <a href="../exercise/minute15.html"><img src="../images/15ex.jpg" alt="exercise15"></a>
+                </div>
+                <div class="exerciseImg">
+                    <a href="../exercise/minute30.html"><img src="../images/30ex.jpg" alt="exercise30"></a>
+                </div>
+                <div class="exerciseImg">
+                    <a href="../exercise/minute60.html"><img src="../images/60ex.jpg" alt="exercise60"></a>
+                </div>
+            </div>
+			
 			<div id="backToTop">
-				<a href="#banner"><img src="../images/up-arrow.svg" alt="" width="50" height="50"></a>
+				<a href="#banner2"><img src="../images/up-arrow.svg" alt="upwardArrow" width="50" height="50"></a>
 			</div>
             <div id="footer">
 				<table id="footerTable">
@@ -122,11 +130,8 @@
 						</td>
 					</tr>
 				</table>
-				<p>Copyright but not really<a href="./images/mandom.png">&copy;</a></p>
-            </div>
+
+				<p>Copyright but not really <a href="./images/mandom.png">&copy;</a></p>
         </div>
     </body>
 </html>
-
-Status API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Contact Help

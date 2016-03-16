@@ -419,7 +419,7 @@ body {
 	padding: 5px;
 }
 #footer {
-	border-top: 5px gray solid;
+	/*border-top: 5px gray solid;*/
     background-color: #FFFFFF;
 	color: black;
 	padding: 50px;
