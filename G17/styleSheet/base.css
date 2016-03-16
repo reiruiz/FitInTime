@@ -470,3 +470,43 @@ body {
 	font-family: thisSideUp;
     margin-top: -5px;   
 }
+/*30 minute recipes*/
+
+#thirty1 {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    background-image: url("../images/food/15Recipes/quesadillasbg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: thisSideUp;
+    margin-top: -5px;   
+}
+
+#thirty2 {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    background-image: url("../images/food/15Recipes/filletsbg.jpg");
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: thisSideUp;
+    margin-top: -5px;   
+}
+
+#thirty3 {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    background-image: url("../images/food/15Recipes/shrimpbg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: thisSideUp;
+    margin-top: -5px;   
+}
