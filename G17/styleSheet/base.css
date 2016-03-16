@@ -441,7 +441,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 	font-family: thisSideUp;
-    margin-top: -5px;   
+    margin-top: -5px; 
 }
 
 #fifteen2 {
@@ -468,4 +468,70 @@ body {
     background-size: cover;
 	font-family: thisSideUp;
     margin-top: -5px;   
+}
+
+#fifteen1Intro {
+    float: right;
+    width: 600px;
+    background-color:  rgba(255, 255, 255, 0.75); 
+    margin-top: 100px;
+    text-align: center;
+    margin-right: 125px;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+#fifteen1Intro h1 {
+    font-size: 650%;
+    font-weight: normal;
+}
+
+#fifteen1Intro p {
+    font-size: 250%;
+    margin-top: 10px;
+    margin-bottom: 20px;    
+}
+
+#fifteen2Intro {
+    float: right;
+    width: 600px;
+    background-color:  rgba(255, 255, 255, 0.75); 
+    margin-top: 100px;
+    text-align: center;
+    margin-right: 125px;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+#fifteen2Intro h1 {
+    font-size: 650%;
+    font-weight: normal;
+}
+
+#fifteen2Intro p {
+    font-size: 250%;
+    margin-top: 10px;
+    margin-bottom: 20px;    
+}
+
+#fifteen3Intro {
+    float: right;
+    width: 600px;
+    background-color:  rgba(255, 255, 255, 0.75); 
+    margin-top: 100px;
+    text-align: center;
+    margin-right: 125px;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+#fifteen3Intro h1 {
+    font-size: 650%;
+    font-weight: normal;
+}
+
+#fifteen3Intro p {
+    font-size: 250%;
+    margin-top: 10px;
+    margin-bottom: 20px;    
 }
