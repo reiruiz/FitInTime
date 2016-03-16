@@ -429,3 +429,44 @@ body {
     color: black;
     text-decoration: none   
 }
+
+/* 15 MINUTE RECIPES */
+
+#fifteen1 {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    background-image: url("../images/food/15Recipes/quesadillasbg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: thisSideUp;
+    margin-top: -5px;   
+}
+
+#fifteen2 {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    background-image: url("../images/food/15Recipes/filletsbg.jpg");
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: thisSideUp;
+    margin-top: -5px;   
+}
+
+#fifteen3 {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    background-image: url("../images/food/15Recipes/shrimpbg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: thisSideUp;
+    margin-top: -5px;   
+}
