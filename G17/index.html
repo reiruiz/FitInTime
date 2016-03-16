@@ -124,20 +124,41 @@
                         </h1>
                         <form action="" method="post">
                             <table>
+                                <tr></tr>
                                 <tr>
                                     <th>
                                         <label for="reguser">Username:</label>
                                     </th>
                                     <td>
-                                        <input type="text" name="reguser" id="reguser" onblur="validateNewUser('reguser')" required>
+                                        <input type="text" name="reguser" id="reguser" onblur="validateUser('reguser')" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                    </th>
+                                    <td>
+                                        <p>(must be 4-15 characters long<br>&nbsp;no special characters)</p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>
                                         <label for="regpass">Password:</label>
+                                        <br>
                                     </th>
                                     <td>
-                                        <input type="password" name="regpass" id="regpass" onblur="validateNewPass('regpass')" required>
+                                        <input type="password" name="regpass" id="regpass" onblur="validatePass('regpass')" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                    </th>
+                                    <td>
+                                        <p>Must contain:</p>
+                                        <ul style="margin-left: 20px;">
+                                            <li>One uppercase character</li>
+                                            <li>One lowercase character</li>
+                                            <li>One number</li>
+                                        </ul>
                                     </td>
                                 </tr>
                                 <tr>
@@ -182,7 +203,7 @@
                                         <label for="signuser">Username:</label>
                                     </th>
                                     <td>
-                                        <input type="text" name="singninuser" id="signuser">
+                                        <input type="text" name="signinuser" id="signuser" onblur="validateUser('signuser')">
                                     </td>
                                 </tr>
                                 <tr>
@@ -190,7 +211,7 @@
                                         <label for="signpass">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:</label>
                                     </th>
                                     <td>
-                                        <input type="password" name="signinpass" id="signpass">
+                                        <input type="password" name="signinpass" id="signpass" onblur="validatePass('signpass')">
                                     </td>
                                 </tr>
                                 <tr>

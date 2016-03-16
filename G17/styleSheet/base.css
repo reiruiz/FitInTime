@@ -374,7 +374,8 @@ body {
 }#registerBox {
     background-color: white;
     width: 500px;
-    height: 45%;
+    height: 55%;
+    padding-bottom: 20px;
     margin: auto;
     position: absolute;
     top: 20%;

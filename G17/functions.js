@@ -1,5 +1,5 @@
 //Shortcut to getting elements
-function $(id){
+function getElement(id){
     var element = document.getElementById(id);
     return element;
 }
@@ -13,31 +13,35 @@ function validHighlight(element){
     element.style.backgroundColor = "#99ff99";
     element.style.border = "2px solid #339900";
 }
+//Insert new node after
+function insertAfter(insertNode, refNode){
+    refNode.parentNode.insertBefore(insertNode, refNode.nextSibling);
+}
 
 //Creates error message for invalid fields
 function errorMsg(msg, childId, parentId, errorId){
     //Checks to see if the error id being created is already present
-    if($(errorId) == null){
+    if(getElement(errorId) == null){
         //creates new paragraph tag and inserts it before input field
         var error = document.createElement("p");
         var text = document.createTextNode(msg);
         error.appendChild(text);
         error.style.color = "red";
         error.id = errorId;
-        parentId.insertBefore(error,childId);
+        insertAfter(error,childId);
     }
 }
 //Validates username registration field
-function validateNewUser(id){
+function validateUser(id){
     //Gets string for new user name
-    var element = $(id);
-    //Username must be alphanumeric
+    var element = getElement(id);
+    //Username must be alphanumeric and at 4-15 characters long
     var patt = /\W/;
-    if(patt.test(element.value) || element.value.length == 0){
+    if(patt.test(element.value) || (element.value).length < 4 || (element.value).length > 15){
         highlight(element);
         errorMsg("Invalid user name.", element, element.parentNode,'userError');
     }else{
-        var userError = $('userError');
+        var userError = getElement('userError');
         if(userError != null){
             userError.parentNode.removeChild(userError);
         }
@@ -45,9 +49,9 @@ function validateNewUser(id){
     }
 }
 //Validates password registration field
-function validateNewPass(id){
+function validatePass(id){
     //Gets string for password
-    var pass = $(id).value;
+    var pass = getElement(id).value;
 
     //Password must contain uppercase letter, lowercase letter and a number
     var testUpper = /[A-Z]/;
@@ -55,46 +59,45 @@ function validateNewPass(id){
     var testNum = /[0-9]/;
 
     //Test patterns, if all pass, input categorized as valid.
-    if(!testUpper.test(pass) || !testLower.test(pass) || !testNum.test(pass)){
-        highlight($(id));
-        errorMsg("Password must contain one uppercase and lowercase letter and one number."
-                    , $(id), $(id).parentNode, 'passError');
+    if(!testUpper.test(pass) || !testLower.test(pass) || !testNum.test(pass) || (pass).length < 4 || (pass).length > 15){
+        highlight(getElement(id));
+        errorMsg("Invalid Password.", getElement(id), getElement(id).parentNode, 'passError');
     } else {
         var passError = $('passError');
         if(passError != null){
             passError.parentNode.removeChild(passError);
         }
-        validHighlight($(id));
+        validHighlight(getElement(id));
     }
 }
 //Validates email registration field
 function validateEmail(id){
-    var email = $(id).value;
+    var email = getElement(id).value;
     /*
     pattern matches to format:
     [any alphanumeric characters including underscore]@[any domain].[toplevel domain(min 2 char)]
     */
     var patt = /[\w_]+@.*\.[a-zA-Z]{2,}/;
     if(!patt.test(email)){
-        highlight($(id));
-        errorMsg("Invalid email!", $(id), $(id).parentNode, 'emailError');
+        highlight(getElement(id));
+        errorMsg("Invalid email!", getElement(id), getElement(id).parentNode, 'emailError');
     }else{
-        var emailError = $('emailError');
+        var emailError = getElement('emailError');
         //Removes error message if present
         if(emailError != null){
             emailError.parentNode.removeChild(emailError);
         }
-        validHighlight($(id));
+        validHighlight(getElement(id));
     }
 }
 //Confirms if two input fields are the same
 function confirmInput(original, confirmer){
-    var conf = $(confirmer);
-    if($(original).value != conf.value){
+    var conf = getElement(confirmer);
+    if(getElement(original).value != conf.value){
         highlight(conf);
         errorMsg("Does not match!", conf, conf.parentNode, 'error' + original);
     } else {
-        var confirm = $('error' + original);
+        var confirm = getElement('error' + original);
         if(confirm != null){
             confirm.parentNode.removeChild(confirm);
         }
