@@ -15,6 +15,7 @@ function validHighlight(element){
 }
 //Insert new node after
 function insertAfter(insertNode, refNode){
+    
     refNode.parentNode.insertBefore(insertNode, refNode.nextSibling);
 }
 
@@ -61,6 +62,7 @@ function validatePass(id){
     //Test patterns, if all pass, input categorized as valid.
     if(!testUpper.test(pass) || !testLower.test(pass) || !testNum.test(pass) || (pass).length < 4 || (pass).length > 15){
         highlight(getElement(id));
+        
         errorMsg("Invalid Password.", getElement(id), getElement(id).parentNode, 'passError');
     } else {
         var passError = $('passError');
