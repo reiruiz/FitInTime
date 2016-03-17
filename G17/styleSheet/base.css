@@ -412,7 +412,7 @@ body {
 }
 
 #footerTable th{
-	padding: 10px 50px;
+	padding: 0 50px;
 }
 
 #footerTable td{
@@ -494,7 +494,6 @@ body {
     display: inline-block;
     width: 100%;
     background-image: url("../images/food/15Recipes/filletsbg.jpg");
-    /*background-attachment: fixed;*/
     background-repeat: no-repeat;
     background-size: cover;
 	font-family: thisSideUp;
@@ -535,7 +534,6 @@ body {
     display: inline-block;
     width: 100%;
     background-image: url("../images/food/30Recipes/TurkeySkilletbg.jpg");
-    /*background-attachment: fixed;*/
     background-repeat: no-repeat;
     background-size: cover;
 	font-family: thisSideUp;
@@ -554,7 +552,6 @@ body {
     font-family: thisSideUp;
     margin-top: -5px;
 }
-
 
 /*60 MINUTE RECIPES */
 
@@ -577,7 +574,6 @@ body {
     display: inline-block;
     width: 100%;
     background-image: url("../images/food/60Recipes/SpinachChickenbg.jpg");
-    /*background-attachment: fixed;*/
     background-repeat: no-repeat;
     background-size: cover;
 	font-family: thisSideUp;
