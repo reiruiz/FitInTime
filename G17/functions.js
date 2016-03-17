@@ -48,6 +48,7 @@ function validateUser(id){
         }
         validHighlight(element);
     }
+	document.getElementById("usernameRuleDisplay").style.display = "none";
 }
 //Validates password registration field
 function validatePass(id){
@@ -71,6 +72,8 @@ function validatePass(id){
         }
         validHighlight(getElement(id));
     }
+	document.getElementsByClassName("passwordRuleDisplay")[0].style.display = "none";
+	document.getElementsByClassName("passwordRuleDisplay")[1].style.display = "none";
 }
 //Validates email registration field
 function validateEmail(id){
@@ -105,4 +108,15 @@ function confirmInput(original, confirmer){
         }
         validHighlight(conf);
     }
+}
+
+//Shows username rules
+function showUsernameRule() {
+	document.getElementById("usernameRuleDisplay").style.display = "initial";
+}
+
+//Show password rules
+function showPasswordRule() {
+	document.getElementsByClassName("passwordRuleDisplay")[0].style.display = "initial";
+	document.getElementsByClassName("passwordRuleDisplay")[1].style.display = "initial";
 }
