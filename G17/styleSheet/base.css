@@ -489,7 +489,7 @@ body {
 
 .recipeInfo p {
 	text-align: left;
-    font-size: 250%;
+    font-size: 350%;
     margin-top: 10px;
     margin-bottom: 20px;    
 }
@@ -500,6 +500,11 @@ body {
     margin-bottom: 20px;    
 	padding-left: 40px;
 }
+
+.recipeInfo li {
+	font-size: 1.1em;
+}
+
 
 .recipeInfo ol {
 	text-align: left;
