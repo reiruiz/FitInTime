@@ -374,7 +374,7 @@ body {
 }#registerBox {
     background-color: white;
     width: 500px;
-    height: 55%;
+    height: auto;
     padding-bottom: 20px;
     margin: auto;
     position: absolute;
@@ -595,4 +595,12 @@ body {
     background-size: cover;
     font-family: thisSideUp;
     margin-top: -5px;
+}
+
+#usernameRuleDisplay {
+	display: none;
+}
+
+.passwordRuleDisplay {
+	display: none;
 }

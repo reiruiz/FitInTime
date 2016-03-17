@@ -128,14 +128,14 @@
                                         <label for="reguser">Username:</label>
                                     </th>
                                     <td>
-                                        <input type="text" name="reguser" id="reguser" onblur="validateUser('reguser')" required>
+                                        <input type="text" name="reguser" id="reguser" onblur="validateUser('reguser')" onfocus="showUsernameRule()" required>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>
                                     </th>
                                     <td>
-                                        <p>(must be 4-15 characters long<br>&nbsp;no special characters)</p>
+                                        <p id="usernameRuleDisplay">(must be 4-15 characters long<br>&nbsp;no special characters)</p>
                                     </td>
                                 </tr>
                                 <tr>
@@ -144,15 +144,15 @@
                                         <br>
                                     </th>
                                     <td>
-                                        <input type="password" name="regpass" id="regpass" onblur="validatePass('regpass')" required>
+                                        <input type="password" name="regpass" id="regpass" onblur="validatePass('regpass')" onfocus="showPasswordRule()" required>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>
                                     </th>
                                     <td>
-                                        <p>Must contain:</p>
-                                        <ul style="margin-left: 20px;">
+                                        <p class="passwordRuleDisplay">Must contain:</p>
+                                        <ul class="passwordRuleDisplay" style="margin-left: 20px;">
                                             <li>One uppercase character</li>
                                             <li>One lowercase character</li>
                                             <li>One number</li>
