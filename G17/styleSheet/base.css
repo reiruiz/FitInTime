@@ -600,3 +600,159 @@ body {
 .passwordRuleDisplay {
 	display: none;
 }
+
+/* EXERCISE INFORMATION */
+
+.exerciseInfo {
+    float: right;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.75); 
+    text-align: center;
+    margin-right: 125px;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.exerciseInfo h1 {
+    font-size: 400%;
+	padding-bottom: 10px;
+    font-weight: normal;
+}
+
+.exerciseInfo p {
+	text-align: left;
+    font-size: 250%;
+    margin-top: 10px;
+    margin-bottom: 20px;    
+}
+
+.exerciseInfo li {
+	font-size: 1.1em;
+}
+
+.exerciseInfo ol {
+	text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;    
+	padding-left: 40px;
+}
+
+/* 15 MINUTE EXERCISES */
+
+#fifteen4 {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    background-image: url("../images/exercise/15Exercise/lungebg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: thisSideUp;
+    margin-top: -5px;
+}
+
+#fifteen5 {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    background-image: url("../images/exercise/15Exercise/pushupbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: thisSideUp;
+    margin-top: -5px;   
+}
+
+#fifteen6 {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    background-image: url("../images/exercise/15Exercise/jogbg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: thisSideUp;
+    margin-top: -5px;   
+}
+
+/* 30 MINUTE EXERCISES */
+
+#thirty4 {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    background-image: url("../images/exercise/15Exercise/lungebg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: thisSideUp;
+    margin-top: -5px;
+}
+
+#thirty5 {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    background-image: url("../images/exercise/15Exercise/pushupbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: thisSideUp;
+    margin-top: -5px;   
+}
+
+#thirty6 {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    background-image: url("../images/exercise/15Exercise/jogbg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: thisSideUp;
+    margin-top: -5px;   
+}
+
+/* 60 MINUTE EXERCISES */
+
+#sixty4 {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    background-image: url("../images/exercise/15Exercise/lungebg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: thisSideUp;
+    margin-top: -5px;
+}
+
+#sixty5 {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    background-image: url("../images/exercise/15Exercise/pushupbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: thisSideUp;
+    margin-top: -5px;   
+}
+
+#sixty6 {
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    background-image: url("../images/exercise/15Exercise/jogbg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: thisSideUp;
+    margin-top: -5px;   
+}
