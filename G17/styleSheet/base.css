@@ -387,7 +387,7 @@ body {
     margin: auto;
     width: 100%;
     top: 30%;
-}#inputBoxes th {
+}#inputBoxes th {
     text-align: right;
     padding-right: 5px;
 }/* FOOTER */
@@ -514,7 +514,7 @@ body {
     margin-top: -5px;   
 }
 
-/*30 minute recipes*/
+/*30 MINUTE RECIPES */
 
 #thirty1 {
     height: 1000px;
@@ -556,7 +556,7 @@ body {
 }
 
 
-/*60 minute recipes*/
+/*60 MINUTE RECIPES */
 
 #sixty1 {
     height: 1000px;
