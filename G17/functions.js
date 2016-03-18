@@ -66,8 +66,7 @@ function validatePass(id){
         errorMsg("Invalid Password.", getElement(id), getElement(id).parentNode, 'passError');
     } else {
         var passError = $('passError');
-        if(passError != undefined){
-            alert(passError);
+        if(passError != null){
             passError.parentNode.removeChild(passError);
         }
         validHighlight(getElement(id));
