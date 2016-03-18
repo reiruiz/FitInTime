@@ -580,7 +580,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     display: inline-block;
     width: 100%;
-    background-image: url("../images/exercise/15Exercise/bikingbg.jpg");
+    background-image: url("../images/exercise/15Exercise/lungebg.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -593,7 +593,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     display: inline-block;
     width: 100%;
-    background-image: url("../images/exercise/15Exercise/treadmillbg.jpg");
+    background-image: url("../images/exercise/15Exercise/pushupbg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 	font-family: thisSideUp;
@@ -605,7 +605,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     display: inline-block;
     width: 100%;
-    background-image: url("../images/exercise/15Exercise/rowbg.jpg");
+    background-image: url("../images/exercise/15Exercise/situpbg.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -620,7 +620,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     display: inline-block;
     width: 100%;
-    background-image: url("../images/exercise/30Exercise/ bg.jpg");
+    background-image: url("../images/exercise/30Exercise/bikingbg.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -633,7 +633,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     display: inline-block;
     width: 100%;
-    background-image: url("../images/exercise/30Exercise/ bg.jpg");
+    background-image: url("../images/exercise/30Exercise/treadmillbg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 	font-family: thisSideUp;
@@ -645,7 +645,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     display: inline-block;
     width: 100%;
-    background-image: url("../images/exercise/30Exercise/ bg.jpg");
+    background-image: url("../images/exercise/30Exercise/rowbg.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
