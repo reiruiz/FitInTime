@@ -248,12 +248,39 @@ body {
 #recipe {
     height: 1000px;
 }
-
-.recipeImg {
+.imageLink{
     width: 33.3333333%;
     float: left;
     overflow: hidden;
     margin-top: -5px;
+    position: relative;
+}
+.imageLink img {
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+	-ms-filter: grayscale(1);
+    -o-filter: grayscale(1);
+	filter: grayscale(1);
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;
+}
+.imageLink img:hover {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+/*.recipeImg {
+    width: 33.3333333%;
+    float: left;
+    overflow: hidden;
+    margin-top: -5px;
+    position: relative;
 }
 
 .recipeImg img {
@@ -263,9 +290,9 @@ body {
     -o-filter: grayscale(1);
 	filter: grayscale(1);
 	-webkit-transition: all .3s linear;
-	-moz-transition: all .3s lienar;
+	-moz-transition: all .3s linear;
 	-ms-transition: all .3s linear;
-	-o-transition: all .3s lienar;
+	-o-transition: all .3s linear;
 	transition: all .3s linear;
 }
 
@@ -275,13 +302,13 @@ body {
 	-ms-filter: grayscale(0);
     -o-filter: grayscale(0);
 	filter: grayscale(0);
-}
+}*/
 
 #exercise {
     height: 1000px;
 }
 
-.exerciseImg {
+/*.exerciseImg {
     width: 33.3333333%;
     float: left;
     overflow: hidden;
@@ -295,9 +322,9 @@ body {
     -o-filter: grayscale(1);
 	filter: grayscale(1);
 	-webkit-transition: all .3s linear;
-	-moz-transition: all .3s lienar;
+	-moz-transition: all .3s linear;
 	-ms-transition: all .3s linear;
-	-o-transition: all .3s lienar;
+	-o-transition: all .3s linear;
 	transition: all .3s linear;
 }
 
@@ -307,7 +334,7 @@ body {
 	-ms-filter: grayscale(0);
     -o-filter: grayscale(0);
 	filter: grayscale(0);
-}
+}*/
 
 /* REGISTER (on main page) */
 
@@ -580,11 +607,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     display: inline-block;
     width: 100%;
-<<<<<<< HEAD
-    background-image: url("../images/exercise/15Exercise/bikingbg.jpg");
-=======
     background-image: url("../images/exercise/15Exercise/lungebg.jpg");
->>>>>>> 3e7a1159bec4d890b02618126d127d40c7935b4b
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -597,11 +620,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     display: inline-block;
     width: 100%;
-<<<<<<< HEAD
-    background-image: url("../images/exercise/15Exercise/treadmillbg.jpg");
-=======
     background-image: url("../images/exercise/15Exercise/pushupbg.jpg");
->>>>>>> 3e7a1159bec4d890b02618126d127d40c7935b4b
     background-repeat: no-repeat;
     background-size: cover;
 	font-family: thisSideUp;
@@ -613,11 +632,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     display: inline-block;
     width: 100%;
-<<<<<<< HEAD
-    background-image: url("../images/exercise/15Exercise/rowbg.jpg");
-=======
     background-image: url("../images/exercise/15Exercise/situpbg.jpg");
->>>>>>> 3e7a1159bec4d890b02618126d127d40c7935b4b
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -632,11 +647,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     display: inline-block;
     width: 100%;
-<<<<<<< HEAD
-    background-image: url("../images/exercise/30Exercise/ bg.jpg");
-=======
     background-image: url("../images/exercise/30Exercise/bikingbg.jpg");
->>>>>>> 3e7a1159bec4d890b02618126d127d40c7935b4b
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -649,11 +660,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     display: inline-block;
     width: 100%;
-<<<<<<< HEAD
-    background-image: url("../images/exercise/30Exercise/ bg.jpg");
-=======
     background-image: url("../images/exercise/30Exercise/treadmillbg.jpg");
->>>>>>> 3e7a1159bec4d890b02618126d127d40c7935b4b
     background-repeat: no-repeat;
     background-size: cover;
 	font-family: thisSideUp;
@@ -665,11 +672,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     display: inline-block;
     width: 100%;
-<<<<<<< HEAD
-    background-image: url("../images/exercise/30Exercise/ bg.jpg");
-=======
     background-image: url("../images/exercise/30Exercise/rowbg.jpg");
->>>>>>> 3e7a1159bec4d890b02618126d127d40c7935b4b
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -678,7 +681,6 @@ body {
 }
 
 /* 60 MINUTE EXERCISES */
-
 #sixty4 {
     height: 1000px;
     background-color: rgba(0, 0, 0, 0);
@@ -691,7 +693,6 @@ body {
 	font-family: thisSideUp;
     margin-top: -5px;
 }
-
 #sixty5 {
     height: 1000px;
     background-color: rgba(0, 0, 0, 0);
@@ -703,7 +704,6 @@ body {
 	font-family: thisSideUp;
     margin-top: -5px;   
 }
-
 #sixty6 {
     height: 1000px;
     background-color: rgba(0, 0, 0, 0);
@@ -715,4 +715,35 @@ body {
     background-size: cover;
 	font-family: thisSideUp;
     margin-top: -5px;   
+}
+
+.imageLink a p{
+    font-family: thisSideUp;
+    color: black;
+    width: 100%;
+    height: 300px;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 10em;
+    
+    /*Fade text in*/
+    -webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;
+    opacity: 1000;
+}
+.imageLink a:hover p{
+    /*Fade text out*/
+    -webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;
+    opacity: 0;
 }
