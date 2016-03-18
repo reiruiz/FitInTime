@@ -3,53 +3,285 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="./styleSheet/base.css">
+        <script src="functions.js"></script>
+        
+        <!-- SMOOTH SCROLL -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(function() {
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1750);
+                    return false;
+                  }
+                }
+              });
+            });
+        </script>
+        <!-- End of SMOOTH SCROLL -->
+
         <meta charset="utf-8" />
-        <title>FitNizBiz</title>
+        <title>FitInTime</title>
     </head>
     <body>
         <div id="header">
-            <h1>Homepage</h1>
-        </div>
-        <div id="wrapper">
-            <div id="banner">
-                <a href="index.html"><img src="./images/Fitness2.png" alt="FitnizBiz Logo" width="600" height="350"></a>
-            </div>
-            <div id="nav">
-                <ul>
-                    <li><a href="./exercise/exercise.html">Exercise</a></li>
-                    <li><a href="./nutrition/nutrition.html">Nutrition</a></li>
-                    <li><a href="profile.html">Profile</a></li>
-                    <li><a href="register.html">Register</a></li>
+            <div class="menu">
+                <a href="#fitInTime">FitInTime</a>
+                <ul class="dropdown">
+                    <li><a href="#nutrition">Nutrition</a>
+                    <li><a href="#recipe">Recipes</a>
+                    <li><a href="#fitness">Fitness</a>
+                    <li><a href="#exercise">Exercises</a>
+                    <li><a href="#register">Register</a>
                 </ul>
             </div>
-            <div id="content">
-                <img class="homeImage" src="./images/pitbull_hacker.jpg" alt="Hacker" width="450" height="359">
-                <p class="homeContent">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id sem id dui pretium gravida.
-                Cras volutpat ligula aliquet lobortis ultrices. Pellentesque at condimentum mi, in viverra nisi. 
-                Vestibulum aliquet, erat et aliquet vestibulum, nisl augue consequat lorem, nec imperdiet ligula orci non mauris. 
-                Nullam dictum tempor dolor quis aliquet. In hac habitasse platea dictumst. Mauris nec porta ligula, nec vehicula ex. 
-                Sed id tristique risus, sed varius purus. 
-                Morbi a sem id augue fringilla pellentesque. Phasellus vitae enim convallis, vulputate magna id, pulvinar nisi. 
-                Curabitur imperdiet est in metus laoreet viverra.
-                </p>
-                <br>
-                <p class="homeContent">
-                    Proin venenatis at nunc et suscipit. 
-                    Donec faucibus et arcu eget posuere. 
-                    Phasellus dictum egestas justo quis laoreet. 
-                    Pellentesque commodo massa vel auctor accumsan. 
-                    Vivamus velit enim, vehicula a mauris ac, consectetur tincidunt turpis. 
-                    Morbi placerat tortor sem, vitae semper dolor sagittis eu. Sed nec lacinia quam, ac mollis velit. 
-                    Fusce finibus scelerisque purus, vitae pellentesque ligula volutpat quis. Vivamus vel porta nulla. 
-                    In tellus mauris, blandit vitae urna eu, tincidunt bibendum eros. 
-                    Vestibulum tempus, arcu vitae viverra dignissim, libero erat lacinia eros, condimentum laoreet ligula lectus non erat. 
-                    Donec posuere ornare ultrices.
-                </p>
+            
+            <div class="profile">
+                <a href="#register"><img src="./images/user.png" width="40" height="40" alt="user"></a>                
             </div>
+
+        </div>
+        
+        <div id="fitInTime">
+
+            <div id="logo">
+                <h1>Get FitInTime</h1>
+                <p>Whether you've got 15 minutes or 60 minutes, 
+                    we at FITINTIME will provide the resources you'll need to get fit in time!</p>
+                <p>Click below to get started!</p>
+                <ul>
+                   <li><a href="#nutrition">Nutrition</a></li>
+                   <li>/</li>
+                   <li><a href="#fitness">Fitness</a></li>
+                </ul>
+			</div>
+
+        </div>
+
+        <div id="nutrition">
+            <div class="introduction">
+                <h1>Nutrition</h1>
+                <p>
+                Lorem ipsum dolor sit amet, per commodo eleifend eu, qui dolore timeam indoctum et. 
+                Praesent consectetuer mel ne. Et oratio tritani euripidis sed, nonumy nostro at vel. 
+                Dignissim tincidunt et mea, vidit doctus vivendo et sea. Et detracto urbanitas cum, 
+                feugait singulis conclusionemque est id, ex mel nostro legimus electram.
+                </p>
+                <a href="#recipe">Get Healthy</a>
+            </div>
+        </div>
+
+            <div id="recipe">
+                <div class="recipeImg">
+
+                    <a href="./nutrition/minute15.html"><img src="./images/15min.jpg" alt="recipes15"></a>
+                </div>
+                <div class="recipeImg">
+                    <a href="./nutrition/minute30.html"><img src="./images/30min.jpg" alt="recipes30"></a>
+                </div>
+                <div class="recipeImg">
+                    <a href="./nutrition/minute60.html"><img src="./images/60min.jpg" alt="recipes60"></a>
+                </div>
+            </div>
+
+            <div id="fitness">
+                <div class="introduction">
+                    <h1>Fitness</h1>
+                    <p>
+                    Lorem ipsum dolor sit amet, per commodo eleifend eu, qui dolore timeam indoctum et. 
+                    Praesent consectetuer mel ne. Et oratio tritani euripidis sed, nonumy nostro at vel. 
+                    Dignissim tincidunt et mea, vidit doctus vivendo et sea. Et detracto urbanitas cum, 
+                    feugait singulis conclusionemque est id, ex mel nostro legimus electram.
+                    </p>
+                    <a href="#exercise">Get Fit</a>
+                </div>
+            </div>
+
+            <div id="exercise">
+                <div class="exerciseImg">
+                    <a href="./exercise/minute15.html"><img src="./images/15ex.jpg" alt="exercise15"></a>
+                </div>
+                <div class="exerciseImg">
+                    <a href="./exercise/minute30.html"><img src="./images/30ex.jpg" alt="exercise30"></a>
+                </div>
+                <div class="exerciseImg">
+                    <a href="./exercise/minute60.html"><img src="./images/60ex.jpg" alt="exercise60"></a>
+                </div>
+            </div>
+			
+            <div id="register">
+                <div id="registerBox">
+                    <div id="inputBoxes">
+                        <h1 id="inputText">
+                           Register today!
+                        </h1>
+                        <form action="" method="post">
+                            <table>
+                                <tr></tr>
+                                <tr>
+                                    <th>
+                                        <label for="reguser">Username:</label>
+                                    </th>
+                                    <td>
+                                        <input type="text" name="reguser" id="reguser" onblur="validateUser('reguser')" onfocus="showUsernameRule()" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                    </th>
+                                    <td>
+                                        <p id="usernameRuleDisplay">Must be 4-15 characters long<br>and have no special characters</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label for="regpass">Password:</label>
+                                        <br>
+                                    </th>
+                                    <td>
+                                        <input type="password" name="regpass" id="regpass" onblur="validatePass('regpass')" onfocus="showPasswordRule()" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                    </th>
+                                    <td>
+                                        <p class="passwordRuleDisplay">Must contain</p>
+                                        <ul class="passwordRuleDisplay" style="margin-left: 20px;">
+                                            <li>One uppercase character</li>
+                                            <li>One lowercase character</li>
+                                            <li>One number</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label for="confpass">Confirm Password:</label>
+                                    </th>
+                                    <td>
+                                        <input type="password" name="confpass" id="confpass" onblur="confirmInput('regpass','confpass')" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label for="regemail">Email:</label>
+                                    </th>
+                                    <td>
+                                        <input type="text" name="regemail" id="regemail" onblur="validateEmail('regemail')"required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label for="confemail">Confirm Email:</label>
+                                    </th>
+                                    <td>
+                                        <input type="text" name="confemail" id="confemail" onblur="confirmInput('regemail','confemail')" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <input type="submit" name="submit" id="submit" value="Register">
+                                    </th>
+                                </tr>
+                            </table>
+                        </form>
+                        
+                        <h2 id="inputText">
+                            Sign in!
+                        </h2>
+                        <form action="" method="post">
+                            <table id="signin">
+                                <tr>
+                                    <th>
+                                        <label for="signuser">Username:</label>
+                                    </th>
+                                    <td>
+                                        <input type="text" name="signinuser" id="signuser" onblur="validateUser('signuser')">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label for="signpass">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:</label>
+                                    </th>
+                                    <td>
+                                        <input type="password" name="signinpass" id="signpass" onblur="validatePass('signpass')">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <input type="submit" name="submitinfo" id="submit" value="Sign in" style="margin-bottom: 20px">
+                                    </th>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+			<div id="backToTop">
+				<a href="#fitInTime"><img src="./images/up-arrow.svg" alt="upwardArrow" width="50" height="50"></a>
+			</div>
             <div id="footer">
-                <p>Copyright but not really &copy;</p>
-            </div>
+				<table id="footerTable">
+		            <tr>
+					    <th>
+						    About Us
+					    </th>
+					    <th>
+						    Recipes
+					    </th>
+					    <th>
+						    Exercises
+					    </th>
+					    <th>
+						    Profile
+					    </th>
+				    </tr>
+				    <tr>
+					    <td>
+						    Sup
+					    </td>
+					    <td>
+						    <a href="./nutrition/minute15.html">15 minutes</a>
+					    </td>
+					    <td>
+						    <a href="./exercise/minute15.html">15 Minutes</a>
+					    </td>
+					    <td>
+						    Sign In
+					    </td>
+				    </tr>
+				    <tr>
+					    <td>
+						    Sup
+					    </td>
+					    <td>
+						    <a href="./nutrition/minute30.html">30 minutes</a>
+					    </td>
+					    <td>
+						    <a href="./exercise/minute30.html">30 Minutes</a>
+					    </td>
+					    <td>
+						    <a href="./index.html#register">Register</a>
+					    </td>
+				    </tr>
+				    <tr>
+					    <td>
+					    </td>
+					    <td>
+						    <a href="./nutrition/minute60.html">60 minutes</a>
+					    </td>
+					    <td>
+						    <a href="./exercise/minute60.html">60 Minutes</a>
+					    </td>
+				    </tr>
+				</table>
+
+				<p>Copyright but not really <a href="./images/mandom.png">&copy;</a></p>
         </div>
     </body>
 </html>
