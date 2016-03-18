@@ -52,7 +52,7 @@ body {
 
 /* changes background color for menu */
 
-#header .menu {
+.menu {
     background-color: black;
     height: 40px;
     line-height: 40px;
@@ -62,13 +62,13 @@ body {
 
 /* changes background color for menu on hover */
 
-#header .menu:hover {
+.menu:hover {
     background-color: #888888;
 }
 
-/* floats the profile icon to the righ and adds padding */
+/* floats the profile icon to the right and adds padding */
 
-#header .profile {
+.profile {
     float: right;
     padding-right: 10px;
 }
@@ -83,7 +83,7 @@ body {
 
 /* removes bullets and changes the font size for the menu */
 
-#header ul {
+.menu ul {
     list-style: none;
     font-size: 100%;
     font-weight: 400;
@@ -91,7 +91,7 @@ body {
 
 /* sets the colors for the menu */ 
 
-#header ul li a {                                      
+.menu ul li a {                                      
     background-color: black;
     color: white;
     text-decoration: none;
@@ -99,13 +99,13 @@ body {
 
 /* initially hides the menu */
 
-#header .dropdown {
+.dropdown {
     display: none;
 }
 
 /* displays the menu items when you hover the menu */
 
-#header .menu:hover ul.dropdown {
+.menu:hover ul.dropdown {
     display: block;
     background-color: black;
     color: white;
@@ -114,17 +114,17 @@ body {
 
 /* displays an underline when you hover menu items */
 
-#header .menu:hover ul.dropdown:hover a:hover {
+.menu:hover ul.dropdown:hover a:hover {
     background-color: black;
     color: white;
     text-decoration: underline;
 }
 
-/* BANNER */
+/* BANNERS * /
 
 /* makes a static background for the main info page */
 
-#banner {
+#fitInTime {
 	background-image: url("../images/background.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -133,56 +133,7 @@ body {
 	font-family: thisSideUp;
 }
 
-/* information text for main banner */
-
-#logoIntro {
-    float: right;
-    width: 600px;
-    background-color: rgba(255, 255, 255, 0); 
-    margin-top: 100px;
-    text-align: center;
-    margin-right: 125px;
-    border-radius: 25px;
-    padding: 25px;
-}
-
-#logoIntro h1 {
-    font-size: 650%;
-    font-weight: normal;
-}
-
-#logoIntro p {
-    font-size: 250%;
-    margin-top: 10px;
-    margin-bottom: 20px;    
-}
-
-#logoIntro a {
-    text-decoration: none;
-    color: black;
-}
-
-#logoIntro li {
-    font-size: 450%;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-#logoIntro a:hover {
-    color: white;
-}
-
-#logoIntro ul {
-    list-style-type: none;
-}
-
-#logoIntro li {
-    display: inline;
-}
-
-/* makes a static background for the recipe info page */
-
-#banner2 {
+#nutrition {
     height: 1000px;
     background-color: rgba(0, 0, 0, 0);
     display: inline-block;
@@ -194,47 +145,7 @@ body {
 	font-family: thisSideUp;
 }
 
-/* information text for recipe banner */
-
-#recipeIntro {
-    float: right;
-    width: 600px;
-    background-color: rgba(255, 255, 255, 0.75); 
-    margin-top: 100px;
-    text-align: center;
-    margin-right: 125px;
-    border-radius: 25px;
-    padding: 25px;
-}
-
-#recipeIntro h1 {
-    font-size: 650%;
-    font-weight: normal;
-}
-
-#recipeIntro p {
-    font-size: 250%;
-    margin-top: 10px;
-    margin-bottom: 20px;    
-}
-
-#recipeIntro a {
-    text-decoration: none;
-    color: black;
-    font-size: 450%;
-}
-
-#recipeIntro a:hover {
-    color: white;
-}
-
-#recipeIntro ul {
-    list-style-type: none;
-}
-
-/* makes a static background for the fitness info page */
-
-#banner3 {
+#fitness {
     height: 1000px;
     background-color: rgba(0, 0, 0, 0);
     display: inline-block;
@@ -247,12 +158,12 @@ body {
     margin-top: -5px;   
 }
 
-/* information text for fitness banner */
+/* INFORMATION BOX (for main banner) */
 
-#fitIntro {
+#logo {
     float: right;
     width: 600px;
-    background-color:  rgba(255, 255, 255, 0.75); 
+    background-color: rgba(255, 255, 255, 0); 
     margin-top: 100px;
     text-align: center;
     margin-right: 125px;
@@ -260,32 +171,79 @@ body {
     padding: 25px;
 }
 
-#fitIntro h1 {
+#logo h1 {
     font-size: 650%;
     font-weight: normal;
 }
 
-#fitIntro p {
+#logo p {
     font-size: 250%;
     margin-top: 10px;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;    
 }
 
-#fitIntro a {
+#logo a {
+    text-decoration: none;
+    color: black;
+}
+
+#logo li {
+    font-size: 450%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#logo a:hover {
+    color: white;
+}
+
+#logo ul {
+    list-style-type: none;
+}
+
+#logo li {
+    display: inline;
+}
+
+/* INFORMATION BOXES (for all pages and initial banner) */
+
+.introduction {
+    float: right;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.75); 
+    margin-top: 100px;
+    text-align: center;
+    margin-right: 125px;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.introduction h1 {
+    font-size: 650%;
+    font-weight: normal;
+}
+
+.introduction p {
+    font-size: 250%;
+    margin-top: 10px;
+    margin-bottom: 20px;    
+}
+
+.introduction a {
     text-decoration: none;
     color: black;
     font-size: 450%;
 }
 
-#fitIntro a:hover {
+.introduction a:hover {
     color: white;
 }
 
-#fitIntro ul {
+.introduction ul {
     list-style-type: none;
 }
 
-/* CONTENT */
+/* RECIPES and EXERCISES (on main page) */
 
 #recipe {
     height: 1000px;
@@ -351,8 +309,9 @@ body {
 	filter: grayscale(0);
 }
 
-/* REGISTER */
-#register {
+/* REGISTER (on main page) */
+
+#register {
     background-image: url("../images/background4.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -360,18 +319,24 @@ body {
     height: 1000px;
     position: relative;
     margin-top: -5px;
-}#inputText {
+}
+
+#inputText {
     font-weight: lighter;
     font-size: 50px;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-}#registerText {
+}
+
+#registerText {
     text-align: center;
     font-size: 50px;
     margin-top: 30px;
     font-weight: lighter;
-}#registerBox {
+}
+
+#registerBox {
     background-color: white;
     width: 500px;
     height: auto;
@@ -383,14 +348,20 @@ body {
     right: 0;
     border-radius: 25px;
     border: 10px solid white;
-}#inputBoxes table {
+}
+
+#inputBoxes table {
     margin: auto;
     width: 100%;
     top: 30%;
-}#inputBoxes th {
+}
+
+#inputBoxes th {
     text-align: right;
     padding-right: 5px;
-}/* FOOTER */
+}
+
+/* FOOTER (on all pages) */
 
 #backToTop {
 	position: fixed;
@@ -418,7 +389,8 @@ body {
 #footerTable td{
 	padding: 5px;
 }
-#footer {
+
+#footer {
 	/*border-top: 5px gray solid;*/
     background-color: #FFFFFF;
 	color: black;
@@ -430,9 +402,17 @@ body {
     text-decoration: none   
 }
 
-/* RECIPE INFORMATION */
+#usernameRuleDisplay {
+	display: none;
+}
 
-.recipeInfo {
+.passwordRuleDisplay {
+	display: none;
+}
+
+/* RECIPE & EXERCISE INFORMATION */
+
+.information {
     float: right;
     width: 600px;
     background-color: rgba(255, 255, 255, 0.75); 
@@ -442,31 +422,31 @@ body {
     padding: 25px;
 }
 
-.recipeInfo h1 {
+.information h1 {
     font-size: 400%;
 	padding-bottom: 10px;
     font-weight: normal;
 }
 
-.recipeInfo p {
+.information p {
 	text-align: left;
     font-size: 250%;
     margin-top: 10px;
     margin-bottom: 20px;    
 }
 
-.recipeInfo ul {
+.information ul {
 	text-align: left;
     margin-top: 10px;
     margin-bottom: 20px;    
 	padding-left: 40px;
 }
 
-.recipeInfo li {
+.information li {
 	font-size: 1.1em;
 }
 
-.recipeInfo ol {
+.information ol {
 	text-align: left;
     margin-top: 10px;
     margin-bottom: 20px;    
@@ -593,50 +573,6 @@ body {
     margin-top: -5px;
 }
 
-#usernameRuleDisplay {
-	display: none;
-}
-
-.passwordRuleDisplay {
-	display: none;
-}
-
-/* EXERCISE INFORMATION */
-
-.exerciseInfo {
-    float: right;
-    width: 600px;
-    background-color: rgba(255, 255, 255, 0.75); 
-    text-align: center;
-    margin-right: 125px;
-    border-radius: 25px;
-    padding: 25px;
-}
-
-.exerciseInfo h1 {
-    font-size: 400%;
-	padding-bottom: 10px;
-    font-weight: normal;
-}
-
-.exerciseInfo p {
-	text-align: left;
-    font-size: 250%;
-    margin-top: 10px;
-    margin-bottom: 20px;    
-}
-
-.exerciseInfo li {
-	font-size: 1.1em;
-}
-
-.exerciseInfo ol {
-	text-align: left;
-    margin-top: 10px;
-    margin-bottom: 20px;    
-	padding-left: 40px;
-}
-
 /* 15 MINUTE EXERCISES */
 
 #fifteen4 {
@@ -644,7 +580,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     display: inline-block;
     width: 100%;
-    background-image: url("../images/exercise/15Exercise/lungebg.jpg");
+    background-image: url("../images/exercise/15Exercise/bikingbg.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -657,7 +593,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     display: inline-block;
     width: 100%;
-    background-image: url("../images/exercise/15Exercise/pushupbg.jpg");
+    background-image: url("../images/exercise/15Exercise/treadmillbg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 	font-family: thisSideUp;
@@ -669,7 +605,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     display: inline-block;
     width: 100%;
-    background-image: url("../images/exercise/15Exercise/jogbg.jpg");
+    background-image: url("../images/exercise/15Exercise/rowbg.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
