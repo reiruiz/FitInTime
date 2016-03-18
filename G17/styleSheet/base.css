@@ -453,6 +453,10 @@ body {
 	padding-left: 40px;
 }
 
+.fontSize {
+	font-size: 0.5em;
+}
+
 /* 15 MINUTE RECIPES */
 
 #fifteen1 {
@@ -692,3 +696,4 @@ body {
 	font-family: thisSideUp;
     margin-top: -5px;   
 }
+
