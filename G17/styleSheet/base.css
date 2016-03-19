@@ -41,7 +41,7 @@ body {
 /* changes font and box-model for header links */
 
 .menu a {
-    padding: 7px 10px;
+    padding: 5px 10px;
     font-size: 175%;
     width: 115px;
     height: 100%;
@@ -60,15 +60,20 @@ body {
 	float: left;
 }
 
-#recipeNav {
-	padding-right: 20px;
-	padding-left: 17px;
-}
-
 #registerNav {
 	float: right;
 	font-size: 0.7em;
 	line-height: 40px;
+}
+
+#registerNav a {
+    padding: 5px 10px;
+    font-size: 175%;
+    width: 115px;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 /* changes background color for menu on hover */
@@ -93,7 +98,11 @@ body {
 /* makes the font in the dropdown smaller */
 
 .dropdown a {
-    font-size: 145%;
+    font-size: 120%;
+}
+
+.dropdown li {
+    text-align: center;
 }
 
 /* removes bullets and changes the font size for the menu */
@@ -226,7 +235,7 @@ body {
     float: right;
     width: 600px;
     background-color: rgba(255, 255, 255, 0.75); 
-    margin-top: 100px;
+    margin-top: 75px;
     text-align: center;
     margin-right: 125px;
     border-radius: 25px;
