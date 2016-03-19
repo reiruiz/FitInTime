@@ -56,9 +56,10 @@ body {
     background-color: black;
     height: 40px;
     line-height: 40px;
-    float: left;
     text-decoration: none;
+	float: left;
 }
+
 
 /* changes background color for menu on hover */
 
@@ -69,7 +70,7 @@ body {
 /* floats the profile icon to the right and adds padding */
 
 .profile {
-    float: right;
+	float: right;
     padding-right: 10px;
 }
 
