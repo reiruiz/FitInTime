@@ -255,7 +255,7 @@ body {
     margin-top: -5px;
     position: relative;
 }
-.imageLink img {
+.imageLink {
     -webkit-filter: grayscale(1);
     -moz-filter: grayscale(1);
 	-ms-filter: grayscale(1);
@@ -267,7 +267,7 @@ body {
 	-o-transition: all .3s linear;
 	transition: all .3s linear;
 }
-.imageLink img:hover {
+.imageLink:hover {
     -webkit-filter: grayscale(0);
     -moz-filter: grayscale(0);
     -ms-filter: grayscale(0);
@@ -724,22 +724,23 @@ body {
     font-family: thisSideUp;
     color: black;
     width: 100%;
-    height: 300px;
+    height: 995px;
     z-index: 10;
     position: absolute;
     bottom: 0;
     top: 0;
+    line-height: 1000px;
     margin: auto;
     text-align: center;
     font-size: 10em;
-    
+    background-color: rgba(255,255,255,0.5);
     /*Fade text in*/
     -webkit-transition: all .3s linear;
 	-moz-transition: all .3s linear;
 	-ms-transition: all .3s linear;
 	-o-transition: all .3s linear;
 	transition: all .3s linear;
-    opacity: 1000;
+    opacity: 100;
 }
 .imageLink a:hover p{
     /*Fade text out*/
