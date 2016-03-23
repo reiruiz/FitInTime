@@ -57,10 +57,10 @@
 			</div>
 			
             <div class="profile">
-                <a href="#register"><img src="./images/user.png" width="40" height="40" alt="user"></a>                
+                <a href="register.html"><img src="./images/user.png" width="40" height="40" alt="user"></a>                
             </div>
 			<div id="registerNav">
-            <a href="#register">Register / Sign in</a>
+            <a href="register.html">Register / Sign in</a>
             </div>
         </div>
         
@@ -94,7 +94,7 @@
             </div>
         </div>
 
-            <div id="recipe">
+        <div id="recipe">
                 <div class="imageLink">
                     
                     <a href="./nutrition/minute15.html">
@@ -116,7 +116,7 @@
                 </div>
             </div>
 
-            <div id="fitness">
+        <div id="fitness">
                 <div class="introduction">
                     <h1>Fitness</h1>
                     <p>
@@ -130,7 +130,7 @@
                 </div>
             </div>
 
-            <div id="exercise">
+        <div id="exercise">
                 <div class="imageLink">
                     <a href="./exercise/minute15.html">
                         <p>15 min</p>
@@ -151,118 +151,10 @@
                 </div>
             </div>
 			
-            <div id="register">
-                <div id="registerBox">
-                    <div id="inputBoxes">
-                        <h1 id="inputText">
-                           Register today!
-                        </h1>
-                        <form action="" method="post">
-                            <table>
-                                <tr></tr>
-                                <tr>
-                                    <th>
-                                        <label for="reguser">Username:</label>
-                                    </th>
-                                    <td>
-                                        <input type="text" name="reguser" id="reguser" onblur="validateUser('reguser')" onfocus="showUsernameRule()" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                    </th>
-                                    <td>
-                                        <p id="usernameRuleDisplay">Must be 4-15 characters long<br>and have no special characters</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <label for="regpass">Password:</label>
-                                        <br>
-                                    </th>
-                                    <td>
-                                        <input type="password" name="regpass" id="regpass" onblur="validatePass('regpass')" onfocus="showPasswordRule()" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                    </th>
-                                    <td>
-                                        <p class="passwordRuleDisplay">Must contain</p>
-                                        <ul class="passwordRuleDisplay" style="margin-left: 20px;">
-                                            <li>One uppercase character</li>
-                                            <li>One lowercase character</li>
-                                            <li>One number</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <label for="confpass">Confirm Password:</label>
-                                    </th>
-                                    <td>
-                                        <input type="password" name="confpass" id="confpass" onblur="confirmInput('regpass','confpass')" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <label for="regemail">Email:</label>
-                                    </th>
-                                    <td>
-                                        <input type="text" name="regemail" id="regemail" onblur="validateEmail('regemail')"required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <label for="confemail">Confirm Email:</label>
-                                    </th>
-                                    <td>
-                                        <input type="text" name="confemail" id="confemail" onblur="confirmInput('regemail','confemail')" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <input type="submit" name="submit" id="submit" value="Register">
-                                    </th>
-                                </tr>
-                            </table>
-                        </form>
-                        
-                        <h2 id="inputText">
-                            Sign in!
-                        </h2>
-                        <form action="" method="post">
-                            <table id="signin">
-                                <tr>
-                                    <th>
-                                        <label for="signuser">Username:</label>
-                                    </th>
-                                    <td>
-                                        <input type="text" name="signinuser" id="signuser" onblur="validateUser('signuser')">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <label for="signpass">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:</label>
-                                    </th>
-                                    <td>
-                                        <input type="password" name="signinpass" id="signpass" onblur="validatePass('signpass')">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <input type="submit" name="submitinfo" id="submit" value="Sign in" style="margin-bottom: 20px">
-                                    </th>
-                                </tr>
-                            </table>
-                        </form>
-                    </div>
-                </div>
-            </div>
-			<div id="backToTop">
+		<div id="backToTop">
 				<a href="#fitInTime"><img src="./images/up-arrow.svg" alt="upwardArrow" width="50" height="50"></a>
 			</div>
-            <div id="footer">
+        <div id="footer">
 				<table id="footerTable">
 		            <tr>
 					    <th>
