@@ -64,6 +64,9 @@
                     <li><a href="./exercise/minute60.html">60 Minutes</a></li>
                 </ul>
             </div>
+            <div class="menu">
+                <a href="./forum.php">Forum</a>
+            </div>
 
             <div class="profile">
                 <a href="register.html"><img src="./images/user.png" width="40" height="40" alt="user"></a>
