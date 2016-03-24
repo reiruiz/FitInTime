@@ -1,3 +1,14 @@
+<?php
+	include 'functions.php';
+	//require_once('config.php');
+	//session_start();
+
+	//// Connect to server and select database.
+	//mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)or die("cannot connect, error: ".mysql_error());
+	//mysql_select_db(DB_DATABASE)or die("cannot select DB, error: ".mysql_error());
+	//$tbl_name="topic"; // Table name
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -58,7 +69,13 @@
                 <a href="register.html"><img src="./images/user.png" width="40" height="40" alt="user"></a>
             </div>
             <div id="registerNav">
-                <a href="register.html">Register / Sign in</a>
+			<?php
+				if (isLoggedIn()){
+					echo '<a href="logout.php">Welcome! Logout?</a><br/>';
+				} else {
+					echo '<a href="register.html">Register / Sign in</a>';
+				}
+			?>
             </div>
         </div>
 
@@ -193,7 +210,7 @@
                         <a href="./exercise/minute30.html">30 Minutes</a>
                     </td>
                     <td>
-                        <a href="./index.html#register">Register</a>
+                        <a href="./index.php#register">Register</a>
                     </td>
                 </tr>
                 <tr>
