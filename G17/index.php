@@ -73,7 +73,7 @@
 				if (isLoggedIn()){
 					echo '<a href="logout.php">Welcome! Logout?</a><br/>';
 				} else {
-					echo '<a href="register_form.php">Register / Sign in</a>';
+					echo '<a href="login_form.php">Register / Sign in</a>';
 				}
 			?>
             </div>
