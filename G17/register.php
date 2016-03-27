@@ -39,7 +39,14 @@
 	$password = clean($_POST['password']);
 	$cpassword = clean($_POST['cpassword']);
 	
+    //Regex strings to match to
+    $namePatt = '/[a-zA-Z-]{1,}/'; // One or more characters of the alphabet or '-' is allowed
+    $loginPatt = '/[\w]{4,15}/'; // 4-15 alpha numeric characters
+    $passPatt = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{3,}/'; //(?=PATTERN) means look ahead in the string for a match
+    //pass must contain 1 lowercase letter, 1 uppercase letter and one number
+
 	//Input Validations
+    //Check if fields are empty
 	if($fname == '') {
 		$errmsg_arr[] = 'First name missing';
 		$errflag = true;
@@ -56,15 +63,29 @@
 		$errmsg_arr[] = 'Password missing';
 		$errflag = true;
 	}
-	if($cpassword == '') {
-		$errmsg_arr[] = 'Confirm password missing';
+	if($cpassword == '' || $cpassword !=) {
+		$errmsg_arr[] = 'Confirm password did not match password';
 		$errflag = true;
 	}
 	if( strcmp($password, $cpassword) != 0 ) {
 		$errmsg_arr[] = 'Passwords do not match';
 		$errflag = true;
 	}
-	
+	//Check if fields meet requirements
+    //First name and last name generate same error message.
+    if(!preg_match($namePatt,$fname) || !preg_match($namePatt,$lname)){
+        $errmsg_arr[] = 'Name cannot contain numbers or special characters other than \'-\'.';
+        $errflag = true;
+    }
+
+    if(!preg_match($passPatt,$password)){
+        $errmsg_arr[] = 'Password must contain two letters<br>(Upper case AND lower case) and one number and is at least 3 characters long.';
+        $errflag = true;
+    }
+    if(!preg_match($loginPatt,$login)){
+        $errmsg_arr[] = 'Login can only have alphanumeric characters(a-z and 0-9).';
+        $errflag = true;
+    }
 	//Check for duplicate login ID
 	if($login != '') {
 		$qry = "SELECT * FROM members WHERE login='$login'";

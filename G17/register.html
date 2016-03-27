@@ -1,9 +1,11 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <link rel="stylesheet" href="./styleSheet/base.css">
         <script src="functions.js"></script>
-
         <!-- SMOOTH SCROLL -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>
@@ -27,6 +29,16 @@
         <title>FitInTime</title>
     </head>
     <body>
+        <?php
+	        if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
+		        echo '<ul class="err">';
+		        foreach($_SESSION['ERRMSG_ARR'] as $msg) {
+			        echo '<li>',$msg,'</li>'; 
+		        }
+		        echo '</ul>';
+		        unset($_SESSION['ERRMSG_ARR']);
+	        }
+        ?>
         <div id="header">
             <div class="menu" style="background-color: #888888">
                 <a href="index.php">FitInTime</a>
@@ -70,7 +82,7 @@
                     <h1 id="inputText">
                            Register today!
                     </h1>
-                    <form action="" method="post">
+                    <form id="registerForm" name="registerForm" action="register.php" method="post">
                         <table>
                             <tr></tr>
                             <tr>
@@ -144,14 +156,15 @@
                     <h2 id="inputText">
                             Sign in!
                     </h2>
-                    <form action="" method="post">
+					<!-- Log in section -->
+                    <form id="loginForm" name="loginForm" method="post" action="login.php">
                         <table id="signin">
                             <tr>
                                 <th>
                                     <label for="signuser">Username:</label>
                                 </th>
                                 <td>
-                                    <input type="text" name="signinuser" id="signuser" onblur="validateUser('signuser')">
+                                    <input required type="text" name="signinuser" id="signuser" onblur="validateUser('signuser')">
                                 </td>
                             </tr>
                             <tr>
