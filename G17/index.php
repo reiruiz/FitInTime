@@ -48,9 +48,9 @@
             <div class="menu">
                 <a href="#recipe">Recipes</a>
                 <ul class="dropdown">
-                    <li><a href="./nutrition/minute15.html">15 Minutes</a>
-                    <li><a href="./nutrition/minute30.html">30 Minutes</a>
-                    <li><a href="./nutrition/minute60.html">60 Minutes</a></li>
+                    <li><a href="./nutrition/minute15.php">15 Minutes</a>
+                    <li><a href="./nutrition/minute30.php">30 Minutes</a>
+                    <li><a href="./nutrition/minute60.php">60 Minutes</a></li>
                 </ul>
             </div>
             <div class="menu">
@@ -59,9 +59,9 @@
             <div class="menu">
                 <a href="#exercise">Exercises</a>
                 <ul class="dropdown">
-                    <li><a href="./exercise/minute15.html">15 Minutes</a>
-                    <li><a href="./exercise/minute30.html">30 Minutes</a>
-                    <li><a href="./exercise/minute60.html">60 Minutes</a></li>
+                    <li><a href="./exercise/minute15.php">15 Minutes</a>
+                    <li><a href="./exercise/minute30.php">30 Minutes</a>
+                    <li><a href="./exercise/minute60.php">60 Minutes</a></li>
                 </ul>
             </div>
             <div class="menu">
@@ -115,19 +115,19 @@
         <div id="recipe">
             <div class="imageLink">
 
-                <a href="./nutrition/minute15.html">
+                <a href="./nutrition/minute15.php">
                     <p>15 Min</p>
                     <img src="./images/15min.jpg" alt="recipes15">
                 </a>
             </div>
             <div class="imageLink">
-                <a href="./nutrition/minute30.html">
+                <a href="./nutrition/minute30.php">
                     <p>30 Min</p>
                     <img src="./images/30min.jpg" alt="recipes30">
                 </a>
             </div>
             <div class="imageLink">
-                <a href="./nutrition/minute60.html">
+                <a href="./nutrition/minute60.php">
                     <p>60 Min</p>
                     <img src="./images/60min.jpg" alt="recipes60">
                 </a>
@@ -150,19 +150,19 @@
 
         <div id="exercise">
             <div class="imageLink">
-                <a href="./exercise/minute15.html">
+                <a href="./exercise/minute15.php">
                     <p>15 min</p>
                     <img src="./images/15ex.jpg" alt="exercise15">
                 </a>
             </div>
             <div class="imageLink">
-                <a href="./exercise/minute30.html">
+                <a href="./exercise/minute30.php">
                     <p>30 Min</p>
                     <img src="./images/30ex.jpg" alt="exercise30">
                 </a>
             </div>
             <div class="imageLink">
-                <a href="./exercise/minute60.html">
+                <a href="./exercise/minute60.php">
                     <p>60 Min</p>
                     <img src="./images/60ex.jpg" alt="exercise60">
                 </a>

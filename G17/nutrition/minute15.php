@@ -37,9 +37,9 @@
             <div class="menu">
                 <a href="../index.php#recipe" style="background-color: #888888">Recipes</a>
                 <ul class="dropdown">
-                    <li><a href="../nutrition/minute15.html">15 Minutes</a>
-                    <li><a href="../nutrition/minute30.html">30 Minutes</a>
-                    <li><a href="../nutrition/minute60.html">60 Minutes</a></li>
+                    <li><a href="../nutrition/minute15.php">15 Minutes</a>
+                    <li><a href="../nutrition/minute30.php">30 Minutes</a>
+                    <li><a href="../nutrition/minute60.php">60 Minutes</a></li>
                 </ul>
             </div>
             <div class="menu">
@@ -48,9 +48,9 @@
             <div class="menu">
                 <a href="../index.php#exercise">Exercises</a>
                 <ul class="dropdown">
-                    <li><a href="../exercise/minute15.html">15 Minutes</a>
-                    <li><a href="../exercise/minute30.html">30 Minutes</a>
-                    <li><a href="../exercise/minute60.html">60 Minutes</a></li>
+                    <li><a href="../exercise/minute15.php">15 Minutes</a>
+                    <li><a href="../exercise/minute30.php">30 Minutes</a>
+                    <li><a href="../exercise/minute60.php">60 Minutes</a></li>
                 </ul>
             </div>
             <div class="menu">
