@@ -24,7 +24,7 @@
         </script>
         <!-- End of SMOOTH SCROLL -->
         <meta charset="utf-8" />
-        <title>60 Minute Recipes</title>
+        <title>30 Minute Recipes</title>
     </head>
     <body>
         <div id="header">
@@ -53,18 +53,27 @@
                     <li><a href="../exercise/minute60.html">60 Minutes</a></li>
                 </ul>
             </div>
+            <div class="menu">
+                <a href="../forum.php">Forum</a>
+            </div>
 
             <div class="profile">
-                <a href="../index.php#register"><img src="../images/user.png" width="40" height="40" alt="user"></a>
+                <img src="../images/user.png" width="40" height="40" alt="user">
             </div>
             <div id="registerNav">
-                <a href="../index.php#register">Register / Sign in</a>
+			<?php
+				if (isLoggedIn()){
+					echo '<a href="../logout.php">Welcome! Logout?</a><br/>';
+				} else {
+					echo '<a href="../register_form.php">Register / Sign in</a>';
+				}
+			?>
             </div>
         </div>
 
 <!--         <div id="nutrition">
             <div class="introduction">
-                <h1>60 Minutes</h1>
+                <h1>30 Minutes</h1>
                 <p>
                 Lorem ipsum dolor sit amet, per commodo eleifend eu, qui dolore timeam indoctum et.
                 Praesent consectetuer mel ne. Et oratio tritani euripidis sed, nonumy nostro at vel.
@@ -77,108 +86,93 @@
 
         <div id="recipe">
             <div class="imageLink">
-                <a href="#sixty1"><img src="../images/food/60Recipes/ChickenRedWine.jpg" alt="ChickenRedWine"></a>
+                <a href="#thirty1"><img src="../images/food/30Recipes/MisoSalmon.jpg" alt="Miso Salmon"></a>
             </div>
             <div class="imageLink">
-                <a href="#sixty2"><img src="../images/food/60Recipes/SpinachChicken.jpg" alt="SpinachChicken"></a>
+                <a href="#thirty2"><img src="../images/food/30Recipes/TurkeySkillet.jpg" alt="Turkey Skillet"></a>
             </div>
             <div class="imageLink">
-                <a href="#sixty3"><img src="../images/food/60Recipes/TurkeyMeatloaf.jpg" alt="TurkeyMeatloaf"></a>
+                <a href="#thirty3"><img src="../images/food/30Recipes/VeggieSandwich.jpg" alt="Veggie Sandwich"></a>
             </div>
         </div>
 
-        <div id="sixty1">
+        <div id="thirty1">
             <div class="information" style="margin-top: 100px;">
-                <h1>Chicken and Red Wine Sauce</h1>
-                <p>
-               Ingredients (12 servings)
+                <h1>Miso Glazed
+                    <br>Salmon</h1>
+                <p> Ingredients (4 servings)
                 </p>
                 <ul>
+                    <li>4 (6-ounce) skinless salmon fillets
+                    <li>1/4 cup white miso
+                    <li>1/4 cup maple syrup
+                    <li>1/4 cup mirin
+                    <li>1 tablespoon ginger
+                    <li>1 tablespoon sesame oil
+                    <li>1 cup sugar snap peas</li>
+                </ul>
+                <p>Instructions (454 calories per s.)</p>
+                <ol>
+                    <li>Preheat the oven to broil and adjust the rack to about 6 inches from the heat.
+                    <li>Whisk the miso, maple syrup, mirin, ginger and sesame oil
+                    <li>Add the salmon and toss to coat.
+                    <li>Place fillets on a cooking sheet and place in oven until the glaze is browned and shiny.
+                    <li>Leave the fillets in the oven for roughly 5-8 minutes until the salmon is firm and opaque.
+                    <li>In the meantime, steam the snap peas for about 5 minutes until crisp-tender.</li>
+
+                </ol>
+            </div>
+        </div>
+
+        <div id="thirty2">
+            <div class="information" style="margin-top: 150px;">
+                <h1>Turkey Skillet</h1>
+                <p> Ingredients (4 servings)
+                </p>
+                <ul>
+                    <li>1/4 cup orange juice (or pineapple juice)
+                    <li>1/4 1lb. turkey cutlets, sliced
+                    <li>1/2teaspoon fine chili peppers
+                    <li>1/2 teaspoon finely sliced ground cumin
+                    <li>1/2 teaspoon finely sliced ground coriander
+                    <li>1/2 large orange sliced with peel on
+                    <li>1 tablespoon pine nuts
                     <li>1 tablespoon olive oil
-                    <li>1 tablespoon minced garlic 3 pound skinless, boneless chicken breasts
-                    <li>1 tablespoon paprika
-                    <li>1 cup brown sugar
-                    <li>1 cup red wine
-                    <li>Salt and pepper</li>
+                    <li>1/4 cup raisins
+                    <li>1 tablespoon honey</li>
                 </ul>
-                <p>Instructions (214 calories per s.)</p>
+                <p>Instructions (308 calories per s.)</p>
                 <ol>
-                    <li>Heat oil in a large skillet over medium heat.
-                    <li>Cook the garlic in the oil until it becomes tender.
-                    <li>Place the chicken on the skillet and cook for about 10 minutes on each side, until it is no longer pink and the juices run clear.
-                    <li>Drain the oil from the skillet.
-                    <li>Sprinkle the chicken with paprika and brown sugar.
-                    <li>Pour some red wine around the chicken and let it simmer while covering the skillet for roughly 20 minutes.
-                    <li>Lightly baste the chicken with wine sauce while cooking.
-                    <li>Add some salt and pepper for taste and serve.</li>
-
+                    <li>Combine beans, cheese and 1/4 cup of salsa in a bowl.
+                    <li>Spread out the tortillas and spread 1/2 cup of the mixture on each tortilla, then fold them in half.
+                    <li>Heat 1 tablespoon oil in a large non-stick skillet over medium heat. Add a tortilla and cook for 2 to 4 minutes on each side until golden.
+                    <li>Serve the quesadillas with avocado and the remaining salsa.</li>
                 </ol>
             </div>
         </div>
 
-        <div id="sixty2">
-            <div class="information" style="margin-top: 75px;">
-                <h1>Spinach Stuffed Chicken</h1>
-                <p>
-               Ingredients (10 servings)
+        <div id="thirty3">
+            <div class="information" style="margin-top: 175px;">
+                <h1>Veggie Sandwich</h1>
+                <p> Ingredients (4 servings)
                 </p>
                 <ul>
-                    <li>2 1/2 cups of spinach
-                    <li>1 cup shredded Swiss Cheese
-                    <li>3/4 cup ricotta cheese
-                    <li>1/3 cup grated parmesan cheese
-                    <li>3 tablespoon finely chopped onions
-                    <li>1 clove minced garlic
-                    <li>1/2 tablespoon salt and pepper
-                    <li>1/4 tablespoon ground nutmeg
-                    <li>6 boneless chicken breast halves
-                    <li>2 tablespoon olive or vegetable oil
-                    <li>1 tablespoon paprika
-                    <li>1/2 tablespoon dried oregano
-                    <li>1/2 tablespoon dried thyme</li>
+                    <li>1 avocado mashed
+                    <li>1 cup alfalfa sprouts
+                    <li>1 small tomato, chopped
+                    <li>1 small sweet onion, chopped
+                    <li>4 tablespoons Ranch-style salad dressing
+                    <li>4 tablespoons toasted sesame seeds
+                    <li>1 cup shredded smoked Cheddar Cheese
+                    <li>4 English muffins, split and toasted</li>
                 </ul>
-                <p>Instructions (294 calories per s.)</p>
+                <p>Instructions (470 calories per s.)</p>
                 <ol>
-                    <li>Preheat the oven to 350 degrees F.
-                    <li>Combine and mix the spinach, swiss cheese, ricotta cheese, parmesan cheese, onions, garlic, salt, pepper, and ground nutmeg in a bowl.
-                    <li>Stuff 1/2 cup of the mixture into each chicken breast.
-                    <li>Place the stuffed chicken on a greased baking pan.
-                    <li>Mix the oil, paprika, oregano, and thyme in a bowl and brush the mixture over the chicken.
-                    <li>Sprinkle some more paprika on top if desired.
-                    <li>Bake in the oven for 1 to 1 1/2 hours, or until juices run clear.</li>
-
-                </ol>
-            </div>
-        </div>
-
-        <div id="sixty3">
-            <div class="information" style="margin-top: 100px;">
-                <h1>Turkey Veggie Meatloaf Cups</h1>
-                <p>
-               Ingredients (10 servings)
-                </p>
-                <ul>
-                    <li>2 cups of chopped zucchini
-                    <li>1 1/2 cups of chopped onions
-                    <li>1 red bell pepper chopped
-                    <li>1 pound extra lean ground turkey meat
-                    <li>1/2 cup uncooked couscous
-                    <li>1 egg
-                    <li>1 tablespoon Dijon mustard
-                    <li>1/2 cup BBQ sauce
-                    <li>2 tablespoon Worcestershire sauce </li>
-
-                </ul>
-                <p>Instructions (119 calories per s.)</p>
-                <ol>
-                    <li>Preheat oven to 400 degrees F.
-                    <li>Chop the zucchini, onions and bell pepper as finely as you can, or blend them in a food processor.
-                    <li>Place the vegetables, turkey, egg, couscous, Worcestershire, and the Dijon mustard in a bowl and mix evenly.
-                    <li>Spray 20 muffin cups with cooking spray and fill each cup about ¾ full with the mixture.
-                    <li>Add a tablespoon of BBQ sauce on top of each cup.
-                    <li>Bake in the oven for roughly 25 minutes until the juices run clear.
-                    <li>Let them sit for 5 minutes before serving.</li>
-
+                    <li>Preheat oven to broil
+                    <li>Place each muffin faced up on a cooking sheet.
+                    <li>Spread each half with mashed avocados.
+                    <li>Distribute the remaining ingredients on each half of the muffin.
+                    <li>Place under broiler for roughly 5 minutes, or until cheese is melted and bubbly.</li>
                 </ol>
             </div>
         </div>

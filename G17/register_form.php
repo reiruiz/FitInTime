@@ -56,12 +56,21 @@
                     <li><a href="./exercise/minute60.html">60 Minutes</a></li>
                 </ul>
             </div>
+            <div class="menu">
+                <a href="./forum.php">Forum</a>
+            </div>
 
             <div class="profile">
                 <a href="#"><img src="./images/user.png" width="40" height="40" alt="user"></a>
             </div>
             <div id="registerNav">
-                <a href="#">Register / Sign in</a>
+			<?php
+				if (isLoggedIn()){
+					echo '<a href="logout.php">Welcome! Logout?</a><br/>';
+				} else {
+					echo '<a href="register_form.php">Register / Sign in</a>';
+				}
+			?>
             </div>
         </div>
 

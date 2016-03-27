@@ -69,14 +69,14 @@
             </div>
 
             <div class="profile">
-                <a href="register.html"><img src="./images/user.png" width="40" height="40" alt="user"></a>
+                <img src="./images/user.png" width="40" height="40" alt="user">
             </div>
             <div id="registerNav">
 			<?php
 				if (isLoggedIn()){
 					echo '<a href="logout.php">Welcome! Logout?</a><br/>';
 				} else {
-					echo '<a href="login_form.php">Register / Sign in</a>';
+					echo '<a href="register_form.php">Register / Sign in</a>';
 				}
 			?>
             </div>
