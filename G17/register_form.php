@@ -87,10 +87,51 @@
         <div id="register">
             <div id="registerBox">
                 <div id="inputBoxes">
-                    <h1 id="inputText">
-                           Register today!
-                    </h1>
-                    <form id="registerForm" name="registerForm" method="post" action="register.php">
+                   
+
+                    <h2 id="inputText">
+                            Sign in!
+                    </h2>
+                    <form id="loginForm" name="loginForm" method="post" action="login.php">
+                        <!-- Error message is generated in the div but above the table.-->
+                        <?php
+	                        if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
+		                        echo '<ul class="err">';
+		                        foreach($_SESSION['ERRMSG_ARR'] as $msg) {
+			                        echo '<li>',$msg,'</li>'; 
+		                        }
+		                        echo '</ul>';
+		                        unset($_SESSION['ERRMSG_ARR']);
+	                        }
+                        ?>
+                        <table id="signin">
+                            <tr>
+                                <th>
+                                    <label for="loginUser">Username:</label>
+                                </th>
+                                <td>
+                                    <input type="text" name="login" id="loginUser" onblur="validateUser('signuser')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="loginPass">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:</label>
+                                </th>
+                                <td>
+                                    <input type="password" name="password" id="loginPass" onblur="validatePass('signpass')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <input type="submit" name="submitinfo" id="submit" value="Sign in" style="margin-bottom: 20px">
+                                </th>
+                            </tr>
+                        </table>
+                        <h1 id="inputText">
+                          Register today!
+                        </h1>
+                    
+                        <form id="registerForm" name="registerForm" method="post" action="register.php">
                         <!-- Error message is generated in the div but above the table.-->
                         <?php
 	                        if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
@@ -148,7 +189,6 @@
                                     <input type="password" name="cpassword" id="confpass" onblur="confirmInput('regpass','confpass')" required>
                                 </td>
                             </tr>
-                            <!-- need to add js validation for first name and last name-->
                             <tr>
                                 <th>
                                     <label for="fname">First Name:</label>
@@ -191,45 +231,6 @@
                             </tr>
                         </table>
                     </form>
-
-                    <h2 id="inputText">
-                            Sign in!
-                    </h2>
-                    <form id="loginForm" name="loginForm" method="post" action="login.php">
-                        <!-- Error message is generated in the div but above the table.-->
-                        <?php
-	                        if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
-		                        echo '<ul class="err">';
-		                        foreach($_SESSION['ERRMSG_ARR'] as $msg) {
-			                        echo '<li>',$msg,'</li>'; 
-		                        }
-		                        echo '</ul>';
-		                        unset($_SESSION['ERRMSG_ARR']);
-	                        }
-                        ?>
-                        <table id="signin">
-                            <tr>
-                                <th>
-                                    <label for="loginUser">Username:</label>
-                                </th>
-                                <td>
-                                    <input type="text" name="login" id="loginUser" onblur="validateUser('signuser')">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <label for="loginPass">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:</label>
-                                </th>
-                                <td>
-                                    <input type="password" name="password" id="loginPass" onblur="validatePass('signpass')">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <input type="submit" name="submitinfo" id="submit" value="Sign in" style="margin-bottom: 20px">
-                                </th>
-                            </tr>
-                        </table>
                     </form>
                 </div>
             </div>

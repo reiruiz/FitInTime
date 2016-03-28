@@ -767,11 +767,9 @@ body {
     opacity: 0;
 }
 /*Center the generated error messages on the register_form.php page*/
-#loginForm ul.err li{
-    text-align: center;
-    list-style: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
+#registerForm ul.err{
+    padding: 20px;
+    padding-left: 40px;
     background-color: pink;
     width: 40%;
     position: relative;
