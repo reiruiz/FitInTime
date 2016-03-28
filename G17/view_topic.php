@@ -180,5 +180,67 @@
             </tr>
             </table>
         </div>
+                <div id="footer">
+            <table id="footerTable">
+                <tr>
+                    <th>
+						    About Us
+                    </th>
+                    <th>
+						    Recipes
+                    </th>
+                    <th>
+						    Exercises
+                    </th>
+                    <th>
+						    Profile
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+						<a href="#fitInTime">Home<a>
+                    </td>
+                    <td>
+                        <a href="./nutrition/minute15.php">15 minutes</a>
+                    </td>
+                    <td>
+                        <a href="./exercise/minute15.php">15 Minutes</a>
+                    </td>
+                    <td>
+						<a href="./register_form.php">Sign In</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+						<a href="#nutrition">Nutrition</a>
+                    </td>
+                    <td>
+                        <a href="./nutrition/minute30.php">30 minutes</a>
+                    </td>
+                    <td>
+                        <a href="./exercise/minute30.php">30 Minutes</a>
+                    </td>
+                    <td>
+                        <a href="./register_form.php">Register</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+						<a href="#fitness">Fitness</a>
+                    </td>
+                    <td>
+                        <a href="./nutrition/minute60.php">60 minutes</a>
+                    </td>
+                    <td>
+                        <a href="./exercise/minute60.php">60 Minutes</a>
+                    </td>
+					<td>
+						<a href="./forum.php">Forum</a>
+					</td>
+                </tr>
+            </table>
+            <p>Copyright but not really <a href="./images/mandom.png">&copy;</a></p>
+        </div>
+
     </body>
 </html>
