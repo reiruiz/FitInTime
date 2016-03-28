@@ -24,7 +24,7 @@ function errorMsg(msg, childId, parentId, errorId){
     //Checks to see if the error id being created is already present
     if(getElement(errorId) == null){
         //creates new paragraph tag and inserts it before input field
-        var error = document.createElement("p");
+        var error = document.createElement("td");
         var text = document.createTextNode(msg);
         error.appendChild(text);
         error.style.color = "red";
@@ -52,7 +52,7 @@ function validateUser(id){
     //Gets string for new user name
     var element = getElement(id);
     //Username must be alphanumeric and at 4-15 characters long
-    var patt = /^\W{4,15}$/;
+    var patt = /^\w{4,15}$/;
     if(patt.test(element.value) || (element.value).length < 4 || (element.value).length > 15){
         highlight(element);
         errorMsg("Invalid user name.", element, element.parentNode,id + 'Error');
