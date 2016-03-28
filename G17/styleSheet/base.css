@@ -779,5 +779,8 @@ body {
 }
 
 #forumTable {
-	margin-top: 100px;
+	padding-top: 100px;
+}
+#forumTable table{
+    margin: auto;
 }
