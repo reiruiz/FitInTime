@@ -63,7 +63,8 @@
 		$errmsg_arr[] = 'Password missing';
 		$errflag = true;
 	}
-	if($cpassword == '' || $cpassword !=) {
+    //Compare $cpassword with $password
+	if($cpassword == '' || $cpassword != $password) {
 		$errmsg_arr[] = 'Confirm password did not match password';
 		$errflag = true;
 	}
@@ -77,11 +78,12 @@
         $errmsg_arr[] = 'Name cannot contain numbers or special characters other than \'-\'.';
         $errflag = true;
     }
-
+    //Check $password if it meets requirements
     if(!preg_match($passPatt,$password)){
         $errmsg_arr[] = 'Password must contain two letters<br>(Upper case AND lower case) and one number and is at least 3 characters long.';
         $errflag = true;
     }
+    //Check if $login meets requirements
     if(!preg_match($loginPatt,$login)){
         $errmsg_arr[] = 'Login can only have alphanumeric characters(a-z and 0-9).';
         $errflag = true;
