@@ -225,13 +225,13 @@
                 </tr>
                 <tr>
                     <td>
-						Sup
+						<a href="../index.php#nutrition">Nutrition</a>
                     </td>
                     <td>
-                        <a href="./minute15.html">15 minutes</a>
+                        <a href="./minute15.php">15 minutes</a>
                     </td>
                     <td>
-                        <a href="../exercise/minute15.html">15 Minutes</a>
+                        <a href="../exercise/minute15.php">15 Minutes</a>
                     </td>
                     <td>
 						Sign In
@@ -239,13 +239,13 @@
                 </tr>
                 <tr>
                     <td>
-						Sup
+						<a href="../index.php#fitness">Fitness</a>
                     </td>
                     <td>
-                        <a href="./minute30.html">30 minutes</a>
+                        <a href="./minute30.php">30 minutes</a>
                     </td>
                     <td>
-                        <a href="../exercise/minute30.html">30 Minutes</a>
+                        <a href="../exercise/minute30.php">30 Minutes</a>
                     </td>
                     <td>
                         <a href="../index.php#register">Register</a>
@@ -255,10 +255,10 @@
                     <td>
                     </td>
                     <td>
-                        <a href="./minute60.html">60 minutes</a>
+                        <a href="#recipe">60 minutes</a>
                     </td>
                     <td>
-                        <a href="../exercise/minute60.html">60 Minutes</a>
+                        <a href="../exercise/minute60.php">60 Minutes</a>
                     </td>
                 </tr>
             </table>
