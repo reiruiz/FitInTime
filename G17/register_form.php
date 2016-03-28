@@ -35,7 +35,7 @@
         </script>
         <!-- End of SMOOTH SCROLL -->
         <meta charset="utf-8" />
-        <title>FitInTime</title>
+        <title>Register</title>
     </head>
     <body>
         <div id="header">
