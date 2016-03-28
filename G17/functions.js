@@ -55,9 +55,9 @@ function validateUser(id){
     var patt = /^\W{4,15}$/;
     if(patt.test(element.value) || (element.value).length < 4 || (element.value).length > 15){
         highlight(element);
-        errorMsg("Invalid user name.", element, element.parentNode,'userError');
+        errorMsg("Invalid user name.", element, element.parentNode,id + 'Error');
     }else{
-        var userError = getElement('userError');
+        var userError = getElement(id + 'Error');
         if(userError != null){
             userError.parentNode.removeChild(userError);
         }
@@ -79,9 +79,9 @@ function validatePass(id){
     if(!testUpper.test(pass) || !testLower.test(pass) || !testNum.test(pass) || (pass).length < 4 || (pass).length > 15){
         highlight(getElement(id));
         
-        errorMsg("Invalid Password.", getElement(id), getElement(id).parentNode, 'passError');
+        errorMsg("Invalid Password.", getElement(id), getElement(id).parentNode, id+'Error');
     } else {
-        var passError = $('passError');
+        var passError = $(id+'Error');
         if(passError != null){
             passError.parentNode.removeChild(passError);
         }
