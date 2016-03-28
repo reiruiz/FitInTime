@@ -789,6 +789,17 @@ body {
     margin-bottom: 20px;
 }
 
+#loginForm ul.err{
+    padding: 20px;
+    padding-left: 40px;
+    background-color: pink;
+    width: 40%;
+    position: relative;
+    border: 2px solid red;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
 #forumTable {
 	padding-top: 100px;
 }
