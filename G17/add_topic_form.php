@@ -4,40 +4,107 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-		<meta charset="utf-8">
-		<title>Create topic</title>
-</head>
-<body>
-<table width="400" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
-<tr>
-<form id="form1" name="form1" method="post" action="add_topic.php">
-<td>
-<table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
-<tr>
-<td colspan="3" bgcolor="#E6E6E6"><strong>Create New Topic</strong> </td>
-</tr>
-<tr>
-<td width="14%"><strong>Topic</strong></td>
-<td width="2%">:</td>
-<td width="84%"><input name="topic" type="text" id="topic" size="50" /></td>
-</tr>
-<tr>
-<td valign="top"><strong>Detail</strong></td>
-<td valign="top">:</td>
-<td><textarea name="detail" cols="50" rows="3" id="detail"></textarea></td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td><input type="submit" name="Submit" value="Submit" /> <input type="reset" name="Submit2" value="Reset" /></td>
-</tr>
-</table>
-</td>
-</form>
-</tr>
-</table>
-</body>
+    <head>
+        <link rel="stylesheet" href="./styleSheet/base.css">
+        <script src="functions.js"></script>
+
+        <!-- SMOOTH SCROLL -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(function() {
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1750);
+                    return false;
+                  }
+                }
+              });
+            });
+        </script>
+        <!-- End of SMOOTH SCROLL -->
+        <meta charset="utf-8" />
+        <title>FitInTime View Topic</title>
+    </head>
+    <body>
+        <div id="header">
+            <div class="menu">
+                <a href="./index.php#fitInTime">FitInTime</a>
+            </div>
+            <div class="menu">
+                <a href="./index.php#nutrition">Nutrition</a>
+            </div>
+            <div class="menu">
+                <a href="./index.php#recipe">Recipes</a>
+                <ul class="dropdown">
+                    <li><a href="./nutrition/minute15.php">15 Minutes</a>
+                    <li><a href="./nutrition/minute30.php">30 Minutes</a>
+                    <li><a href="./nutrition/minute60.php">60 Minutes</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <a href="./index.php#fitness">Fitness</a>
+            </div>
+            <div class="menu">
+                <a href="./index.php#exercise">Exercises</a>
+                <ul class="dropdown">
+                    <li><a href="./exercise/minute15.php">15 Minutes</a>
+                    <li><a href="./exercise/minute30.php">30 Minutes</a>
+                    <li><a href="./exercise/minute60.php">60 Minutes</a></li>
+                </ul>
+            </div>
+            <div class="menu" style="background-color: #888888">
+                <a href="./forum.php">Forum</a>
+            </div>
+
+            <div class="profile">
+                <img src="./images/user.png" width="40" height="40" alt="user">
+            </div>
+            <div id="registerNav">
+			<?php
+				if (isLoggedIn()){
+					echo '<a href="logout.php">Welcome, '.$_SESSION['SESS_LOGIN'].' (Logout)</a><br/>';
+				} else {
+					echo '<a href="register_form.php">Register / Sign in</a>';
+				}
+			?>
+            </div>
+        </div>
+        <div id="tableForm">
+            <table width="400" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
+                <tr>
+                <form id="form1" name="form1" method="post" action="add_topic.php">
+                <td>
+                <table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
+                <tr>
+                <td colspan="3" bgcolor="#E6E6E6"><strong>Create New Topic</strong> </td>
+                </tr>
+                <tr>
+                <td width="14%"><strong>Topic</strong></td>
+                <td width="2%">:</td>
+                <td width="84%"><input name="topic" type="text" id="topic" size="50" /></td>
+                </tr>
+                <tr>
+                <td valign="top"><strong>Detail</strong></td>
+                <td valign="top">:</td>
+                <td><textarea name="detail" cols="50" rows="3" id="detail"></textarea></td>
+                </tr>
+                <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><input type="submit" name="Submit" value="Submit" /> <input type="reset" name="Submit2" value="Reset" /></td>
+                </tr>
+                </table>
+                </td>
+                </form>
+                </tr>
+            </table>
+        </div>
+    </body>
 </html>
 
 
