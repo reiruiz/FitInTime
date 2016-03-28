@@ -32,12 +32,27 @@ function errorMsg(msg, childId, parentId, errorId){
         insertAfter(error,childId);
     }
 }
+//Validates name field(either one)
+function validateName(id){
+    var element = getElement(id);
+    var patt = /^[a-zA-Z-]{1,}$/; //Pattern that allows any letter or dash in name
+    if(!patt.test(element.value)){
+        highlight(element);
+        errorMsg("Name cannot contain special characters", element, element.parentNode, id + 'Error');
+    } else {
+        var nameError = getElement(id + 'Error');
+        if(nameError != null){
+            nameError.parentNode.removeChild(nameError);
+        }
+        validHighlight(element);
+    }
+}
 //Validates username registration field
 function validateUser(id){
     //Gets string for new user name
     var element = getElement(id);
     //Username must be alphanumeric and at 4-15 characters long
-    var patt = /\W/;
+    var patt = /^\W{4,15}$/;
     if(patt.test(element.value) || (element.value).length < 4 || (element.value).length > 15){
         highlight(element);
         errorMsg("Invalid user name.", element, element.parentNode,'userError');
@@ -98,7 +113,7 @@ function validateEmail(id){
 //Confirms if two input fields are the same
 function confirmInput(original, confirmer){
     var conf = getElement(confirmer);
-    if(getElement(original).value != conf.value){
+    if(getElement(original).value != conf.value || conf.value.length == 0){
         highlight(conf);
         errorMsg("Does not match!", conf, conf.parentNode, 'error' + original);
     } else {

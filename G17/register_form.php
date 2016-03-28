@@ -13,7 +13,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="./styleSheet/base.css">
-        <!--<script src="functions.js"></script>-->
+        <script src="functions.js"></script>
 
         <!-- SMOOTH SCROLL -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -154,7 +154,7 @@
                                     <label for="fname">First Name:</label>
                                 </th>
                                 <td>
-                                    <input type="text" name="fname" id="fname" required>
+                                    <input type="text" name="fname" id="fname" onblur="validateName('fname')" required>
                                 </td>
                             </tr>
                             <tr>
@@ -162,7 +162,7 @@
                                     <label for="fname">Last Name:</label>
                                 </th>
                                 <td>
-                                    <input type="text" name="lname" id="lname" required>
+                                    <input type="text" name="lname" id="lname" onblur="validateName('lname')"required>
                                 </td>
                             </tr>
                             <!-- Original php doesn't ask for email so im commenting this out //Chris-->
