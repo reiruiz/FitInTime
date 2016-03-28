@@ -248,7 +248,7 @@
                         <a href="#exercise">15 Minutes</a>
                     </td>
                     <td>
-						    Sign In
+                        <a href="../register_form.php">Sign In</a>
                     </td>
                 </tr>
                 <tr>
@@ -262,7 +262,7 @@
                         <a href="../exercise/minute30.php">30 Minutes</a>
                     </td>
                     <td>
-                        <a href="../index.php#register">Register</a>
+                        <a href="../register_form.php">Register</a>
                     </td>
                 </tr>
                 <tr>
