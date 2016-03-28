@@ -8,7 +8,7 @@
 	mysql_select_db(DB_DATABASE)or die("cannot select DB, error: ".mysql_error());
 	$tbl_name="topic"; // Table name
 ?>
-
+<!--Comment to test commit-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
