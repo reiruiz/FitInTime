@@ -38,7 +38,7 @@
     </head>
     <body>
         <div id="header">
-            <div class="menu" style="background-color: #888888">
+            <div class="menu">
                 <a href="./index.php#fitInTime">FitInTime</a>
             </div>
             <div class="menu">
@@ -56,14 +56,14 @@
                 <a href="./index.php#fitness">Fitness</a>
             </div>
             <div class="menu">
-                <a href="../index.php#exercise">Exercises</a>
+                <a href="./index.php#exercise">Exercises</a>
                 <ul class="dropdown">
                     <li><a href="./exercise/minute15.php">15 Minutes</a>
                     <li><a href="./exercise/minute30.php">30 Minutes</a>
                     <li><a href="./exercise/minute60.php">60 Minutes</a></li>
                 </ul>
             </div>
-            <div class="menu">
+            <div class="menu" style="background-color: #888888">
                 <a href="./forum.php">Forum</a>
             </div>
 
