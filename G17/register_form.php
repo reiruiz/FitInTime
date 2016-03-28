@@ -127,10 +127,10 @@
                                 </th>
                             </tr>
                         </table>
-                        <h1 id="inputText">
-                          Register today!
-                        </h1>
-                    
+                    </form>
+                    <h1 id="inputText">
+                        Register today!
+                    </h1>
                         <form id="registerForm" name="registerForm" method="post" action="register.php">
                         <!-- Error message is generated in the div but above the table.-->
                         <?php
@@ -231,7 +231,7 @@
                             </tr>
                         </table>
                     </form>
-                    </form>
+                    
                 </div>
             </div>
         </div>
