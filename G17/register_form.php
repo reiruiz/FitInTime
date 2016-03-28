@@ -74,7 +74,7 @@
             <div id="registerNav">
 			<?php
 				if (isLoggedIn()){
-					echo '<a href="logout.php">Welcome! Logout?</a><br/>';
+					echo '<a href="logout.php">Welcome, '.$_SESSION['SESS_LOGIN'].' (Logout)</a><br/>';
 				} else {
 					echo '<a href="register_form.php">Register / Sign in</a>';
 				}
