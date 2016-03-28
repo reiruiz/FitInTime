@@ -1,40 +1,115 @@
-<?php
-	require_once('config.php');
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styleSheet/base.css">
+        <script src="functions.js"></script>
 
-	// Connect to server and select database.
-	mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)or die("cannot connect");
-	mysql_select_db(DB_DATABASE)or die("cannot select DB");
-	$tbl_name="topic"; // Table name
+        <!-- SMOOTH SCROLL -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(function() {
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1750);
+                    return false;
+                  }
+                }
+              });
+            });
+        </script>
+        <!-- End of SMOOTH SCROLL -->
+        <meta charset="utf-8" />
+        <title>FitInTime Forum</title>
+    </head>
+    <body>
+        <div id="header">
+            <div class="menu" style="background-color: #888888">
+                <a href="#fitInTime">FitInTime</a>
+            </div>
+            <div class="menu">
+                <a href="#nutrition">Nutrition</a>
+            </div>
+            <div class="menu">
+                <a href="#recipe">Recipes</a>
+                <ul class="dropdown">
+                    <li><a href="./nutrition/minute15.php">15 Minutes</a>
+                    <li><a href="./nutrition/minute30.php">30 Minutes</a>
+                    <li><a href="./nutrition/minute60.php">60 Minutes</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <a href="#fitness">Fitness</a>
+            </div>
+            <div class="menu">
+                <a href="#exercise">Exercises</a>
+                <ul class="dropdown">
+                    <li><a href="./exercise/minute15.php">15 Minutes</a>
+                    <li><a href="./exercise/minute30.php">30 Minutes</a>
+                    <li><a href="./exercise/minute60.php">60 Minutes</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <a href="./forum.php">Forum</a>
+            </div>
+
+            <div class="profile">
+                <img src="./images/user.png" width="40" height="40" alt="user">
+            </div>
+            <div id="registerNav">
+			<?php
+				if (isLoggedIn()){
+					echo '<a href="logout.php">Welcome! Logout?</a><br/>';
+				} else {
+					echo '<a href="register_form.php">Register / Sign in</a>';
+				}
+			?>
+            </div>
+        </div>
+        <div>
+            <?php
+	            require_once('config.php');
+
+	            // Connect to server and select database.
+	            mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)or die("cannot connect");
+	            mysql_select_db(DB_DATABASE)or die("cannot select DB");
+	            $tbl_name="topic"; // Table name
 
 
-	$sql="SELECT * FROM $tbl_name ORDER BY id DESC";
-	// ORDER BY id DESC is order result by descending
-	$result=mysql_query($sql);
-?>
+	            $sql="SELECT * FROM $tbl_name ORDER BY id DESC";
+	            // ORDER BY id DESC is order result by descending
+	            $result=mysql_query($sql);
+            ?>
+            <table width="90%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
+            <tr>
+            <td width="6%" align="center" bgcolor="#E6E6E6"><strong>#</strong></td>
+            <td width="53%" align="center" bgcolor="#E6E6E6"><strong>Topic</strong></td>
+            <td width="13%" align="center" bgcolor="#E6E6E6"><strong>Date/Time</strong></td>
+            </tr>
 
-<table width="90%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
-<tr>
-<td width="6%" align="center" bgcolor="#E6E6E6"><strong>#</strong></td>
-<td width="53%" align="center" bgcolor="#E6E6E6"><strong>Topic</strong></td>
-<td width="13%" align="center" bgcolor="#E6E6E6"><strong>Date/Time</strong></td>
-</tr>
+            <?php
+            while($rows=mysql_fetch_array($result)){ // Start looping table row
+            ?>
 
-<?php
-while($rows=mysql_fetch_array($result)){ // Start looping table row
-?>
+            <tr>
+            <td bgcolor="#FFFFFF"><?php echo $rows['id']; ?></td>
+            <td bgcolor="#FFFFFF"><a href="view_topic.php?id=<?php echo $rows['id']; ?>"><?php echo $rows['topic']; ?></a><BR></td>
+            <td align="center" bgcolor="#FFFFFF"><?php echo $rows['datetime']; ?></td>
+            </tr>
 
-<tr>
-<td bgcolor="#FFFFFF"><?php echo $rows['id']; ?></td>
-<td bgcolor="#FFFFFF"><a href="view_topic.php?id=<?php echo $rows['id']; ?>"><?php echo $rows['topic']; ?></a><BR></td>
-<td align="center" bgcolor="#FFFFFF"><?php echo $rows['datetime']; ?></td>
-</tr>
-
-<?php
-// Exit looping and close connection
-}
-mysql_close();
-?>
-<tr>
-<td colspan="5" align="right" bgcolor="#E6E6E6"><a href="add_topic_form.php"><strong>Create New Topic</strong> </a></td>
-</tr>
-</table>
+            <?php
+            // Exit looping and close connection
+            }
+            mysql_close();
+            ?>
+            <tr>
+            <td colspan="5" align="right" bgcolor="#E6E6E6"><a href="add_topic_form.php"><strong>Create New Topic</strong> </a></td>
+            </tr>
+            </table>
+        </div>
+    </body>
+</html>

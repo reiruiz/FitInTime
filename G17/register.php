@@ -42,7 +42,7 @@
     //Regex strings to match to
     $namePatt = '/[a-zA-Z-]{1,}/'; // One or more characters of the alphabet or '-' is allowed
     $loginPatt = '/[\w]{4,15}/'; // 4-15 alpha numeric characters
-    $passPatt = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{3,}/'; //(?=PATTERN) means look ahead in the string for a match
+    $passPatt = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{3,}/'; //(?=PATTERN) means look ahead in the string for the pattern, don't move pointer
     //pass must contain 1 lowercase letter, 1 uppercase letter and one number
 
 	//Input Validations
@@ -63,7 +63,8 @@
 		$errmsg_arr[] = 'Password missing';
 		$errflag = true;
 	}
-	if($cpassword == '' || $cpassword !=) {
+    //Compare $cpassword with $password
+	if($cpassword == '' || $cpassword != $password) {
 		$errmsg_arr[] = 'Confirm password did not match password';
 		$errflag = true;
 	}
@@ -77,11 +78,12 @@
         $errmsg_arr[] = 'Name cannot contain numbers or special characters other than \'-\'.';
         $errflag = true;
     }
-
+    //Check $password if it meets requirements
     if(!preg_match($passPatt,$password)){
         $errmsg_arr[] = 'Password must contain two letters<br>(Upper case AND lower case) and one number and is at least 3 characters long.';
         $errflag = true;
     }
+    //Check if $login meets requirements
     if(!preg_match($loginPatt,$login)){
         $errmsg_arr[] = 'Login can only have alphanumeric characters(a-z and 0-9).';
         $errflag = true;
