@@ -260,6 +260,9 @@
                     <td>
                         <a href="../exercise/minute60.php">60 Minutes</a>
                     </td>
+					<td>
+						<a href="../forum.php">Forum</a>
+					</td>
                 </tr>
             </table>
             <p>Copyright but not really <a href="./images/mandom.png">&copy;</a></p>

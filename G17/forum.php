@@ -1,3 +1,13 @@
+<?php
+	include 'functions.php';
+	require_once('config.php');
+	session_start();
+	// Connect to server and select database.
+	mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)or die("cannot connect, error: ".mysql_error());
+	mysql_select_db(DB_DATABASE)or die("cannot select DB, error: ".mysql_error());
+	$tbl_name="topic"; // Table name
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -29,13 +39,13 @@
     <body>
         <div id="header">
             <div class="menu" style="background-color: #888888">
-                <a href="#fitInTime">FitInTime</a>
+                <a href="./index.php#fitInTime">FitInTime</a>
             </div>
             <div class="menu">
-                <a href="#nutrition">Nutrition</a>
+                <a href="./index.php#nutrition">Nutrition</a>
             </div>
             <div class="menu">
-                <a href="#recipe">Recipes</a>
+                <a href="./index.php#recipe">Recipes</a>
                 <ul class="dropdown">
                     <li><a href="./nutrition/minute15.php">15 Minutes</a>
                     <li><a href="./nutrition/minute30.php">30 Minutes</a>
@@ -43,10 +53,10 @@
                 </ul>
             </div>
             <div class="menu">
-                <a href="#fitness">Fitness</a>
+                <a href="./index.php#fitness">Fitness</a>
             </div>
             <div class="menu">
-                <a href="#exercise">Exercises</a>
+                <a href="../index.php#exercise">Exercises</a>
                 <ul class="dropdown">
                     <li><a href="./exercise/minute15.php">15 Minutes</a>
                     <li><a href="./exercise/minute30.php">30 Minutes</a>
@@ -70,7 +80,7 @@
 			?>
             </div>
         </div>
-        <div>
+        <div id="forumTable">
             <?php
 	            require_once('config.php');
 
@@ -110,6 +120,70 @@
             <td colspan="5" align="right" bgcolor="#E6E6E6"><a href="add_topic_form.php"><strong>Create New Topic</strong> </a></td>
             </tr>
             </table>
+        </div>
+		<div id="backToTop">
+            <a href="#forumTable"><img src="./images/up-arrow.svg" alt="upwardArrow" width="50" height="50"></a>
+        </div>
+
+        <div id="footer">
+            <table id="footerTable">
+                <tr>
+                    <th>
+						    About Us
+                    </th>
+                    <th>
+						    Recipes
+                    </th>
+                    <th>
+						    Exercises
+                    </th>
+                    <th>
+						    Profile
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+						<a href="./index.php#nutrition">Nutrition</a>
+                    </td>
+                    <td>
+                        <a href="./nutrition/minute15.php">15 minutes</a>
+                    </td>
+                    <td>
+                        <a href="./exercise/minute15.php">15 Minutes</a>
+                    </td>
+                    <td>
+                        <a href="./register_form.php">Sign In</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+						<a href="./index.php#fitness">Fitness</a>
+                    </td>
+                    <td>
+                        <a href="./nutrition/minute30.php">30 minutes</a>
+                    </td>
+                    <td>
+                        <a href="./exercise/minute30.php">30 Minutes</a>
+                    </td>
+                    <td>
+                        <a href="./register_form.php">Register</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <a href="./nutrition/minute60.php">60 minutes</a>
+                    </td>
+                    <td>
+                        <a href="./exercise/minute30.php">60 Minutes</a>
+                    </td>
+					<td>
+						<a href="./forum.php">Forum</a>
+					</td>
+                </tr>
+            </table>
+            <p>Copyright but not really <a href="./images/mandom.png">&copy;</a></p>
         </div>
     </body>
 </html>
