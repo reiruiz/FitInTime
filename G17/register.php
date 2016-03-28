@@ -42,7 +42,7 @@
     //Regex strings to match to
     $namePatt = '/[a-zA-Z-]{1,}/'; // One or more characters of the alphabet or '-' is allowed
     $loginPatt = '/[\w]{4,15}/'; // 4-15 alpha numeric characters
-    $passPatt = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{3,}/'; //(?=PATTERN) means look ahead in the string for a match
+    $passPatt = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{3,}/'; //(?=PATTERN) means look ahead in the string for the pattern, don't move pointer
     //pass must contain 1 lowercase letter, 1 uppercase letter and one number
 
 	//Input Validations
