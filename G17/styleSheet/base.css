@@ -779,3 +779,7 @@ body {
     margin: auto;
     margin-bottom: 20px;
 }
+
+#forumTable {
+	margin-top: 100px;
+}

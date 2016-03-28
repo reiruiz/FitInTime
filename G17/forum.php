@@ -56,7 +56,7 @@
                 <a href="./index.php#fitness">Fitness</a>
             </div>
             <div class="menu">
-                <a href="../index.php#exercise">Exercises</a>
+                <a href="./index.php#exercise">Exercises</a>
                 <ul class="dropdown">
                     <li><a href="./exercise/minute15.php">15 Minutes</a>
                     <li><a href="./exercise/minute30.php">30 Minutes</a>
