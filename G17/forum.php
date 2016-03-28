@@ -2,6 +2,7 @@
 	include 'functions.php';
 	require_once('config.php');
 	session_start();
+	
 	// Connect to server and select database.
 	mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)or die("cannot connect, error: ".mysql_error());
 	mysql_select_db(DB_DATABASE)or die("cannot select DB, error: ".mysql_error());
@@ -34,7 +35,7 @@
         </script>
         <!-- End of SMOOTH SCROLL -->
         <meta charset="utf-8" />
-        <title>FitInTime Forum</title>
+        <title>Forum</title>
     </head>
     <body>
         <div id="header">
@@ -143,7 +144,7 @@
                 </tr>
                 <tr>
                     <td>
-						<a href="./index.php#nutrition">Nutrition</a>
+						<a href="#fitInTime">Home<a>
                     </td>
                     <td>
                         <a href="./nutrition/minute15.php">15 minutes</a>
@@ -152,12 +153,12 @@
                         <a href="./exercise/minute15.php">15 Minutes</a>
                     </td>
                     <td>
-                        <a href="./register_form.php">Sign In</a>
+						<a href="./register_form.php">Sign In</a>
                     </td>
                 </tr>
                 <tr>
                     <td>
-						<a href="./index.php#fitness">Fitness</a>
+						<a href="#nutrition">Nutrition</a>
                     </td>
                     <td>
                         <a href="./nutrition/minute30.php">30 minutes</a>
@@ -171,12 +172,13 @@
                 </tr>
                 <tr>
                     <td>
+						<a href="#fitness">Fitness</a>
                     </td>
                     <td>
                         <a href="./nutrition/minute60.php">60 minutes</a>
                     </td>
                     <td>
-                        <a href="./exercise/minute30.php">60 Minutes</a>
+                        <a href="./exercise/minute60.php">60 Minutes</a>
                     </td>
 					<td>
 						<a href="./forum.php">Forum</a>

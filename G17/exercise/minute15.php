@@ -239,7 +239,7 @@
                 </tr>
                 <tr>
                     <td>
-						<a href="../index.php#nutrition">Nutrition</a>
+						<a href="../index.php">Home</a>
                     </td>
                     <td>
                         <a href="../nutrition/minute30.php">15 minutes</a>
@@ -253,7 +253,7 @@
                 </tr>
                 <tr>
                     <td>
-						<a href="../index.php#fitness">Fitness</a>
+						<a href="../index.php#nutrition">Nutrition</a>
                     </td>
                     <td>
                         <a href="../nutrition/minute30.php">30 minutes</a>
@@ -267,6 +267,7 @@
                 </tr>
                 <tr>
                     <td>
+						<a href="../index.php#fitness">Fitness</a>
                     </td>
                     <td>
                         <a href="../nutrition/minute60.php">60 minutes</a>

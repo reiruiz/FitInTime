@@ -35,7 +35,7 @@
         </script>
         <!-- End of SMOOTH SCROLL -->
         <meta charset="utf-8" />
-        <title>FitInTime</title>
+        <title>Register</title>
     </head>
     <body>
         <div id="header">
@@ -256,41 +256,45 @@
                 </tr>
                 <tr>
                     <td>
-						    Sup
+						<a href="#fitInTime">Home<a>
                     </td>
                     <td>
-                        <a href="./nutrition/minute15.html">15 minutes</a>
+                        <a href="./nutrition/minute15.php">15 minutes</a>
                     </td>
                     <td>
-                        <a href="./exercise/minute15.html">15 Minutes</a>
+                        <a href="./exercise/minute15.php">15 Minutes</a>
                     </td>
                     <td>
-						    Sign In
+						<a href="./register_form.php">Sign In</a>
                     </td>
                 </tr>
                 <tr>
                     <td>
-						    Sup
+						<a href="#nutrition">Nutrition</a>
                     </td>
                     <td>
-                        <a href="./nutrition/minute30.html">30 minutes</a>
+                        <a href="./nutrition/minute30.php">30 minutes</a>
                     </td>
                     <td>
-                        <a href="./exercise/minute30.html">30 Minutes</a>
+                        <a href="./exercise/minute30.php">30 Minutes</a>
                     </td>
                     <td>
-                        <a href="./index.php#register">Register</a>
+                        <a href="./register_form.php">Register</a>
                     </td>
                 </tr>
                 <tr>
                     <td>
+						<a href="#fitness">Fitness</a>
                     </td>
                     <td>
-                        <a href="./nutrition/minute60.html">60 minutes</a>
+                        <a href="./nutrition/minute60.php">60 minutes</a>
                     </td>
                     <td>
-                        <a href="./exercise/minute60.html">60 Minutes</a>
+                        <a href="./exercise/minute60.php">60 Minutes</a>
                     </td>
+					<td>
+						<a href="./forum.php">Forum</a>
+					</td>
                 </tr>
             </table>
             
