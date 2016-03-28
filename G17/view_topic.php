@@ -33,7 +33,7 @@
         </script>
         <!-- End of SMOOTH SCROLL -->
         <meta charset="utf-8" />
-        <title>FitInTime View Topic</title>
+        <title>View Topic</title>
     </head>
     <body>
         <div id="header">
