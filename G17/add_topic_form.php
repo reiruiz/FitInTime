@@ -130,7 +130,7 @@
                 </tr>
                 <tr>
                     <td>
-						<a href="#fitInTime">Home<a>
+						<a href="./index.php">Home<a>
                     </td>
                     <td>
                         <a href="./nutrition/minute15.php">15 minutes</a>
@@ -144,7 +144,7 @@
                 </tr>
                 <tr>
                     <td>
-						<a href="#nutrition">Nutrition</a>
+						<a href="./index.php#nutrition">Nutrition</a>
                     </td>
                     <td>
                         <a href="./nutrition/minute30.php">30 minutes</a>
@@ -158,7 +158,7 @@
                 </tr>
                 <tr>
                     <td>
-						<a href="#fitness">Fitness</a>
+						<a href="./index.php#fitness">Fitness</a>
                     </td>
                     <td>
                         <a href="./nutrition/minute60.php">60 minutes</a>

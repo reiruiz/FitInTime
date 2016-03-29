@@ -209,6 +209,7 @@
                     </th>
                 </tr>
                 <tr>
+                    <td>
 						<a href="../index.php">Home</a>
                     </td>
                     <td>
