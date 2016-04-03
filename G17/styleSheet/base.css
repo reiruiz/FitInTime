@@ -103,7 +103,7 @@ body {
 
 /* floats the profile icon to the right and adds padding */
 
-.print {
+.profile {
     float: right;
     padding-right: 10px;
 }
@@ -230,7 +230,7 @@ body {
 }
 
 #logo a:hover {
-    color: white;
+    text-decoration: underline;
 }
 
 #logo ul {
