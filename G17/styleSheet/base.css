@@ -231,8 +231,8 @@ body {
 
 #logo a:hover {
 	color: white;
-    -webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: black;
+	/*           Color   ignore   weight*/
+    text-shadow: #000000 0px 0px 5px;
 }
 
 #logo ul {
