@@ -3,6 +3,7 @@ function getElement(id){
     var element = document.getElementById(id);
     return element;
 }
+
 //Highlights element as invalid
 function highlight(element){
     element.style.backgroundColor = "pink";
@@ -32,6 +33,46 @@ function errorMsg(msg, childId, parentId, errorId){
         insertAfter(error,childId);
     }
 }
+
+//Checks if name is valid.
+function isNameValid(id){
+    //Pattern that matches to letters only
+    var patt = /^[A-z]+$/;
+    return patt.test(getElement(id).value);
+}
+
+//Checks if username is valid.
+function isUserValid(id){
+    //Pattern that allows anything except special characters(excluding '_')
+    var patt = /^[A-z0-9_]{4,}$/;
+    return patt.test(getElement(id).value);
+}
+
+//Checks if password is valid.
+function isPassValid(id){
+    /*Pattern that requires the user to have:
+        - One upper case letter
+        - One lower case letter
+        - One number
+    */
+    var patt = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{5,}$/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Validates name field(either one)
 function validateName(id){
     var element = getElement(id);

@@ -105,22 +105,28 @@
 	                        }
                         ?>
                         <table id="signin">
-                            <tr>
-                                <th>
-                                    <label for="loginUser">Username:</label>
-                                </th>
-                                <td>
-                                    <input type="text" name="login" id="loginUser" onblur="validateUser('signuser')">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <label for="loginPass">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:</label>
-                                </th>
-                                <td>
-                                    <input type="password" name="password" id="loginPass" onblur="validatePass('signpass')">
-                                </td>
-                            </tr>
+                            <div id="eleLoginUser"
+                                <div id="errLoginUser"></div>
+                                <tr>
+                                    <th>
+                                        <label for="loginUser">Username:</label>
+                                    </th>
+                                    <td>
+                                        <input type="text" name="login" id="loginUser" onblur="validateUser('signuser')">
+                                    </td>
+                                </tr>
+                            </div>
+                            <div id="eleLoginPass">
+                                <div id="errLoginPass"></div>
+                                <tr>
+                                    <th>
+                                        <label for="loginPass">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:</label>
+                                    </th>
+                                    <td>
+                                        <input type="password" name="password" id="loginPass" onblur="validatePass('signpass')">
+                                    </td>
+                                </tr>
+                            </div>
                             <tr>
                                 <th>
                                     <input type="submit" name="submitinfo" id="submit" value="Sign in" style="margin-bottom: 20px">
@@ -145,14 +151,17 @@
                         ?>
                         <table>
                             <tr></tr>
-                            <tr>
-                                <th>
-                                    <label for="reguser">Username:</label>
-                                </th>
-                                <td>
-                                    <input type="text" name="login" id="reguser" onblur="validateUser('reguser')" onfocus="showUsernameRule()" required>
-                                </td>
-                            </tr>
+                            <div id="eleRegUser">
+                                <div id="errRegUser"></div>
+                                <tr>
+                                    <th>
+                                        <label for="reguser">Username:</label>
+                                    </th>
+                                    <td>
+                                        <input type="text" name="login" id="reguser" onblur="validateUser('reguser')" onfocus="showUsernameRule()" required>
+                                    </td>
+                                </tr>
+                            </div>
                             <tr>
                                 <th>
                                 </th>
