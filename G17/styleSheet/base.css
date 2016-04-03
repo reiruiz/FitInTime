@@ -103,7 +103,7 @@ body {
 
 /* floats the profile icon to the right and adds padding */
 
-.profile {
+.print {
     float: right;
     padding-right: 10px;
 }

@@ -1,4 +1,4 @@
-<?php
+<!--<?php
 	include '../functions.php';
 	require_once('../config.php');
 	session_start();
@@ -7,7 +7,7 @@
 	mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)or die("cannot connect, error: ".mysql_error());
 	mysql_select_db(DB_DATABASE)or die("cannot select DB, error: ".mysql_error());
 	$tbl_name="topic"; // Table name
-?>
+?>-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -68,8 +68,8 @@
                 <a href="../forum.php">Forum</a>
             </div>
 
-            <div class="profile">
-                <img src="../images/user.png" width="40" height="40" alt="user">
+            <div class="print">
+                <script>var pfHeaderImgUrl = '';var pfHeaderTagline = '';var pfdisableClickToDel = 0;var pfHideImages = 1;var pfImageDisplayStyle = 'right';var pfDisablePDF = 0;var pfDisableEmail = 0;var pfDisablePrint = 0;var pfCustomCSS = '';var pfBtVersion='1';(function(){var js, pf;pf = document.createElement('script');pf.type = 'text/javascript';if ('https:' === document.location.protocol){js='https://pf-cdn.printfriendly.com/ssl/main.js'}else{js='http://cdn.printfriendly.com/printfriendly.js'}pf.src=js;document.getElementsByTagName('head')[0].appendChild(pf)})();</script><a href="http://www.printfriendly.com" style="color:#6D9F00;text-decoration:none;" class="printfriendly" onclick="window.print();return false;" title="Printer Friendly and PDF"><img style="margin-top: 10px; border:none;-webkit-box-shadow:none;box-shadow:none;" src="http://cdn.printfriendly.com/button-print-gry20.png" alt="Print Friendly and PDF"/></a>
             </div>
             <div id="registerNav">
 			<?php
