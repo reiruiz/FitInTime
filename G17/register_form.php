@@ -92,7 +92,7 @@
                     <h2 id="inputText">
                             Sign in!
                     </h2>
-                    <form id="loginForm" name="loginForm" method="post" action="login.php">
+                    <form id="loginForm" name="loginForm" method="post" action="login.php" onsubmit="return submitLoginForm()">
                         <!-- Error message is generated in the div but above the table.-->
                         <?php
 	                        if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
@@ -112,7 +112,7 @@
                                         <label for="loginUser">Username:</label>
                                     </th>
                                     <td>
-                                        <input type="text" name="login" id="loginUser" onblur="validateUser('signuser')">
+                                        <input type="text" name="login" id="loginUser">
                                     </td>
                                 </tr>
                             </div>
@@ -123,7 +123,7 @@
                                         <label for="loginPass">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:</label>
                                     </th>
                                     <td>
-                                        <input type="password" name="password" id="loginPass" onblur="validatePass('signpass')">
+                                        <input type="password" name="password" id="loginPass">
                                     </td>
                                 </tr>
                             </div>
@@ -137,7 +137,7 @@
                     <h1 id="inputText">
                         Register today!
                     </h1>
-                        <form id="registerForm" name="registerForm" method="post" action="register.php">
+                        <form id="registerForm" name="registerForm" method="post" action="register.php" onsubmit="return submitRegForm()">
                         <!-- Error message is generated in the div but above the table.-->
                         <?php
 	                        if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
@@ -202,7 +202,7 @@
 										<label for="confpass">Confirm Password:</label>
 									</th>
 									<td>
-										<input type="password" name="cpassword" id="confpass" onblur="confirmInput('regpass','confpass')" required>
+										<input type="password" name="cpassword" id="confpass" required>
 									</td>
 								</tr>
 							</div>
@@ -213,7 +213,7 @@
 										<label for="fname">First Name:</label>
 									</th>
 									<td>
-										<input type="text" name="fname" id="fname" onblur="validateName('fname')" required>
+										<input type="text" name="fname" id="fname"required>
 									</td>
 								</tr>
 							</div>
@@ -224,7 +224,7 @@
 										<label for="lname">Last Name:</label>
 									</th>
 									<td>
-										<input type="text" name="lname" id="lname" onblur="validateName('lname')"required>
+										<input type="text" name="lname" id="lname"required>
 									</td>
 								</tr>
 							</div>

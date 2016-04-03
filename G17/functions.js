@@ -4,35 +4,35 @@ function getElement(id){
     return element;
 }
 
-//Highlights element as invalid
-function highlight(element){
-    element.style.backgroundColor = "pink";
-    element.style.border = "2px solid red";
-}
-//Highlights element as valid
-function validHighlight(element){
-    element.style.backgroundColor = "#99ff99";
-    element.style.border = "2px solid #339900";
-}
-//Insert new node after
-function insertAfter(insertNode, refNode){
-    
-    refNode.parentNode.insertBefore(insertNode, refNode.nextSibling);
-}
+////Highlights element as invalid
+//function highlight(element){
+//    element.style.backgroundColor = "pink";
+//    element.style.border = "2px solid red";
+//}
+////Highlights element as valid
+//function validHighlight(element){
+//    element.style.backgroundColor = "#99ff99";
+//    element.style.border = "2px solid #339900";
+//}
+////Insert new node after
+//function insertAfter(insertNode, refNode){
+//    
+//    refNode.parentNode.insertBefore(insertNode, refNode.nextSibling);
+//}
 
 //Creates error message for invalid fields
-function errorMsg(msg, childId, parentId, errorId){
-    //Checks to see if the error id being created is already present
-    if(getElement(errorId) == null){
-        //creates new paragraph tag and inserts it before input field
-        var error = document.createElement("td");
-        var text = document.createTextNode(msg);
-        error.appendChild(text);
-        error.style.color = "red";
-        error.id = errorId;
-        insertAfter(error,childId);
-    }
-}
+//function errorMsg(msg, childId, parentId, errorId){
+//    //Checks to see if the error id being created is already present
+//    if(getElement(errorId) == null){
+//        //creates new paragraph tag and inserts it before input field
+//        var error = document.createElement("td");
+//        var text = document.createTextNode(msg);
+//        error.appendChild(text);
+//        error.style.color = "red";
+//        error.id = errorId;
+//        insertAfter(error,childId);
+//    }
+//}
 
 //Checks if name is valid.
 function isNameValid(id){
@@ -64,15 +64,16 @@ function isPassValid(id){
 function isSame(first, second){
     return (getElement(first).value == getElement(second).value);
 }
-//Reveals error messages onsubmit instead of onblur/onchange.
-function submitRegForm(){
-    var valid = true;
+
+//Validate login form before submitting.
+function submitLoginForm(){
+    var validLog = true;
     //Check user name
     if(isUserValid('reguser')){
         getElement('eleRegUser').class = '';
         getElement('errRegUser').innerHTML = '';
     }else{
-        valid = false;
+        validLog = false;
         getElement('eleRegUser').class = 'error';
         getElement('errRegUser').innerHTML = 'Invalid Username!';
     }
@@ -81,7 +82,31 @@ function submitRegForm(){
         getElement('eleRegPass').class = '';
         getElement('errRegPass').innerHTML = '';
     }else{
-        valid = false;
+        validLog = false;
+        getElement('eleRegPass').class = 'error';
+        getElement('errRegPass').innerHTML = 'Invalid Password!';
+    }
+    return validLog;
+}
+
+//Validate registration form before submitting.
+function submitRegForm(){
+    var validReg = true;
+    //Check user name
+    if(isUserValid('reguser')){
+        getElement('eleRegUser').class = '';
+        getElement('errRegUser').innerHTML = '';
+    }else{
+        validReg = false;
+        getElement('eleRegUser').class = 'error';
+        getElement('errRegUser').innerHTML = 'Invalid Username!';
+    }
+    //Check password
+    if(isPassValid('regpass')){
+        getElement('eleRegPass').class = '';
+        getElement('errRegPass').innerHTML = '';
+    }else{
+        validReg = false;
         getElement('eleRegPass').class = 'error';
         getElement('errRegPass').innerHTML = 'Invalid Password!';
     }
@@ -90,7 +115,7 @@ function submitRegForm(){
         getElement('eleConfPass').class = '';
         getElement('errConfPass').innerHTML = '';
     }else{
-        valid = false;
+        validReg = false;
         getElement('eleConfPass').class = 'error';
         getElement('errConfPass').innerHTML = 'Does not match!';
     }
@@ -99,7 +124,7 @@ function submitRegForm(){
         getElement('eleFname').class = '';
         getElement('errFname').innerHTML = '';
     }else{
-        valid = false;
+        validReg = false;
         getElement('eleFname').class = 'error';
         getElement('errFname').innerHTML = 'Name must be alphabetic!';
     }
@@ -108,11 +133,11 @@ function submitRegForm(){
         getElement('eleLname').class = '';
         getElement('errLname').innerHTML = '';
     }else{
-        valid = false;
+        validReg = false;
         getElement('eleLname').class = 'error';
         getElement('errLname').innerHTML = 'Name must be alphabetic!';
     }
-    return valid;
+    return validReg;
 }
 /*
 
