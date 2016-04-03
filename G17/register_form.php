@@ -105,7 +105,7 @@
 	                        }
                         ?>
                         <table id="signin">
-                            <div id="eleLoginUser"
+                            <div id="eleLoginUser">
                                 <div id="errLoginUser"></div>
                                 <tr>
                                     <th>
@@ -158,62 +158,76 @@
                                         <label for="reguser">Username:</label>
                                     </th>
                                     <td>
-                                        <input type="text" name="login" id="reguser" onblur="validateUser('reguser')" onfocus="showUsernameRule()" required>
+                                        <input type="text" name="login" id="reguser" required>
                                     </td>
                                 </tr>
                             </div>
+							
                             <tr>
                                 <th>
                                 </th>
                                 <td>
-                                    <p id="usernameRuleDisplay">Must be 4-15 characters long<br>and have no special characters</p>
+                                    <p>Must be 4-15 characters long<br>and have no special characters</p>
                                 </td>
                             </tr>
+							<div id="eleRegPass">
+								<div id="errRegPass"></div>
+								<tr>
+									<th>
+										<label for="regpass">Password:</label>
+										<br>
+									</th>
+									<td>
+										<input type="password" name="password" id="regpass" required>
+									</td>
+								</tr>
+							</div>
                             <tr>
                                 <th>
-                                    <label for="regpass">Password:</label>
-                                    <br>
                                 </th>
                                 <td>
-                                    <input type="password" name="password" id="regpass" onblur="validatePass('regpass')" onfocus="showPasswordRule()" required>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                </th>
-                                <td>
-                                    <p class="passwordRuleDisplay">Must contain</p>
-                                    <ul class="passwordRuleDisplay" style="margin-left: 20px;">
-                                        <li>One uppercase character</li>
-                                        <li>One lowercase character</li>
+                                    <p>Must contain</p>
+                                    <ul style="margin-left: 20px;">
+                                        <li>One upper case character</li>
+                                        <li>One lower case character</li>
                                         <li>One number</li>
+										<li>Minimum 5 characters</li>
                                     </ul>
                                 </td>
                             </tr>
-                            <tr>
-                                <th>
-                                    <label for="confpass">Confirm Password:</label>
-                                </th>
-                                <td>
-                                    <input type="password" name="cpassword" id="confpass" onblur="confirmInput('regpass','confpass')" required>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <label for="fname">First Name:</label>
-                                </th>
-                                <td>
-                                    <input type="text" name="fname" id="fname" onblur="validateName('fname')" required>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <label for="fname">Last Name:</label>
-                                </th>
-                                <td>
-                                    <input type="text" name="lname" id="lname" onblur="validateName('lname')"required>
-                                </td>
-                            </tr>
+							<div id="eleConfPass">
+								<div id="errConfPass"></div>
+								<tr>
+									<th>
+										<label for="confpass">Confirm Password:</label>
+									</th>
+									<td>
+										<input type="password" name="cpassword" id="confpass" onblur="confirmInput('regpass','confpass')" required>
+									</td>
+								</tr>
+							</div>
+							<div id="eleFname">
+								<div id="errFname"></div>
+								<tr>
+									<th>
+										<label for="fname">First Name:</label>
+									</th>
+									<td>
+										<input type="text" name="fname" id="fname" onblur="validateName('fname')" required>
+									</td>
+								</tr>
+							</div>
+							<div id="eleLname">
+								<div id="errLname"></div>
+								<tr>
+									<th>
+										<label for="lname">Last Name:</label>
+									</th>
+									<td>
+										<input type="text" name="lname" id="lname" onblur="validateName('lname')"required>
+									</td>
+								</tr>
+							</div>
                             <!-- Original php doesn't ask for email so im commenting this out //Chris-->
                             <!--
                             <tr>

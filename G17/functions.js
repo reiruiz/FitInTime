@@ -54,12 +54,67 @@ function isPassValid(id){
         - One upper case letter
         - One lower case letter
         - One number
+        - Five characters long
     */
-    var patt = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{5,}$/
+    var patt = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{5,}$/;
+    return patt.test(getElement(id).value);
 }
 
-
-
+//If the value of first element is the same as the second element, return true
+function isSame(first, second){
+    return (getElement(first).value == getElement(second).value);
+}
+//Reveals error messages onsubmit instead of onblur/onchange.
+function submitRegForm(){
+    var valid = true;
+    //Check user name
+    if(isUserValid('reguser')){
+        getElement('eleRegUser').class = '';
+        getElement('errRegUser').innerHTML = '';
+    }else{
+        valid = false;
+        getElement('eleRegUser').class = 'error';
+        getElement('errRegUser').innerHTML = 'Invalid Username!';
+    }
+    //Check password
+    if(isPassValid('regpass')){
+        getElement('eleRegPass').class = '';
+        getElement('errRegPass').innerHTML = '';
+    }else{
+        valid = false;
+        getElement('eleRegPass').class = 'error';
+        getElement('errRegPass').innerHTML = 'Invalid Password!';
+    }
+    //Check confirmation password
+    if(isSame('regpass','confpass')){
+        getElement('eleConfPass').class = '';
+        getElement('errConfPass').innerHTML = '';
+    }else{
+        valid = false;
+        getElement('eleConfPass').class = 'error';
+        getElement('errConfPass').innerHTML = 'Does not match!';
+    }
+    //Check first name
+    if(isNameValid('fname')){
+        getElement('eleFname').class = '';
+        getElement('errFname').innerHTML = '';
+    }else{
+        valid = false;
+        getElement('eleFname').class = 'error';
+        getElement('errFname').innerHTML = 'Name must be alphabetic!';
+    }
+    //Check last name
+    if(isNameValid('lname')){
+        getElement('eleLname').class = '';
+        getElement('errLname').innerHTML = '';
+    }else{
+        valid = false;
+        getElement('eleLname').class = 'error';
+        getElement('errLname').innerHTML = 'Name must be alphabetic!';
+    }
+    return valid;
+}
+/*
 
 
 
@@ -138,6 +193,7 @@ function validateEmail(id){
     pattern matches to format:
     [any alphanumeric characters including underscore]@[any domain].[toplevel domain(min 2 char)]
     */
+/*
     var patt = /[\w_]+@.*\.[a-zA-Z]{2,}/;
     if(!patt.test(email)){
         highlight(getElement(id));
@@ -176,3 +232,4 @@ function showPasswordRule() {
 	document.getElementsByClassName("passwordRuleDisplay")[0].style.display = "initial";
 	document.getElementsByClassName("passwordRuleDisplay")[1].style.display = "initial";
 }
+*/
