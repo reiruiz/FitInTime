@@ -230,7 +230,9 @@ body {
 }
 
 #logo a:hover {
-    text-decoration: underline;
+	color: white;
+    -webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
 }
 
 #logo ul {
@@ -272,7 +274,9 @@ body {
 }
 
 .introduction a:hover {
-    text-decoration: underline;
+    color: white;
+	/*           Color   ignore   weight*/
+    text-shadow: #000000 0px 0px 5px;
 }
 
 .introduction ul {
