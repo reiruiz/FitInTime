@@ -104,29 +104,27 @@
 		                        unset($_SESSION['ERRMSG_ARR']);
 	                        }
                         ?>
+						<ul id="loginError" class="err">
+							<li id="errLoginUser"></li>
+							<li id="errLoginPass"></li>
+						</ul>
                         <table id="signin">
-                            <div id="eleLoginUser">
-                                <div id="errLoginUser"></div>
-                                <tr>
-                                    <th>
-                                        <label for="loginUser">Username:</label>
-                                    </th>
-                                    <td>
-                                        <input type="text" name="login" id="loginUser">
-                                    </td>
-                                </tr>
-                            </div>
-                            <div id="eleLoginPass">
-                                <div id="errLoginPass"></div>
-                                <tr>
-                                    <th>
-                                        <label for="loginPass">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:</label>
-                                    </th>
-                                    <td>
-                                        <input type="password" name="password" id="loginPass">
-                                    </td>
-                                </tr>
-                            </div>
+							<tr>
+								<th>
+									<label for="loginUser">Username:</label>
+								</th>
+								<td>
+									<input type="text" name="login" id="loginUser">
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<label for="loginPass">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:</label>
+								</th>
+								<td>
+									<input type="password" name="password" id="loginPass">
+								</td>
+							</tr>
                             <tr>
                                 <th>
                                     <input type="submit" name="submitinfo" id="submit" value="Sign in" style="margin-bottom: 20px">
@@ -149,19 +147,22 @@
 		                        unset($_SESSION['ERRMSG_ARR']);
 	                        }
                         ?>
+						<ul id="regError" class="err">
+							<li id="errRegUser"></li>
+							<li id="errRegPass"></li>
+							<li id="errConfPass"></li>
+							<li id="errName"></li>
+						</ul>
                         <table>
                             <tr></tr>
-                            <div id="eleRegUser">
-                                <div id="errRegUser"></div>
-                                <tr>
-                                    <th>
-                                        <label for="reguser">Username:</label>
-                                    </th>
-                                    <td>
-                                        <input type="text" name="login" id="reguser" required>
-                                    </td>
-                                </tr>
-                            </div>
+							<tr>
+								<th>
+									<label for="reguser">Username:</label>
+								</th>
+								<td>
+									<input type="text" name="login" id="reguser" required>
+								</td>
+							</tr>
 							
                             <tr>
                                 <th>
@@ -170,18 +171,15 @@
                                     <p>Must be 4-15 characters long<br>and have no special characters</p>
                                 </td>
                             </tr>
-							<div id="eleRegPass">
-								<div id="errRegPass"></div>
-								<tr>
-									<th>
-										<label for="regpass">Password:</label>
-										<br>
-									</th>
-									<td>
-										<input type="password" name="password" id="regpass" required>
-									</td>
-								</tr>
-							</div>
+							<tr>
+								<th>
+									<label for="regpass">Password:</label>
+									<br>
+								</th>
+								<td>
+									<input type="password" name="password" id="regpass" required>
+								</td>
+							</tr>
                             <tr>
                                 <th>
                                 </th>
@@ -195,39 +193,30 @@
                                     </ul>
                                 </td>
                             </tr>
-							<div id="eleConfPass">
-								<div id="errConfPass"></div>
-								<tr>
-									<th>
-										<label for="confpass">Confirm Password:</label>
-									</th>
-									<td>
-										<input type="password" name="cpassword" id="confpass" required>
-									</td>
-								</tr>
-							</div>
-							<div id="eleFname">
-								<div id="errFname"></div>
-								<tr>
-									<th>
-										<label for="fname">First Name:</label>
-									</th>
-									<td>
-										<input type="text" name="fname" id="fname"required>
-									</td>
-								</tr>
-							</div>
-							<div id="eleLname">
-								<div id="errLname"></div>
-								<tr>
-									<th>
-										<label for="lname">Last Name:</label>
-									</th>
-									<td>
-										<input type="text" name="lname" id="lname"required>
-									</td>
-								</tr>
-							</div>
+							<tr>
+								<th>
+									<label for="confpass">Confirm Password:</label>
+								</th>
+								<td>
+									<input type="password" name="cpassword" id="confpass" required>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<label for="fname">First Name:</label>
+								</th>
+								<td>
+									<input type="text" name="fname" id="fname"required>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<label for="lname">Last Name:</label>
+								</th>
+								<td>
+									<input type="text" name="lname" id="lname"required>
+								</td>
+							</tr>
                             <!-- Original php doesn't ask for email so im commenting this out //Chris-->
                             <!--
                             <tr>

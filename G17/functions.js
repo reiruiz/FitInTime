@@ -69,23 +69,30 @@ function isSame(first, second){
 function submitLoginForm(){
     var validLog = true;
     //Check user name
-    if(isUserValid('reguser')){
-        getElement('eleRegUser').class = '';
-        getElement('errRegUser').innerHTML = '';
+    if(isUserValid('loginUser')){
+        // getElement('errLoginUser').className = '';
+        getElement('errLoginUser').innerHTML = '';
+		getElement('errLoginUser').style.display = "none";
     }else{
         validLog = false;
-        getElement('eleRegUser').class = 'error';
-        getElement('errRegUser').innerHTML = 'Invalid Username!';
+        // getElement('errLoginUser').className = 'error';
+		getElement('errLoginUser').style.display = "block";
+        getElement('errLoginUser').innerHTML = 'Invalid Username!';
     }
     //Check password
-    if(isPassValid('regpass')){
-        getElement('eleRegPass').class = '';
-        getElement('errRegPass').innerHTML = '';
+    if(isPassValid('loginPass')){
+        // getElement('errLoginPass').className = '';
+        getElement('errLoginPass').innerHTML = '';
+		getElement('errLoginPass').style.display = "none";
     }else{
         validLog = false;
-        getElement('eleRegPass').class = 'error';
-        getElement('errRegPass').innerHTML = 'Invalid Password!';
+        // getElement('errLoginPass').className = 'error';
+		getElement('errLoginPass').style.display = "block";
+        getElement('errLoginPass').innerHTML = 'Invalid Password!';
     }
+	if(!validLog){
+		getElement('loginError').style.display = "block";
+	}
     return validLog;
 }
 
@@ -94,49 +101,71 @@ function submitRegForm(){
     var validReg = true;
     //Check user name
     if(isUserValid('reguser')){
-        getElement('eleRegUser').class = '';
+        // getElement('eleRegUser').className = '';
+		getElement('errRegUser').style.display = "none";
         getElement('errRegUser').innerHTML = '';
     }else{
         validReg = false;
-        getElement('eleRegUser').class = 'error';
+        // getElement('eleRegUser').className = 'error';
+		
+		getElement('errRegUser').style.display = "block";
         getElement('errRegUser').innerHTML = 'Invalid Username!';
     }
     //Check password
     if(isPassValid('regpass')){
-        getElement('eleRegPass').class = '';
+        // getElement('eleRegPass').className = '';
+		
+		getElement('errRegPass').style.display = "none";
         getElement('errRegPass').innerHTML = '';
     }else{
         validReg = false;
-        getElement('eleRegPass').class = 'error';
+        // getElement('eleRegPass').className = 'error';
+		
+		getElement('errRegPass').style.display = "block";
         getElement('errRegPass').innerHTML = 'Invalid Password!';
     }
     //Check confirmation password
     if(isSame('regpass','confpass')){
-        getElement('eleConfPass').class = '';
+        // getElement('eleConfPass').className = '';
+		
+		getElement('errConfPass').style.display = "none";
         getElement('errConfPass').innerHTML = '';
     }else{
         validReg = false;
-        getElement('eleConfPass').class = 'error';
-        getElement('errConfPass').innerHTML = 'Does not match!';
+        // getElement('eleConfPass').className = 'error';
+		
+		getElement('errConfPass').style.display = "block";
+        getElement('errConfPass').innerHTML = 'Passwords does not match!';
     }
     //Check first name
     if(isNameValid('fname')){
-        getElement('eleFname').class = '';
-        getElement('errFname').innerHTML = '';
+        // getElement('eleFname').className = '';
+		
+		getElement('errName').style.display = "none";
+        getElement('errName').innerHTML = '';
     }else{
         validReg = false;
-        getElement('eleFname').class = 'error';
-        getElement('errFname').innerHTML = 'Name must be alphabetic!';
+        // getElement('eleFname').className = 'error';
+		
+		getElement('errName').style.display = "block";
+        getElement('errName').innerHTML = 'Name must be alphabetic!';
     }
-    //Check last name
+    //Check last name, edits the same error since 
     if(isNameValid('lname')){
-        getElement('eleLname').class = '';
-        getElement('errLname').innerHTML = '';
+        // getElement('errName').className = '';
+		
+		getElement('errName').style.display = "none";
+        getElement('errName').innerHTML = '';
     }else{
         validReg = false;
-        getElement('eleLname').class = 'error';
-        getElement('errLname').innerHTML = 'Name must be alphabetic!';
+        // getElement('errName').className = 'error';
+		
+		getElement('errName').style.display = "block";
+        getElement('errName').innerHTML = 'Name must be alphabetic!';
     }
+	if(!validReg){
+		getElement('regError').style.display = "block";
+	}
     return validReg;
 }
 /*
