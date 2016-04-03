@@ -731,7 +731,20 @@ body {
 #forumTable table{
     margin: auto;
 }
+#loginError {
+	display:none;
+}
+#regError{
+	display:none;
+}
 .print {
     float: right;
 }
 /*extra*/
+
+div.error{
+    background-color: pink;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}

@@ -92,7 +92,7 @@
                     <h2 id="inputText">
                             Sign in!
                     </h2>
-                    <form id="loginForm" name="loginForm" method="post" action="login.php">
+                    <form id="loginForm" name="loginForm" method="post" action="login.php" onsubmit="return submitLoginForm()">
                         <!-- Error message is generated in the div but above the table.-->
                         <?php
 	                        if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
@@ -104,23 +104,27 @@
 		                        unset($_SESSION['ERRMSG_ARR']);
 	                        }
                         ?>
+						<ul id="loginError" class="err">
+							<li id="errLoginUser"></li>
+							<li id="errLoginPass"></li>
+						</ul>
                         <table id="signin">
-                            <tr>
-                                <th>
-                                    <label for="loginUser">Username:</label>
-                                </th>
-                                <td>
-                                    <input type="text" name="login" id="loginUser" onblur="validateUser('signuser')">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <label for="loginPass">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:</label>
-                                </th>
-                                <td>
-                                    <input type="password" name="password" id="loginPass" onblur="validatePass('signpass')">
-                                </td>
-                            </tr>
+							<tr>
+								<th>
+									<label for="loginUser">Username:</label>
+								</th>
+								<td>
+									<input type="text" name="login" id="loginUser">
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<label for="loginPass">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:</label>
+								</th>
+								<td>
+									<input type="password" name="password" id="loginPass">
+								</td>
+							</tr>
                             <tr>
                                 <th>
                                     <input type="submit" name="submitinfo" id="submit" value="Sign in" style="margin-bottom: 20px">
@@ -131,7 +135,7 @@
                     <h1 id="inputText">
                         Register today!
                     </h1>
-                        <form id="registerForm" name="registerForm" method="post" action="register.php">
+                        <form id="registerForm" name="registerForm" method="post" action="register.php" onsubmit="return submitRegForm()">
                         <!-- Error message is generated in the div but above the table.-->
                         <?php
 	                        if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
@@ -143,68 +147,76 @@
 		                        unset($_SESSION['ERRMSG_ARR']);
 	                        }
                         ?>
+						<ul id="regError" class="err">
+							<li id="errRegUser"></li>
+							<li id="errRegPass"></li>
+							<li id="errConfPass"></li>
+							<li id="errName"></li>
+						</ul>
                         <table>
                             <tr></tr>
+							<tr>
+								<th>
+									<label for="reguser">Username:</label>
+								</th>
+								<td>
+									<input type="text" name="login" id="reguser" required>
+								</td>
+							</tr>
+							
                             <tr>
                                 <th>
-                                    <label for="reguser">Username:</label>
                                 </th>
                                 <td>
-                                    <input type="text" name="login" id="reguser" onblur="validateUser('reguser')" onfocus="showUsernameRule()" required>
+                                    <p>Must be 4-15 characters long<br>and have no special characters</p>
                                 </td>
                             </tr>
+							<tr>
+								<th>
+									<label for="regpass">Password:</label>
+									<br>
+								</th>
+								<td>
+									<input type="password" name="password" id="regpass" required>
+								</td>
+							</tr>
                             <tr>
                                 <th>
                                 </th>
                                 <td>
-                                    <p id="usernameRuleDisplay">Must be 4-15 characters long<br>and have no special characters</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <label for="regpass">Password:</label>
-                                    <br>
-                                </th>
-                                <td>
-                                    <input type="password" name="password" id="regpass" onblur="validatePass('regpass')" onfocus="showPasswordRule()" required>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                </th>
-                                <td>
-                                    <p class="passwordRuleDisplay">Must contain</p>
-                                    <ul class="passwordRuleDisplay" style="margin-left: 20px;">
-                                        <li>One uppercase character</li>
-                                        <li>One lowercase character</li>
+                                    <p>Must contain</p>
+                                    <ul style="margin-left: 20px;">
+                                        <li>One upper case character</li>
+                                        <li>One lower case character</li>
                                         <li>One number</li>
+										<li>Minimum 5 characters</li>
                                     </ul>
                                 </td>
                             </tr>
-                            <tr>
-                                <th>
-                                    <label for="confpass">Confirm Password:</label>
-                                </th>
-                                <td>
-                                    <input type="password" name="cpassword" id="confpass" onblur="confirmInput('regpass','confpass')" required>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <label for="fname">First Name:</label>
-                                </th>
-                                <td>
-                                    <input type="text" name="fname" id="fname" onblur="validateName('fname')" required>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <label for="fname">Last Name:</label>
-                                </th>
-                                <td>
-                                    <input type="text" name="lname" id="lname" onblur="validateName('lname')"required>
-                                </td>
-                            </tr>
+							<tr>
+								<th>
+									<label for="confpass">Confirm Password:</label>
+								</th>
+								<td>
+									<input type="password" name="cpassword" id="confpass" required>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<label for="fname">First Name:</label>
+								</th>
+								<td>
+									<input type="text" name="fname" id="fname"required>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<label for="lname">Last Name:</label>
+								</th>
+								<td>
+									<input type="text" name="lname" id="lname"required>
+								</td>
+							</tr>
                             <!-- Original php doesn't ask for email so im commenting this out //Chris-->
                             <!--
                             <tr>
