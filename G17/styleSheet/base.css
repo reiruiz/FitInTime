@@ -810,4 +810,7 @@ body {
 #forumTable table{
     margin: auto;
 }
+.print {
+    float: right;
+}
 /*extra*/
