@@ -230,7 +230,9 @@ body {
 }
 
 #logo a:hover {
-    color: white;
+	color: white;
+	/*           Color   ignore   weight*/
+    text-shadow: #000000 0px 0px 5px;
 }
 
 #logo ul {
@@ -273,6 +275,8 @@ body {
 
 .introduction a:hover {
     color: white;
+	/*           Color   ignore   weight*/
+    text-shadow: #000000 0px 0px 5px;
 }
 
 .introduction ul {
@@ -805,5 +809,8 @@ body {
 }
 #forumTable table{
     margin: auto;
+}
+.print {
+    float: right;
 }
 /*extra*/

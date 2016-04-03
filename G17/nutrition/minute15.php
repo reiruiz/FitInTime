@@ -68,8 +68,8 @@
                 <a href="../forum.php">Forum</a>
             </div>
 
-            <div class="profile">
-                <img src="../images/user.png" width="40" height="40" alt="user">
+            <div class="print">
+                <script>var pfHeaderImgUrl = '';var pfHeaderTagline = '';var pfdisableClickToDel = 0;var pfHideImages = 1;var pfImageDisplayStyle = 'right';var pfDisablePDF = 0;var pfDisableEmail = 0;var pfDisablePrint = 0;var pfCustomCSS = '';var pfBtVersion='1';(function(){var js, pf;pf = document.createElement('script');pf.type = 'text/javascript';if ('https:' === document.location.protocol){js='https://pf-cdn.printfriendly.com/ssl/main.js'}else{js='http://cdn.printfriendly.com/printfriendly.js'}pf.src=js;document.getElementsByTagName('head')[0].appendChild(pf)})();</script><a href="http://www.printfriendly.com" style="color:#6D9F00;text-decoration:none;" class="printfriendly" onclick="window.print();return false;" title="Printer Friendly and PDF"><img style="margin-top: 10px; border:none;-webkit-box-shadow:none;box-shadow:none;" src="http://cdn.printfriendly.com/button-print-gry20.png" alt="Print Friendly and PDF"/></a>
             </div>
             <div id="registerNav">
 			<?php
@@ -97,7 +97,7 @@
 
         <div id="recipe">
             <div class="imageLink">
-                <a href="#fifteen1"><img src="../images/food/15Recipes/quesadillas.jpg" alt="quesadilla"></a>
+                <a href="#fifteen1"><img src="../images/food/15Recipes/Quesadillas.jpg" alt="quesadilla"></a>
             </div>
             <div class="imageLink">
                 <a href="#fifteen2"><img src="../images/food/15Recipes/fillets.jpg" alt="fillets"></a>
