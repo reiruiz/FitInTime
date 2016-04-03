@@ -126,9 +126,10 @@
 								</td>
 							</tr>
                             <tr>
-                                <th>
+                                <th></th>
+                                <td>
                                     <input type="submit" name="submitinfo" id="submit" value="Sign in" style="margin-bottom: 20px">
-                                </th>
+                                </td>
                             </tr>
                         </table>
                     </form>
@@ -237,9 +238,10 @@
                             </tr>
                             -->
                             <tr>
-                                <th>
+                                <th></th>
+                                <td>
                                     <input type="submit" name="submit" id="submit" value="Register">
-                                </th>
+                                </td>
                             </tr>
                         </table>
                     </form>
