@@ -230,7 +230,7 @@ body {
 }
 
 #logo a:hover {
-    text-decoration: underline;
+    color: white;
 }
 
 #logo ul {
@@ -272,7 +272,7 @@ body {
 }
 
 .introduction a:hover {
-    color: white;
+    text-decoration: underline
 }
 
 .introduction ul {
