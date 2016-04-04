@@ -1,0 +1,168 @@
+/* BASE CONTENT */
+
+* {                                 /* resets margin/padding to 0*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:  #10222B;
+    height: 100%;
+}
+
+#content p {                        /* only content indents; fixed issue with footer indent*/
+    text-indent: 40px;
+}
+
+#wrapper {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 35px;
+}
+
+#header {
+    background-color: #95AB36;
+    position: fixed;
+    width: 100%;
+}
+
+#header h1 {                            /* TEMPORARY*/
+    text-align: right;
+    padding-right: 10px;
+}
+
+#banner img {
+    width: 100%;
+    height:  150px;
+    display: block;
+    margin: auto;
+}
+
+#nav {                                  /* centers the nav texts*/
+    background-color: #BDD6A6;
+    text-align: center;
+}
+
+#nav a {
+    text-decoration:  none;
+    color: #000000;
+}
+
+#nav a:hover {
+    color: #808080;
+}
+
+#nav li {
+    display:  inline-block;
+    list-style:  none;
+    font-size:  large;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#content {
+    background-color:  #F6FFE0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#footer {
+    background-color:  #95AB36;
+    text-align: center;
+    padding: 10px;
+}
+
+/* HOME CONTENT */
+
+.homeImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.homeContent {
+    font-size: large;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* EXERCISE & NUTRITION CONTENT */
+
+#activityTime {
+    display: block;         
+    text-align:  center;            /* centering the images*/
+    padding: 20px;
+}
+
+#activityTime li{
+    list-style-type: none;
+    text-align: center;
+    display:  inline
+}
+
+#activityTime a {
+    margin: auto;   
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+
+/* PROFILE CONTENT */
+
+
+#displayPicture {
+    padding-top: 30px;
+    float: left;
+    padding-left: 30px;
+
+}
+
+#profileInfo {
+    width: 450px;
+    float: left; 
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+#calendar {
+    clear:  both;
+    padding-top:  30px;
+}
+
+#achievements {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* REGISTRATION*/
+
+#whyRegister {
+    width: 500px;
+    float: left;
+    padding-left: 25px;
+}
+
+#whyRegister h2 {
+    padding-bottom: 20px;
+}
+
+#whyRegister p {
+    padding-bottom: 40px;
+}
+
+#whyRegister img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputBoxes {
+    padding-left: 575px;
+}
