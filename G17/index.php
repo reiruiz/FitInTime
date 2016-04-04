@@ -89,11 +89,9 @@
                 <p>Whether you've got 15 minutes or 60 minutes,
                     we at FITINTIME will provide the resources you'll need to get fit in time!</p>
                 <p>Click below to get started!</p>
-                <ul>
-                    <li><a href="#nutrition">Nutrition</a></li>
-                    <li>/</li>
-                    <li><a href="#fitness">Fitness</a></li>
-                </ul>
+                <p id="miniNav">
+                    <a href="#nutrition">Nutrition</a> / <a href="#fitness">Fitness</a>
+                </p>
             </div>
 
         </div>

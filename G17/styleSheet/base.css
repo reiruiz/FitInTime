@@ -223,24 +223,14 @@ body {
     color: black;
 }
 
-#logo li {
+#logo #miniNav {
     font-size: 450%;
-    padding-left: 5px;
-    padding-right: 5px;
 }
 
 #logo a:hover {
 	color: white;
 	/*           Color   ignore   weight*/
     text-shadow: #000000 0px 0px 5px;
-}
-
-#logo ul {
-    list-style-type: none;
-}
-
-#logo li {
-    display: inline;
 }
 
 /* INFORMATION BOXES (for all pages and initial banner) */
@@ -279,10 +269,6 @@ body {
     text-shadow: #000000 0px 0px 5px;
 }
 
-.introduction ul {
-    list-style-type: none;
-}
-
 /* RECIPES and EXERCISES (on main page) */
 
 #recipe {
@@ -318,66 +304,9 @@ body {
     filter: grayscale(0);
 }
 
-/*.recipeImg {
-    width: 33.3333333%;
-    float: left;
-    overflow: hidden;
-    margin-top: -5px;
-    position: relative;
-}
-
-.recipeImg img {
-    -webkit-filter: grayscale(1);
-    -moz-filter: grayscale(1);
-	-ms-filter: grayscale(1);
-    -o-filter: grayscale(1);
-	filter: grayscale(1);
-	-webkit-transition: all .3s linear;
-	-moz-transition: all .3s linear;
-	-ms-transition: all .3s linear;
-	-o-transition: all .3s linear;
-	transition: all .3s linear;
-}
-
-.recipeImg img:hover {
-    -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-	-ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
-	filter: grayscale(0);
-}*/
-
 #exercise {
     height: 1000px;
 }
-
-/*.exerciseImg {
-    width: 33.3333333%;
-    float: left;
-    overflow: hidden;
-    margin-top: -5px;
-}
-
-.exerciseImg img {
-    -webkit-filter: grayscale(1);
-    -moz-filter: grayscale(1);
-	-ms-filter: grayscale(1);
-    -o-filter: grayscale(1);
-	filter: grayscale(1);
-	-webkit-transition: all .3s linear;
-	-moz-transition: all .3s linear;
-	-ms-transition: all .3s linear;
-	-o-transition: all .3s linear;
-	transition: all .3s linear;
-}
-
-.exerciseImg img:hover {
-    -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-	-ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
-	filter: grayscale(0);
-}*/
 
 /* REGISTER (on main page) */
 
@@ -474,14 +403,6 @@ body {
 #footer a {
     color: black;
     text-decoration: none;
-}
-
-#usernameRuleDisplay {
-    display: none;
-}
-
-.passwordRuleDisplay {
-    display: none;
 }
 
 /* RECIPE & EXERCISE INFORMATION */
